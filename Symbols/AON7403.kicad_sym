@@ -1,0 +1,130 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "AON7403" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at -8.89 3.81 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "AON7403" (id 1) (at -8.89 -6.35 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "AON7403:TRANS_AON7403" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "G" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "Manufacturer Recommendations" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "0.9 mm" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Alpha & Omega" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "AON7403_0_0"
+      (polyline
+        (pts (xy 0.762 -0.762) (xy 0.762 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.762 0.0) (xy 0.762 0.762)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.762 -3.175) (xy 0.762 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.762 -2.54) (xy 0.762 -1.905)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.762 0.0) (xy 2.54 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 0.0) (xy 2.54 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.762 1.905) (xy 0.762 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.762 2.54) (xy 0.762 3.175)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -2.54) (xy 0.0 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 2.54) (xy 0.762 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.81 -2.54) (xy 3.81 0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.81 0.508) (xy 3.81 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 2.54) (xy 3.81 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.762 -2.54) (xy 3.81 -2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.048 0.762) (xy 3.302 0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.302 0.508) (xy 3.81 0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 3.81 0.508) (xy 4.318 0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 4.318 0.508) (xy 4.572 0.254)) (stroke (width 0.1524))
+      )
+      (circle (center 2.54 2.54) (radius 0.3592)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (circle (center 2.54 -2.54) (radius 0.3592)
+        (stroke (width 0.0)) (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.81 0.508)
+          (xy 4.318 -0.254)
+          (xy 3.302 -0.254)
+          (xy 3.81 0.508)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 2.54 0.0)
+          (xy 1.524 0.762)
+          (xy 1.524 -0.762)
+          (xy 2.54 0.0)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (pin passive line (at 2.54 5.08 270.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -2.54 2.54 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 2.54 -5.08 90.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5_8"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
