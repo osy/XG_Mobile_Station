@@ -18,4 +18,6 @@
   (lib (name "USB-C-SMD_TYPE-C-24P-QT")(type "KiCad")(uri "${KIPRJMOD}/Footprints/USB-C-SMD_TYPE-C-24P-QT.pretty")(options "")(descr ""))
   (lib (name "VL822-QFN76")(type "KiCad")(uri "${KIPRJMOD}/Footprints/VL822-QFN76.pretty")(options "")(descr ""))
   (lib (name "AOSP21321")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AOSP21321.pretty")(options "")(descr ""))
+  (lib (name "1-1775099-3")(type "KiCad")(uri "${KIPRJMOD}/Footprints/1-1775099-3.pretty")(options "")(descr ""))
+  (lib (name "TPS2003CDRCR")(type "KiCad")(uri "${KIPRJMOD}/Footprints/TPS2003CDRCR.pretty")(options "")(descr ""))
 )

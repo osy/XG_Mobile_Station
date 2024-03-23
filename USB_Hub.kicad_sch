@@ -2589,7 +2589,7 @@
 		(uuid "2b0fc5d5-daf8-48ca-8767-1e5a012768ab")
 	)
 	(junction
-		(at 157.48 181.61)
+		(at 157.48 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c60c7ea-1708-4da6-bce3-93e2e4fdb7b3")
@@ -2727,7 +2727,7 @@
 		(uuid "a8396743-051b-404a-b3a7-0edae9e4dcee")
 	)
 	(junction
-		(at 139.7 181.61)
+		(at 139.7 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad04ddca-886f-43e9-a00d-26f86bdf09cf")
@@ -2811,6 +2811,24 @@
 		(uuid "e263f42e-7cd2-47ae-b7e7-978b9ba662de")
 	)
 	(junction
+		(at 147.32 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e64f857a-3bde-4fe8-9008-d5d576fd9981")
+	)
+	(junction
+		(at 152.4 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e95eb933-57cc-4470-94bf-9052b551cb25")
+	)
+	(junction
+		(at 156.21 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f62174ba-d516-4ee2-a575-fb747e4c1e3f")
+	)
+	(junction
 		(at 20.32 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2823,7 +2841,7 @@
 		(uuid "f731dad3-86ae-4836-b559-4f670076f78c")
 	)
 	(junction
-		(at 148.59 181.61)
+		(at 148.59 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fafce4ca-f57a-4daf-a1c7-277d786302f8")
@@ -2880,7 +2898,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 182.88) (xy 139.7 181.61)
+			(xy 139.7 175.26) (xy 139.7 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2910,6 +2928,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 182.88) (xy 166.37 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "098d7f4d-7482-40fb-89a8-fb350f505658")
+	)
+	(wire
+		(pts
 			(xy 120.65 52.07) (xy 120.65 50.8)
 		)
 		(stroke
@@ -2930,13 +2958,13 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 190.5) (xy 166.37 191.77)
+			(xy 165.1 142.24) (xy 165.1 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0defd1a9-1167-4451-82d0-6a599534a60a")
+		(uuid "0e811c8e-1706-42f5-91bd-695f8e1c0232")
 	)
 	(wire
 		(pts
@@ -2977,6 +3005,16 @@
 			(type default)
 		)
 		(uuid "12faa5fe-a53c-4945-b0f3-be8c0c174389")
+	)
+	(wire
+		(pts
+			(xy 120.65 20.32) (xy 121.92 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15340226-8d0f-4c68-8567-adcc7ee66901")
 	)
 	(wire
 		(pts
@@ -3040,13 +3078,23 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 181.61) (xy 148.59 182.88)
+			(xy 148.59 173.99) (xy 148.59 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "19782e5f-c45c-4ece-ba6a-66d8bb615c3f")
+	)
+	(wire
+		(pts
+			(xy 119.38 71.12) (xy 121.92 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a885f70-d21b-4390-997d-d0b2e48f210e")
 	)
 	(wire
 		(pts
@@ -3090,6 +3138,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 140.97) (xy 156.21 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bbb1ecd-c772-4a50-9090-8693ce5832ae")
+	)
+	(wire
+		(pts
 			(xy 20.32 105.41) (xy 20.32 110.49)
 		)
 		(stroke
@@ -3130,7 +3188,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 182.88) (xy 157.48 181.61)
+			(xy 157.48 175.26) (xy 157.48 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3250,6 +3308,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 142.24) (xy 138.43 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2777b1da-f1cf-418f-85b6-1404e698ddc8")
+	)
+	(wire
+		(pts
 			(xy 121.92 109.22) (xy 64.77 109.22)
 		)
 		(stroke
@@ -3340,6 +3408,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 114.3) (xy 177.8 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "308257f3-1ef0-4f27-a50c-fb1906412fd1")
+	)
+	(wire
+		(pts
 			(xy 120.65 100.33) (xy 120.65 99.06)
 		)
 		(stroke
@@ -3380,6 +3458,26 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 140.97) (xy 152.4 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "329a8fad-5919-4d1c-aec8-aa594739cdb5")
+	)
+	(wire
+		(pts
+			(xy 165.1 149.86) (xy 165.1 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "337026d5-5f9d-4657-b52b-cc986a36983c")
+	)
+	(wire
+		(pts
 			(xy 74.93 60.96) (xy 74.93 78.74)
 		)
 		(stroke
@@ -3387,6 +3485,16 @@
 			(type default)
 		)
 		(uuid "33804c6b-ba44-44d6-af99-e8f6ca7e6dea")
+	)
+	(wire
+		(pts
+			(xy 156.21 149.86) (xy 156.21 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35e385b9-6b1f-4a6a-bb8b-f17c9788aebd")
 	)
 	(wire
 		(pts
@@ -3480,7 +3588,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 182.88) (xy 166.37 181.61)
+			(xy 166.37 175.26) (xy 166.37 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3520,7 +3628,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 182.88) (xy 130.81 181.61)
+			(xy 130.81 175.26) (xy 130.81 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3607,6 +3715,16 @@
 			(type default)
 		)
 		(uuid "462aea68-2783-45d8-b026-5dda83526fef")
+	)
+	(wire
+		(pts
+			(xy 152.4 139.7) (xy 152.4 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "468a80e3-b2b6-4e31-aa2f-f972bbb7c303")
 	)
 	(wire
 		(pts
@@ -3910,6 +4028,26 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 140.97) (xy 156.21 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c912d13-0ef0-48a8-adb2-63b8e9e9ea2a")
+	)
+	(wire
+		(pts
+			(xy 138.43 140.97) (xy 147.32 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c974319-403c-4c9b-bc6f-970da83304b2")
+	)
+	(wire
+		(pts
 			(xy 74.93 78.74) (xy 121.92 78.74)
 		)
 		(stroke
@@ -3970,7 +4108,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 190.5) (xy 148.59 191.77)
+			(xy 148.59 182.88) (xy 148.59 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3987,6 +4125,16 @@
 			(type default)
 		)
 		(uuid "63f4a1b2-f762-4a0b-b6f4-9fc72c7163fa")
+	)
+	(wire
+		(pts
+			(xy 147.32 142.24) (xy 147.32 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6587d78e-a64b-4704-b330-4877171a743c")
 	)
 	(wire
 		(pts
@@ -4027,6 +4175,16 @@
 			(type default)
 		)
 		(uuid "6d80e1b9-555f-4620-a335-de7a3cb09cfb")
+	)
+	(wire
+		(pts
+			(xy 156.21 140.97) (xy 165.1 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e589402-3a3d-4d8c-a082-e0dee3b6b86a")
 	)
 	(wire
 		(pts
@@ -4110,7 +4268,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 190.5) (xy 139.7 191.77)
+			(xy 139.7 182.88) (xy 139.7 186.69)
 		)
 		(stroke
 			(width 0)
@@ -4137,6 +4295,16 @@
 			(type default)
 		)
 		(uuid "7cee8fe4-4b08-4796-b64c-dcf984940085")
+	)
+	(wire
+		(pts
+			(xy 120.65 21.59) (xy 120.65 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de5db5e-6e5c-4efe-acfc-8f12c11acf6d")
 	)
 	(wire
 		(pts
@@ -4167,6 +4335,16 @@
 			(type default)
 		)
 		(uuid "813f8c3d-868a-4671-bcd5-1a857eae9bfd")
+	)
+	(wire
+		(pts
+			(xy 119.38 21.59) (xy 120.65 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82142ea9-115a-420c-b8db-b5d7bd8c7af4")
 	)
 	(wire
 		(pts
@@ -4270,6 +4448,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 22.86) (xy 121.92 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e0270c2-7fce-4c77-b81b-f4a575f3639f")
+	)
+	(wire
+		(pts
 			(xy 20.32 120.65) (xy 64.77 120.65)
 		)
 		(stroke
@@ -4290,7 +4478,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 180.34) (xy 148.59 181.61)
+			(xy 148.59 172.72) (xy 148.59 173.99)
 		)
 		(stroke
 			(width 0)
@@ -4460,7 +4648,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 181.61) (xy 157.48 181.61)
+			(xy 166.37 173.99) (xy 157.48 173.99)
 		)
 		(stroke
 			(width 0)
@@ -4517,6 +4705,16 @@
 			(type default)
 		)
 		(uuid "a9625bbb-0f14-449a-a90f-93e8dd1a975f")
+	)
+	(wire
+		(pts
+			(xy 157.48 182.88) (xy 157.48 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa1a8a32-3a02-4c42-be8a-8d7cde1317e9")
 	)
 	(wire
 		(pts
@@ -4670,6 +4868,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 20.32) (xy 177.8 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6b6c946-e0bf-4701-8862-21e9d456359a")
+	)
+	(wire
+		(pts
 			(xy 31.75 95.25) (xy 31.75 91.44)
 		)
 		(stroke
@@ -4800,17 +5008,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 190.5) (xy 157.48 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5d4ddef-b95f-4858-9141-42c68d967674")
-	)
-	(wire
-		(pts
-			(xy 148.59 181.61) (xy 157.48 181.61)
+			(xy 148.59 173.99) (xy 157.48 173.99)
 		)
 		(stroke
 			(width 0)
@@ -4980,7 +5178,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 181.61) (xy 139.7 181.61)
+			(xy 130.81 173.99) (xy 139.7 173.99)
 		)
 		(stroke
 			(width 0)
@@ -5040,6 +5238,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 149.86) (xy 147.32 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd23716e-bdc8-473d-b4ff-a22510fa2c67")
+	)
+	(wire
+		(pts
 			(xy 63.5 78.74) (xy 74.93 78.74)
 		)
 		(stroke
@@ -5057,6 +5265,16 @@
 			(type default)
 		)
 		(uuid "e3c799e6-be24-4053-8059-8f7c6b1a17bc")
+	)
+	(wire
+		(pts
+			(xy 120.65 19.05) (xy 120.65 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e402714a-0025-46b2-b616-68b13962e14b")
 	)
 	(wire
 		(pts
@@ -5140,7 +5358,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 190.5) (xy 130.81 191.77)
+			(xy 130.81 182.88) (xy 130.81 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5170,7 +5388,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 20.32) (xy 121.92 20.32)
+			(xy 119.38 19.05) (xy 120.65 19.05)
 		)
 		(stroke
 			(width 0)
@@ -5210,7 +5428,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 181.61) (xy 148.59 181.61)
+			(xy 138.43 149.86) (xy 138.43 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f59d7b33-6f69-48ee-a845-bc3d499ebccc")
+	)
+	(wire
+		(pts
+			(xy 139.7 173.99) (xy 148.59 173.99)
 		)
 		(stroke
 			(width 0)
@@ -5361,8 +5589,8 @@
 		(uuid 1c08be98-19dc-4f90-b9c3-e02ca3a81447)
 	)
 	(rectangle
-		(start 121.92 172.72)
-		(end 173.99 193.04)
+		(start 121.92 165.1)
+		(end 173.99 195.58)
 		(stroke
 			(width 0)
 			(type dash)
@@ -5371,6 +5599,28 @@
 			(type none)
 		)
 		(uuid 5e6cced7-e8bd-4866-9be5-12a100907706)
+	)
+	(rectangle
+		(start 121.92 132.08)
+		(end 173.99 161.29)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b7f7825e-251b-43f8-9a7b-6d2a28e271d3)
+	)
+	(text "VBUS Enables"
+		(exclude_from_sim no)
+		(at 128.27 130.302 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0d2747c6-a475-455c-a35d-4d9fba491139")
 	)
 	(text "1V Power Supply"
 		(exclude_from_sim no)
@@ -5382,9 +5632,9 @@
 		)
 		(uuid "547b6d3c-d992-463d-859c-dc5ca18e0c64")
 	)
-	(text "Disable USB Overcurrent Protection"
+	(text "VBUS OC Input"
 		(exclude_from_sim no)
-		(at 138.684 171.196 0)
+		(at 128.778 163.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5403,8 +5653,8 @@
 		)
 		(uuid "013d2db1-ca3d-4f15-9830-f5364189c4a2")
 	)
-	(label "USBOC1"
-		(at 139.7 191.77 180)
+	(label "USB_DFP0_FLT"
+		(at 139.7 186.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5425,7 +5675,18 @@
 		)
 		(uuid "0708d69e-8af0-4c25-b4a6-7903d7f126b4")
 	)
-	(label "USBOC3"
+	(label "USB_DFP0_EN"
+		(at 138.43 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "098c9f10-1cd6-4a3d-885e-902d22d3e2e2")
+	)
+	(label "USB_DFP2_FLT"
 		(at 157.48 191.77 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5469,6 +5730,17 @@
 		)
 		(uuid "16212052-15ef-4fd8-ba00-d5a76e5912df")
 	)
+	(label "SSTX0+"
+		(at 176.53 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "18e691db-1738-480a-ab05-4b7eeb894e9e")
+	)
 	(label "XI"
 		(at 177.8 99.06 0)
 		(fields_autoplaced yes)
@@ -5479,6 +5751,17 @@
 			(justify left bottom)
 		)
 		(uuid "1d66e803-7a7c-44a5-85e8-5d24b8bd3144")
+	)
+	(label "USB_DFP2_EN"
+		(at 156.21 156.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "241e0dee-17e1-4e16-ae48-4feb7c973e13")
 	)
 	(label "VBUSDET"
 		(at 177.8 104.14 0)
@@ -5513,8 +5796,41 @@
 		)
 		(uuid "39d934ba-0c45-41e3-9eba-c226750560c9")
 	)
+	(label "SSTX1+"
+		(at 120.65 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b7f9c7e-7c8b-4bdc-ab32-df1d5b9e21de")
+	)
+	(label "USB_DFP3_EN"
+		(at 165.1 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4131d82a-33e4-49cb-8575-cef9bbacdb48")
+	)
+	(label "SSTX4-"
+		(at 120.65 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "425fd285-0b75-48f8-b257-c72d701d9803")
+	)
 	(label "USBOC0"
-		(at 130.81 191.77 180)
+		(at 130.81 184.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5524,8 +5840,8 @@
 		)
 		(uuid "42a6d0fd-c841-40b4-84ad-ee09302e85d3")
 	)
-	(label "USBOC4"
-		(at 166.37 191.77 180)
+	(label "USB_DFP3_FLT"
+		(at 166.37 194.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5535,8 +5851,8 @@
 		)
 		(uuid "46733260-4fb6-4eb4-b30f-fa66b016f049")
 	)
-	(label "USBOC2"
-		(at 148.59 191.77 180)
+	(label "USB_DFP1_FLT"
+		(at 148.59 189.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5545,17 +5861,6 @@
 			(justify right bottom)
 		)
 		(uuid "5491c558-d796-41ba-9bda-d499c3e0f6e9")
-	)
-	(label "USBOC1"
-		(at 119.38 20.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5f08c95e-0fe5-48d5-8c58-9e580cbfe537")
 	)
 	(label "SMCLK"
 		(at 177.8 45.72 0)
@@ -5568,6 +5873,17 @@
 		)
 		(uuid "6908d43e-1870-41fe-beb9-983d5a9766f2")
 	)
+	(label "SSTX3+"
+		(at 120.65 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a262bcb-14a7-4c7e-9942-003a1ec50e06")
+	)
 	(label "XO"
 		(at 177.8 101.6 0)
 		(fields_autoplaced yes)
@@ -5578,6 +5894,17 @@
 			(justify left bottom)
 		)
 		(uuid "6bfe74db-8411-4c8b-9c33-830ec2407784")
+	)
+	(label "SSTX1-"
+		(at 120.65 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6db8ee3c-36d6-4241-87c2-5caab854f79c")
 	)
 	(label "REXT"
 		(at 261.62 90.17 0)
@@ -5634,16 +5961,16 @@
 		)
 		(uuid "9c0ecd0a-bf1d-4691-9080-afca82db0e24")
 	)
-	(label "USBOC3"
-		(at 119.38 68.58 180)
+	(label "SSTX4+"
+		(at 120.65 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "a610a6e5-15a3-48ca-8703-be7473b2e85c")
+		(uuid "9ca108da-4a7b-4365-9915-499a034b1f94")
 	)
 	(label "XO"
 		(at 270.51 120.65 0)
@@ -5667,8 +5994,8 @@
 		)
 		(uuid "affadd35-38ba-4e7b-963e-3fc18c1e5736")
 	)
-	(label "USBOC4"
-		(at 177.8 111.76 0)
+	(label "SSTX2+"
+		(at 120.65 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5676,10 +6003,21 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c5d6887c-f739-4757-916a-69926b79c416")
+		(uuid "c0ce7ba9-5118-49a8-b75a-aebf17cd325a")
 	)
-	(label "USBOC2"
-		(at 177.8 22.86 0)
+	(label "USB_DFP1_EN"
+		(at 147.32 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc3e982d-abdb-42e8-8a4f-cc65c71fc75d")
+	)
+	(label "SSTX0-"
+		(at 176.53 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5687,7 +6025,29 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d56e63b8-7a8d-4a22-9e70-645b4a0c1a15")
+		(uuid "d4fdb301-e9ff-4897-9bc0-b1daa2f80499")
+	)
+	(label "SSTX3-"
+		(at 120.65 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e09ad742-9576-4d67-9241-ce9ec7204b0c")
+	)
+	(label "SSTX2-"
+		(at 120.65 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e0a7a692-9767-4fb7-93eb-5b336ca16303")
 	)
 	(label "SMDAT"
 		(at 177.8 48.26 0)
@@ -5733,7 +6093,7 @@
 		)
 		(uuid "ff3c6ba2-7855-4dee-b589-56a97993dbc7")
 	)
-	(hierarchical_label "USB_DFP0_DM"
+	(hierarchical_label "USB_DFP0_DN"
 		(shape input)
 		(at 109.22 43.18 180)
 		(fields_autoplaced yes)
@@ -5745,7 +6105,7 @@
 		)
 		(uuid "04db4a97-8bb0-42b0-b2fa-34a9ba30ac0b")
 	)
-	(hierarchical_label "USB_DFP3_DM"
+	(hierarchical_label "USB_DFP3_DN"
 		(shape input)
 		(at 109.22 114.3 180)
 		(fields_autoplaced yes)
@@ -5756,6 +6116,18 @@
 			(justify right)
 		)
 		(uuid "069eef14-0384-4e93-a712-659c504196f2")
+	)
+	(hierarchical_label "USB_DFP0_FLT"
+		(shape input)
+		(at 119.38 19.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "088753fa-6247-4fab-9ae8-5a8438d989d1")
 	)
 	(hierarchical_label "USB_DFP2_RXN"
 		(shape input)
@@ -5793,7 +6165,19 @@
 		)
 		(uuid "14994c45-bcc3-42d2-8984-f938b3f002bb")
 	)
-	(hierarchical_label "USB_DFP2_DM"
+	(hierarchical_label "USB_DFP2_EN"
+		(shape output)
+		(at 119.38 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2171b844-18b7-4f47-bdca-e7d12d19cbd9")
+	)
+	(hierarchical_label "USB_DFP2_DN"
 		(shape input)
 		(at 109.22 76.2 180)
 		(fields_autoplaced yes)
@@ -5817,7 +6201,7 @@
 		)
 		(uuid "29fa7ac0-acc8-4109-8690-05e7d46581ac")
 	)
-	(hierarchical_label "USB_DFP1_DM"
+	(hierarchical_label "USB_DFP1_DN"
 		(shape input)
 		(at 109.22 66.04 180)
 		(fields_autoplaced yes)
@@ -5828,6 +6212,18 @@
 			(justify right)
 		)
 		(uuid "2af6fc01-6a5b-4966-971c-7b9c22725b57")
+	)
+	(hierarchical_label "USB_DFP3_EN"
+		(shape output)
+		(at 177.8 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30ff4393-c881-4ad8-9e05-49083df6d101")
 	)
 	(hierarchical_label "USB_DFP3_TXP"
 		(shape input)
@@ -5937,7 +6333,7 @@
 		)
 		(uuid "689cacd2-c851-4b09-924f-e1edd9581558")
 	)
-	(hierarchical_label "USB_UFP_DM"
+	(hierarchical_label "USB_UFP_DN"
 		(shape input)
 		(at 187.96 71.12 0)
 		(fields_autoplaced yes)
@@ -5996,6 +6392,30 @@
 			(justify right)
 		)
 		(uuid "8b9a0a3d-b97b-4559-8853-687a32f912cb")
+	)
+	(hierarchical_label "USB_DFP1_EN"
+		(shape output)
+		(at 177.8 20.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "915a7b94-7ef1-4cbd-8f60-2787087ef155")
+	)
+	(hierarchical_label "USB_DFP2_FLT"
+		(shape input)
+		(at 119.38 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "93ff4027-bcae-4ddd-80c8-24ea9fe972d3")
 	)
 	(hierarchical_label "USB_DFP2_DP"
 		(shape input)
@@ -6081,6 +6501,30 @@
 		)
 		(uuid "bd963473-7ead-4d05-81c7-72394a125102")
 	)
+	(hierarchical_label "USB_DFP0_EN"
+		(shape output)
+		(at 119.38 21.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7c2173d-3279-4102-94c2-70970ea4be56")
+	)
+	(hierarchical_label "USB_DFP1_FLT"
+		(shape input)
+		(at 177.8 22.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc0f3c5d-5ea6-4237-8144-75b87d309ca6")
+	)
 	(hierarchical_label "USB_DFP0_TXN"
 		(shape input)
 		(at 109.22 27.94 180)
@@ -6092,6 +6536,18 @@
 			(justify right)
 		)
 		(uuid "e52dd9b8-4853-47cb-8e8f-a0cd8d9db543")
+	)
+	(hierarchical_label "USB_DFP3_FLT"
+		(shape input)
+		(at 177.8 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f557aed4-d903-4393-a14a-df405d246f51")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -6118,7 +6574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 80.01 0)
 			(effects
 				(font
@@ -6145,7 +6601,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 80.01 0)
 			(effects
 				(font
@@ -6154,7 +6610,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 80.01 0)
 			(effects
 				(font
@@ -6173,6 +6629,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 80.01 0)
 			(effects
 				(font
@@ -6347,7 +6866,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 237.49 49.5299 0)
 			(effects
 				(font
@@ -6383,7 +6902,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 233.68 48.26 0)
 			(effects
 				(font
@@ -6392,7 +6911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 233.68 48.26 0)
 			(effects
 				(font
@@ -6411,6 +6930,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 233.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 233.68 48.26 0)
 			(effects
 				(font
@@ -6462,7 +7044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 259.842 95.25 90)
 			(effects
 				(font
@@ -6489,7 +7071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RT0603DRD0712K4L"
+		(property "Part_Number" "CQ05W8F1242T5E"
 			(at 261.62 95.25 0)
 			(effects
 				(font
@@ -6498,7 +7080,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C728611"
+		(property "LCSC" "C966572"
 			(at 261.62 95.25 0)
 			(effects
 				(font
@@ -6517,6 +7099,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 261.62 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 261.62 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 261.62 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 261.62 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 261.62 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 261.62 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 261.62 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 261.62 95.25 0)
 			(effects
 				(font
@@ -6729,7 +7374,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77019"
+		(property "LCSC" "C15195"
 			(at 217.17 88.9 0)
 			(effects
 				(font
@@ -6738,7 +7383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "GRM155R71H103KA88D"
+		(property "Part_Number" "CL05B103KB5NNNC"
 			(at 217.17 88.9 0)
 			(effects
 				(font
@@ -6757,6 +7402,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 217.17 88.9 0)
 			(effects
 				(font
@@ -6805,7 +7513,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 95.25 0)
 			(effects
 				(font
@@ -6832,7 +7540,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 95.25 0)
 			(effects
 				(font
@@ -6841,7 +7549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 95.25 0)
 			(effects
 				(font
@@ -6860,6 +7568,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 95.25 0)
 			(effects
 				(font
@@ -6908,7 +7679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 46.99 0)
 			(effects
 				(font
@@ -6935,7 +7706,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 46.99 0)
 			(effects
 				(font
@@ -6944,7 +7715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 46.99 0)
 			(effects
 				(font
@@ -6963,6 +7734,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 46.99 0)
 			(effects
 				(font
@@ -7004,7 +7838,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 35.56 100.3299 0)
 			(effects
 				(font
@@ -7040,7 +7874,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 31.75 99.06 0)
 			(effects
 				(font
@@ -7049,7 +7883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 31.75 99.06 0)
 			(effects
 				(font
@@ -7068,6 +7902,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 31.75 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 31.75 99.06 0)
 			(effects
 				(font
@@ -7093,7 +7990,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 157.48 186.69 0)
+		(at 157.48 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7102,7 +7999,7 @@
 		(fields_autoplaced yes)
 		(uuid "2006d8e3-7de5-4fbc-989b-2e4d6c2133e0")
 		(property "Reference" "R22"
-			(at 160.02 185.4199 0)
+			(at 160.02 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7111,7 +8008,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 160.02 187.9599 0)
+			(at 160.02 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7120,7 +8017,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 155.702 186.69 90)
+			(at 155.702 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7129,7 +8026,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 186.69 0)
+			(at 157.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7138,7 +8035,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 157.48 186.69 0)
+			(at 157.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7146,8 +8043,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 157.48 186.69 0)
+		(property "LCSC" "C25744"
+			(at 157.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7155,8 +8052,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402FR-0710KL"
-			(at 157.48 186.69 0)
+		(property "Part_Number" "0402WGF1002TCE"
+			(at 157.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7165,7 +8062,7 @@
 			)
 		)
 		(property "Vend" ""
-			(at 157.48 186.69 0)
+			(at 157.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7174,7 +8071,70 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 157.48 186.69 0)
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 157.48 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 157.48 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7216,7 +8176,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 45.72 52.0699 0)
 			(effects
 				(font
@@ -7252,7 +8212,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 41.91 50.8 0)
 			(effects
 				(font
@@ -7261,7 +8221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 41.91 50.8 0)
 			(effects
 				(font
@@ -7280,6 +8240,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 41.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 41.91 50.8 0)
 			(effects
 				(font
@@ -7396,7 +8419,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad_lceda:QFN-76_L9.0-W9.0-P0.40-EP6.3-TL"
+		(property "Footprint" "VL822-QFN76:VL822-QFN76"
 			(at 148.59 17.272 0)
 			(effects
 				(font
@@ -7460,6 +8483,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 148.59 67.31 0)
 			(effects
 				(font
@@ -7710,7 +8796,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 166.37 186.69 0)
+		(at 166.37 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7719,7 +8805,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f6f0a5c-121b-424b-9aff-2dcd7856b480")
 		(property "Reference" "R23"
-			(at 168.91 185.4199 0)
+			(at 168.91 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7728,7 +8814,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 168.91 187.9599 0)
+			(at 168.91 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7737,7 +8823,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 164.592 186.69 90)
+			(at 164.592 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7746,7 +8832,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 186.69 0)
+			(at 166.37 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7755,7 +8841,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 166.37 186.69 0)
+			(at 166.37 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7763,8 +8849,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 166.37 186.69 0)
+		(property "LCSC" "C25744"
+			(at 166.37 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7772,8 +8858,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402FR-0710KL"
-			(at 166.37 186.69 0)
+		(property "Part_Number" "0402WGF1002TCE"
+			(at 166.37 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7782,7 +8868,7 @@
 			)
 		)
 		(property "Vend" ""
-			(at 166.37 186.69 0)
+			(at 166.37 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7791,7 +8877,70 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 166.37 186.69 0)
+			(at 166.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 166.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 166.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 166.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 166.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 166.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 166.37 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 166.37 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7833,7 +8982,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 55.88 59.6899 0)
 			(effects
 				(font
@@ -7869,7 +9018,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 52.07 58.42 0)
 			(effects
 				(font
@@ -7878,7 +9027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 52.07 58.42 0)
 			(effects
 				(font
@@ -7897,6 +9046,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 52.07 58.42 0)
 			(effects
 				(font
@@ -7946,7 +9158,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad_lceda:SOT-25_L3.0-W1.6-P0.95-LS2.8-BL"
+		(property "Footprint" "AP7331-10WG-7:AP7331-10WG-7"
 			(at 49.53 172.6946 0)
 			(effects
 				(font
@@ -8010,6 +9222,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 49.53 175.26 0)
 			(effects
 				(font
@@ -8111,7 +9386,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 148.59 186.69 0)
+		(at 148.59 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8120,7 +9395,7 @@
 		(fields_autoplaced yes)
 		(uuid "32f89183-ee3b-4e60-8adb-df875051ea10")
 		(property "Reference" "R7"
-			(at 151.13 185.4199 0)
+			(at 151.13 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8129,7 +9404,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 151.13 187.9599 0)
+			(at 151.13 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8138,7 +9413,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 146.812 186.69 90)
+			(at 146.812 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8147,7 +9422,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 186.69 0)
+			(at 148.59 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8156,7 +9431,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 148.59 186.69 0)
+			(at 148.59 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8164,8 +9439,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 148.59 186.69 0)
+		(property "LCSC" "C25744"
+			(at 148.59 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8173,8 +9448,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402FR-0710KL"
-			(at 148.59 186.69 0)
+		(property "Part_Number" "0402WGF1002TCE"
+			(at 148.59 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8183,7 +9458,7 @@
 			)
 		)
 		(property "Vend" ""
-			(at 148.59 186.69 0)
+			(at 148.59 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8192,7 +9467,70 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 148.59 186.69 0)
+			(at 148.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 148.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 148.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 148.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 148.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 148.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 148.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 148.59 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8270,7 +9608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL10B105KO8NNNC"
+		(property "Part_Number" "CL10A105KB8NNNC"
 			(at 26.67 177.8 0)
 			(effects
 				(font
@@ -8279,7 +9617,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C59782"
+		(property "LCSC" "C15849"
 			(at 26.67 177.8 0)
 			(effects
 				(font
@@ -8298,6 +9636,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 26.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 26.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 26.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 26.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 26.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 26.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 26.67 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 26.67 177.8 0)
 			(effects
 				(font
@@ -8376,7 +9777,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77019"
+		(property "LCSC" "C15195"
 			(at 53.34 110.49 0)
 			(effects
 				(font
@@ -8385,7 +9786,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "GRM155R71H103KA88D"
+		(property "Part_Number" "CL05B103KB5NNNC"
 			(at 53.34 110.49 0)
 			(effects
 				(font
@@ -8404,6 +9805,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 53.34 110.49 0)
 			(effects
 				(font
@@ -8452,7 +9916,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 29.21 0)
 			(effects
 				(font
@@ -8479,7 +9943,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 29.21 0)
 			(effects
 				(font
@@ -8488,7 +9952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 29.21 0)
 			(effects
 				(font
@@ -8507,6 +9971,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 29.21 0)
 			(effects
 				(font
@@ -8555,7 +10082,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 180.34 85.09 0)
 			(effects
 				(font
@@ -8582,7 +10109,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 180.34 85.09 0)
 			(effects
 				(font
@@ -8591,7 +10118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 180.34 85.09 0)
 			(effects
 				(font
@@ -8610,6 +10137,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 180.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 180.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 180.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 180.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 180.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 180.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 180.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 180.34 85.09 0)
 			(effects
 				(font
@@ -8652,7 +10242,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 35.56 44.4499 0)
 			(effects
 				(font
@@ -8688,7 +10278,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 31.75 43.18 0)
 			(effects
 				(font
@@ -8697,7 +10287,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 31.75 43.18 0)
 			(effects
 				(font
@@ -8724,6 +10314,69 @@
 				(hide yes)
 			)
 		)
+		(property "Category" ""
+			(at 31.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 31.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 31.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 31.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 31.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 31.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 31.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a0e97e4f-afc8-4dfb-a449-97db9eb8b5a9")
 		)
@@ -8734,6 +10387,175 @@
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 138.43 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4dfb8040-aed0-474b-82e3-7ac917a67b82")
+		(property "Reference" "R24"
+			(at 140.97 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 140.97 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 140.208 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part_Number" "0402WGF1003TCE"
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vend" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 138.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "451ddb7f-1e2f-4538-a30b-752b3d6a4547")
+		)
+		(pin "1"
+			(uuid "29b15416-30f5-4c37-a192-e6928e1dfadb")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -8764,7 +10586,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 100.33 0)
 			(effects
 				(font
@@ -8791,7 +10613,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 100.33 0)
 			(effects
 				(font
@@ -8800,7 +10622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 100.33 0)
 			(effects
 				(font
@@ -8819,6 +10641,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 100.33 0)
 			(effects
 				(font
@@ -8964,7 +10849,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C105870"
+		(property "LCSC" "C25900"
 			(at 257.81 59.69 0)
 			(effects
 				(font
@@ -8973,7 +10858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402JR-074K7L"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 257.81 59.69 0)
 			(effects
 				(font
@@ -8992,6 +10877,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 257.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 257.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 257.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 257.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 257.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 257.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 257.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 257.81 59.69 0)
 			(effects
 				(font
@@ -9070,7 +11018,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C105870"
+		(property "LCSC" "C25900"
 			(at 266.7 59.69 0)
 			(effects
 				(font
@@ -9079,7 +11027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402JR-074K7L"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 266.7 59.69 0)
 			(effects
 				(font
@@ -9098,6 +11046,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 266.7 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 266.7 59.69 0)
 			(effects
 				(font
@@ -9206,7 +11217,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 201.93 104.1399 0)
 			(effects
 				(font
@@ -9242,7 +11253,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 198.12 102.87 0)
 			(effects
 				(font
@@ -9251,7 +11262,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 198.12 102.87 0)
 			(effects
 				(font
@@ -9270,6 +11281,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 198.12 102.87 0)
 			(effects
 				(font
@@ -9428,7 +11502,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 148.59 180.34 0)
+		(at 148.59 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9437,7 +11511,7 @@
 		(fields_autoplaced yes)
 		(uuid "85f704d3-26d3-4024-8876-e5ef1f4718cc")
 		(property "Reference" "#PWR023"
-			(at 148.59 184.15 0)
+			(at 148.59 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9446,7 +11520,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 148.59 175.26 0)
+			(at 148.59 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9454,7 +11528,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 180.34 0)
+			(at 148.59 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9463,7 +11537,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 180.34 0)
+			(at 148.59 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9472,7 +11546,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 148.59 180.34 0)
+			(at 148.59 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9573,6 +11647,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 261.62 120.65 0)
 			(effects
 				(font
@@ -9686,6 +11823,69 @@
 				(hide yes)
 			)
 		)
+		(property "Category" ""
+			(at 256.54 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 256.54 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 256.54 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 256.54 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 256.54 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 256.54 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 256.54 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a78859b8-9f7d-4be7-a311-b71c2a3f11cd")
 		)
@@ -9720,7 +11920,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 68.58 118.1099 0)
 			(effects
 				(font
@@ -9756,7 +11956,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 64.77 116.84 0)
 			(effects
 				(font
@@ -9765,7 +11965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 64.77 116.84 0)
 			(effects
 				(font
@@ -9784,6 +11984,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 64.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 64.77 116.84 0)
 			(effects
 				(font
@@ -9964,6 +12227,69 @@
 				(hide yes)
 			)
 		)
+		(property "Category" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "17a66fe6-9a7c-42fe-9236-f2c3160d98be")
 		)
@@ -10004,7 +12330,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 85.09 0)
 			(effects
 				(font
@@ -10031,7 +12357,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 85.09 0)
 			(effects
 				(font
@@ -10040,7 +12366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 85.09 0)
 			(effects
 				(font
@@ -10059,6 +12385,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 85.09 0)
 			(effects
 				(font
@@ -10203,7 +12592,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C105870"
+		(property "LCSC" "C25900"
 			(at 261.62 31.75 0)
 			(effects
 				(font
@@ -10212,7 +12601,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402JR-074K7L"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 261.62 31.75 0)
 			(effects
 				(font
@@ -10231,6 +12620,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 261.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 261.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 261.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 261.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 261.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 261.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 261.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 261.62 31.75 0)
 			(effects
 				(font
@@ -10374,7 +12826,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C105870"
+		(property "LCSC" "C25900"
 			(at 275.59 59.69 0)
 			(effects
 				(font
@@ -10383,7 +12835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402JR-074K7L"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 275.59 59.69 0)
 			(effects
 				(font
@@ -10402,6 +12854,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 275.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 275.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 275.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 275.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 275.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 275.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 275.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 275.59 59.69 0)
 			(effects
 				(font
@@ -10492,6 +13007,175 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 156.21 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afd377f7-3ff1-4c75-96df-d0adbc08aa53")
+		(property "Reference" "R26"
+			(at 158.75 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 158.75 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 154.432 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part_Number" "0402WGF1003TCE"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vend" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2fd8d4e-a260-4fd5-af3d-5279da534462")
+		)
+		(pin "2"
+			(uuid "5c26398a-d5c5-49b3-bd17-f16b8e9c135d")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 20.32 35.56 0)
 		(unit 1)
@@ -10510,7 +13194,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 24.13 36.8299 0)
 			(effects
 				(font
@@ -10546,7 +13230,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 20.32 35.56 0)
 			(effects
 				(font
@@ -10555,7 +13239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 20.32 35.56 0)
 			(effects
 				(font
@@ -10574,6 +13258,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 20.32 35.56 0)
 			(effects
 				(font
@@ -10599,7 +13346,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 186.69 180)
+		(at 139.7 179.07 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10608,7 +13355,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf46f121-b1a9-4036-a282-e5219de43d25")
 		(property "Reference" "R8"
-			(at 142.24 185.4199 0)
+			(at 142.24 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10617,7 +13364,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 142.24 187.9599 0)
+			(at 142.24 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10626,7 +13373,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 141.478 186.69 90)
+			(at 141.478 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10635,7 +13382,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 186.69 0)
+			(at 139.7 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10644,7 +13391,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 139.7 186.69 0)
+			(at 139.7 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10652,8 +13399,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 139.7 186.69 0)
+		(property "LCSC" "C25744"
+			(at 139.7 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10661,8 +13408,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402FR-0710KL"
-			(at 139.7 186.69 0)
+		(property "Part_Number" "0402WGF1002TCE"
+			(at 139.7 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10671,7 +13418,7 @@
 			)
 		)
 		(property "Vend" ""
-			(at 139.7 186.69 0)
+			(at 139.7 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10680,7 +13427,70 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 139.7 186.69 0)
+			(at 139.7 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 139.7 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 139.7 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 139.7 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 139.7 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 139.7 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 139.7 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 139.7 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10722,7 +13532,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 229.87 62.2299 0)
 			(effects
 				(font
@@ -10758,7 +13568,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 226.06 60.96 0)
 			(effects
 				(font
@@ -10767,7 +13577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 226.06 60.96 0)
 			(effects
 				(font
@@ -10786,6 +13596,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 226.06 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 226.06 60.96 0)
 			(effects
 				(font
@@ -10828,7 +13701,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 212.09 99.0599 0)
 			(effects
 				(font
@@ -10864,7 +13737,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 208.28 97.79 0)
 			(effects
 				(font
@@ -10873,7 +13746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 208.28 97.79 0)
 			(effects
 				(font
@@ -10892,6 +13765,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 208.28 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 208.28 97.79 0)
 			(effects
 				(font
@@ -10934,7 +13870,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 229.87 82.5499 0)
 			(effects
 				(font
@@ -10970,7 +13906,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 226.06 81.28 0)
 			(effects
 				(font
@@ -10979,7 +13915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 226.06 81.28 0)
 			(effects
 				(font
@@ -10998,6 +13934,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 226.06 81.28 0)
 			(effects
 				(font
@@ -11023,7 +14022,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 130.81 186.69 180)
+		(at 130.81 179.07 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11032,7 +14031,7 @@
 		(fields_autoplaced yes)
 		(uuid "dac9595d-2901-41ea-822d-733406e2b4d5")
 		(property "Reference" "R2"
-			(at 133.35 185.4199 0)
+			(at 133.35 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11041,7 +14040,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 133.35 187.9599 0)
+			(at 133.35 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11050,7 +14049,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 132.588 186.69 90)
+			(at 132.588 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11059,7 +14058,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 186.69 0)
+			(at 130.81 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11068,7 +14067,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 130.81 186.69 0)
+			(at 130.81 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11076,8 +14075,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 130.81 186.69 0)
+		(property "LCSC" "C25744"
+			(at 130.81 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11085,8 +14084,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "RC0402FR-0710KL"
-			(at 130.81 186.69 0)
+		(property "Part_Number" "0402WGF1002TCE"
+			(at 130.81 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11095,7 +14094,7 @@
 			)
 		)
 		(property "Vend" ""
-			(at 130.81 186.69 0)
+			(at 130.81 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11104,7 +14103,70 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 130.81 186.69 0)
+			(at 130.81 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 130.81 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 130.81 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 130.81 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 130.81 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 130.81 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 130.81 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 130.81 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11155,7 +14217,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 67.0052 181.61 0)
 			(effects
 				(font
@@ -11182,7 +14244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL10A475KQ8NNNC"
+		(property "Part_Number" "CL10A475KO8NNNC"
 			(at 66.04 177.8 0)
 			(effects
 				(font
@@ -11191,7 +14253,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C8032"
+		(property "LCSC" "C19666"
 			(at 66.04 177.8 0)
 			(effects
 				(font
@@ -11210,6 +14272,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 66.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 66.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 66.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 66.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 66.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 66.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 66.04 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 66.04 177.8 0)
 			(effects
 				(font
@@ -11252,7 +14377,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 45.72 106.6799 0)
 			(effects
 				(font
@@ -11288,7 +14413,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 41.91 105.41 0)
 			(effects
 				(font
@@ -11297,7 +14422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 41.91 105.41 0)
 			(effects
 				(font
@@ -11316,6 +14441,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 41.91 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 41.91 105.41 0)
 			(effects
 				(font
@@ -11364,7 +14552,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 24.13 0)
 			(effects
 				(font
@@ -11391,7 +14579,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 24.13 0)
 			(effects
 				(font
@@ -11400,7 +14588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 24.13 0)
 			(effects
 				(font
@@ -11419,6 +14607,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 24.13 0)
 			(effects
 				(font
@@ -11461,7 +14712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 67.31 68.5799 0)
 			(effects
 				(font
@@ -11497,7 +14748,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 63.5 67.31 0)
 			(effects
 				(font
@@ -11506,7 +14757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 63.5 67.31 0)
 			(effects
 				(font
@@ -11525,6 +14776,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 63.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 63.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 63.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 63.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 63.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 63.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 63.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 63.5 67.31 0)
 			(effects
 				(font
@@ -11603,7 +14917,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "GRM155R71H103KA88D"
+		(property "Part_Number" "CL05B103KB5NNNC"
 			(at 63.5 83.82 0)
 			(effects
 				(font
@@ -11612,7 +14926,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77019"
+		(property "LCSC" "C15195"
 			(at 63.5 83.82 0)
 			(effects
 				(font
@@ -11639,6 +14953,69 @@
 				(hide yes)
 			)
 		)
+		(property "Category" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "35d47f8a-5cd7-489c-a36e-a6fd7e1274b0")
 		)
@@ -11649,6 +15026,175 @@
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e99b800f-3cf3-4ca0-8bfb-cd6eeed85d7f")
+		(property "Reference" "R25"
+			(at 149.86 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 149.86 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 149.098 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part_Number" "0402WGF1003TCE"
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vend" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9cee1173-9be7-4588-a159-a27bdf260f07")
+		)
+		(pin "2"
+			(uuid "c4ea946a-dccb-419b-95e9-aa3a4d734b67")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -11715,6 +15261,72 @@
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 152.4 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef06fbe7-0ddb-4c3d-9497-52cb2c706e65")
+		(property "Reference" "#PWR054"
+			(at 152.4 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 152.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 152.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a809f892-2c5e-4a5a-9376-cdb5aa232eac")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11871,7 +15483,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1µF"
 			(at 248.92 34.2899 0)
 			(effects
 				(font
@@ -11907,7 +15519,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C60474"
+		(property "LCSC" "C307331"
 			(at 245.11 33.02 0)
 			(effects
 				(font
@@ -11916,7 +15528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0402KRX7R7BB104"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 245.11 33.02 0)
 			(effects
 				(font
@@ -11943,6 +15555,69 @@
 				(hide yes)
 			)
 		)
+		(property "Category" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 245.11 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "896fb2b3-b37a-4086-9d25-c41387c8214b")
 		)
@@ -11953,6 +15628,175 @@
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165.1 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f949deb2-a379-44eb-8f63-9bbddc722e1f")
+		(property "Reference" "R27"
+			(at 167.64 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 167.64 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 163.322 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part_Number" "0402WGF1003TCE"
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vend" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
+			(at 165.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bbefb7c-eef6-4f60-921f-73524930f2fa")
+		)
+		(pin "2"
+			(uuid "3739ba0f-7d67-4b0a-a9b9-d298368b5616")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -12049,7 +15893,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 114.3 52.07 0)
 			(effects
 				(font
@@ -12076,7 +15920,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 114.3 52.07 0)
 			(effects
 				(font
@@ -12085,7 +15929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 114.3 52.07 0)
 			(effects
 				(font
@@ -12104,6 +15948,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 114.3 52.07 0)
 			(effects
 				(font
@@ -12152,7 +16059,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 180.34 90.17 0)
 			(effects
 				(font
@@ -12179,7 +16086,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C160831"
+		(property "LCSC" "C307331"
 			(at 180.34 90.17 0)
 			(effects
 				(font
@@ -12188,7 +16095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL03A104KQ3NNNC"
+		(property "Part_Number" "CL05B104KB54PNC"
 			(at 180.34 90.17 0)
 			(effects
 				(font
@@ -12207,6 +16114,69 @@
 			)
 		)
 		(property "Vendor" ""
+			(at 180.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 180.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" ""
+			(at 180.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" ""
+			(at 180.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Family" ""
+			(at 180.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 180.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 180.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Status" ""
 			(at 180.34 90.17 0)
 			(effects
 				(font

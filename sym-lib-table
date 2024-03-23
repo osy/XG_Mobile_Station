@@ -13,4 +13,5 @@
   (lib (name "SN75LVPE4410RNQR")(type "KiCad")(uri "${KIPRJMOD}/Symbols/SN75LVPE4410RNQR.kicad_sym")(options "")(descr ""))
   (lib (name "5-1775443-8")(type "KiCad")(uri "${KIPRJMOD}/Symbols/5-1775443-8.kicad_sym")(options "")(descr ""))
   (lib (name "AZ1045-04F")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AZ1045-04F.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS2003CDRCR")(type "KiCad")(uri "${KIPRJMOD}/Symbols/TPS2003CDRCR.kicad_sym")(options "")(descr ""))
 )
