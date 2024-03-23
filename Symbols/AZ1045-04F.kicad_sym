@@ -566,7 +566,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 12.954 270)
+				(at 12.7 12.7 270)
 				(length 5.08)
 				(name "NC"
 					(effects
