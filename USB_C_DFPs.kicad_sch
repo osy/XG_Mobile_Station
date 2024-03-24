@@ -2270,6 +2270,12 @@
 		)
 	)
 	(junction
+		(at 200.66 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02bdc11a-198e-41f4-a1a8-bea93024cf1b")
+	)
+	(junction
 		(at 200.66 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2358,6 +2364,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd8520ca-e9f3-49b4-9396-f689dbad24d5")
+	)
+	(junction
+		(at 200.66 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ccc9c1b7-f713-47b4-8596-6c705073b2be")
 	)
 	(junction
 		(at 97.79 137.16)
@@ -2937,6 +2949,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 140.97) (xy 200.66 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "807cd69e-607c-4386-9804-176d0476fecb")
+	)
+	(wire
+		(pts
 			(xy 86.36 88.9) (xy 90.17 88.9)
 		)
 		(stroke
@@ -3247,7 +3269,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 140.97) (xy 209.55 140.97)
+			(xy 187.96 140.97) (xy 200.66 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3444,6 +3466,16 @@
 			(type default)
 		)
 		(uuid "f92a8177-4b3e-498a-a181-861d5ce148d9")
+	)
+	(wire
+		(pts
+			(xy 200.66 140.97) (xy 209.55 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb74afdb-dc91-4cee-95c2-74ef5cff3548")
 	)
 	(wire
 		(pts
@@ -3697,7 +3729,7 @@
 		)
 		(uuid "a3bc41b4-2d6c-4a02-a39d-d7a6cc6e137e")
 	)
-	(label "USB_DFP0_VBUS"
+	(label "USB_DFP1_VBUS"
 		(at 265.43 130.81 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3763,7 +3795,7 @@
 		)
 		(uuid "c7ec2760-163f-4f4a-96eb-506b23c67bfc")
 	)
-	(label "USB_DFP1_VBUS"
+	(label "USB_DFP0_VBUS"
 		(at 252.73 133.35 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3821,7 +3853,7 @@
 		)
 		(uuid "0a6dadd4-aece-44fc-b092-ea06cf637174")
 	)
-	(hierarchical_label "USB_DFP1_EN"
+	(hierarchical_label "USB_DFP0_EN"
 		(shape input)
 		(at 208.28 133.35 180)
 		(fields_autoplaced yes)
@@ -3833,7 +3865,7 @@
 		)
 		(uuid "0f882496-0597-49a5-a8bd-f1073058e425")
 	)
-	(hierarchical_label "USB_DFP0_FLT"
+	(hierarchical_label "USB_DFP1_FLT"
 		(shape input)
 		(at 208.28 135.89 180)
 		(fields_autoplaced yes)
@@ -3881,7 +3913,7 @@
 		)
 		(uuid "6c1eb214-2def-4489-b6a9-70779cf20e6a")
 	)
-	(hierarchical_label "USB_DFP1_FLT"
+	(hierarchical_label "USB_DFP0_FLT"
 		(shape input)
 		(at 208.28 138.43 180)
 		(fields_autoplaced yes)
@@ -3953,7 +3985,7 @@
 		)
 		(uuid "9f1ce83e-bcba-4632-9b2a-1415afef06b2")
 	)
-	(hierarchical_label "USB_DFP0_EN"
+	(hierarchical_label "USB_DFP1_EN"
 		(shape input)
 		(at 208.28 130.81 180)
 		(fields_autoplaced yes)

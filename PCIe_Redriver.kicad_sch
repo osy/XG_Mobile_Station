@@ -5404,7 +5404,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 112.7252 134.62 0)
 			(effects
 				(font
@@ -5512,7 +5512,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 111.76 130.81 0)
 			(effects
 				(font
@@ -5521,7 +5521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 111.76 130.81 0)
 			(effects
 				(font
@@ -5694,7 +5694,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 217.17 121.9199 0)
 			(effects
 				(font
@@ -5703,7 +5703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 214.63 120.65 0)
 			(effects
 				(font
@@ -5811,7 +5811,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 214.63 120.65 0)
 			(effects
 				(font
@@ -5820,7 +5820,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 214.63 120.65 0)
 			(effects
 				(font
@@ -5928,7 +5928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 217.17 116.8399 0)
 			(effects
 				(font
@@ -6045,7 +6045,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 214.63 115.57 0)
 			(effects
 				(font
@@ -6054,7 +6054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 214.63 115.57 0)
 			(effects
 				(font
@@ -6332,7 +6332,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 72.39 181.6099 0)
 			(effects
 				(font
@@ -6449,7 +6449,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 69.85 180.34 0)
 			(effects
 				(font
@@ -6458,7 +6458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 69.85 180.34 0)
 			(effects
 				(font
@@ -7077,7 +7077,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 135.5852 128.27 0)
 			(effects
 				(font
@@ -7185,7 +7185,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 134.62 124.46 0)
 			(effects
 				(font
@@ -7194,7 +7194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 134.62 124.46 0)
 			(effects
 				(font
@@ -7523,7 +7523,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 199.39 121.9199 0)
 			(effects
 				(font
@@ -7532,7 +7532,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 196.85 120.65 0)
 			(effects
 				(font
@@ -7640,7 +7640,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 196.85 120.65 0)
 			(effects
 				(font
@@ -7649,7 +7649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 196.85 120.65 0)
 			(effects
 				(font
@@ -7701,7 +7701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 147.0152 125.73 0)
 			(effects
 				(font
@@ -7809,7 +7809,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 146.05 121.92 0)
 			(effects
 				(font
@@ -7818,7 +7818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 146.05 121.92 0)
 			(effects
 				(font
@@ -7861,7 +7861,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 72.39 167.6399 0)
 			(effects
 				(font
@@ -7870,7 +7870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 69.85 166.37 0)
 			(effects
 				(font
@@ -7978,7 +7978,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 69.85 166.37 0)
 			(effects
 				(font
@@ -7987,7 +7987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 69.85 166.37 0)
 			(effects
 				(font
@@ -8761,7 +8761,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 90.17 162.5599 0)
 			(effects
 				(font
@@ -8878,7 +8878,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 87.63 161.29 0)
 			(effects
 				(font
@@ -8887,7 +8887,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 87.63 161.29 0)
 			(effects
 				(font
@@ -9171,7 +9171,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 262.5852 82.55 0)
 			(effects
 				(font
@@ -9279,7 +9279,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 261.62 78.74 0)
 			(effects
 				(font
@@ -9288,7 +9288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 261.62 78.74 0)
 			(effects
 				(font
@@ -9463,7 +9463,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 199.39 137.1599 0)
 			(effects
 				(font
@@ -9580,7 +9580,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 196.85 135.89 0)
 			(effects
 				(font
@@ -9589,7 +9589,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 196.85 135.89 0)
 			(effects
 				(font
@@ -9863,7 +9863,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 199.39 116.8399 0)
 			(effects
 				(font
@@ -9980,7 +9980,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 196.85 115.57 0)
 			(effects
 				(font
@@ -9989,7 +9989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 196.85 115.57 0)
 			(effects
 				(font
@@ -10199,7 +10199,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 217.17 137.1599 0)
 			(effects
 				(font
@@ -10316,7 +10316,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 214.63 135.89 0)
 			(effects
 				(font
@@ -10325,7 +10325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 214.63 135.89 0)
 			(effects
 				(font
@@ -10368,7 +10368,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 90.17 148.5899 0)
 			(effects
 				(font
@@ -10377,7 +10377,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 87.63 147.32 0)
 			(effects
 				(font
@@ -10485,7 +10485,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 87.63 147.32 0)
 			(effects
 				(font
@@ -10494,7 +10494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 87.63 147.32 0)
 			(effects
 				(font
@@ -10603,7 +10603,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 199.39 142.2399 0)
 			(effects
 				(font
@@ -10612,7 +10612,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 196.85 140.97 0)
 			(effects
 				(font
@@ -10720,7 +10720,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 196.85 140.97 0)
 			(effects
 				(font
@@ -10729,7 +10729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 196.85 140.97 0)
 			(effects
 				(font
@@ -11073,7 +11073,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 217.17 97.7899 0)
 			(effects
 				(font
@@ -11190,7 +11190,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 214.63 96.52 0)
 			(effects
 				(font
@@ -11199,7 +11199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 214.63 96.52 0)
 			(effects
 				(font
@@ -11228,9 +11228,9 @@
 		(at 123.19 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "872f2cde-c1dd-4874-9a5e-2c6a05d30c29")
 		(property "Reference" "C57"
@@ -11251,7 +11251,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 124.1552 130.81 0)
 			(effects
 				(font
@@ -11359,7 +11359,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 123.19 127 0)
 			(effects
 				(font
@@ -11368,7 +11368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 123.19 127 0)
 			(effects
 				(font
@@ -11655,7 +11655,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 239.7252 88.9 0)
 			(effects
 				(font
@@ -11763,7 +11763,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 238.76 85.09 0)
 			(effects
 				(font
@@ -11772,7 +11772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 238.76 85.09 0)
 			(effects
 				(font
@@ -12202,9 +12202,9 @@
 		(at 250.19 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "96b27e5f-54cb-491b-be3e-89c24d4a67f0")
 		(property "Reference" "C62"
@@ -12225,7 +12225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 251.1552 85.09 0)
 			(effects
 				(font
@@ -12333,7 +12333,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 250.19 81.28 0)
 			(effects
 				(font
@@ -12342,7 +12342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 250.19 81.28 0)
 			(effects
 				(font
@@ -12385,7 +12385,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 72.39 186.6899 0)
 			(effects
 				(font
@@ -12394,7 +12394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 69.85 185.42 0)
 			(effects
 				(font
@@ -12502,7 +12502,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 69.85 185.42 0)
 			(effects
 				(font
@@ -12511,7 +12511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 69.85 185.42 0)
 			(effects
 				(font
@@ -13188,7 +13188,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 217.17 142.2399 0)
 			(effects
 				(font
@@ -13197,7 +13197,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 214.63 140.97 0)
 			(effects
 				(font
@@ -13305,7 +13305,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 214.63 140.97 0)
 			(effects
 				(font
@@ -13314,7 +13314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 214.63 140.97 0)
 			(effects
 				(font
@@ -13809,7 +13809,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 90.17 143.5099 0)
 			(effects
 				(font
@@ -13926,7 +13926,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 87.63 142.24 0)
 			(effects
 				(font
@@ -13935,7 +13935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 87.63 142.24 0)
 			(effects
 				(font
@@ -14313,7 +14313,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 90.17 181.6099 0)
 			(effects
 				(font
@@ -14430,7 +14430,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 87.63 180.34 0)
 			(effects
 				(font
@@ -14439,7 +14439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 87.63 180.34 0)
 			(effects
 				(font
@@ -14945,7 +14945,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 90.17 186.6899 0)
 			(effects
 				(font
@@ -14954,7 +14954,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 87.63 185.42 0)
 			(effects
 				(font
@@ -15062,7 +15062,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 87.63 185.42 0)
 			(effects
 				(font
@@ -15071,7 +15071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 87.63 185.42 0)
 			(effects
 				(font
@@ -15123,7 +15123,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.0152 80.01 0)
 			(effects
 				(font
@@ -15231,7 +15231,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 273.05 76.2 0)
 			(effects
 				(font
@@ -15240,7 +15240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CC0603KRX7R9BB104"
+		(property "Part_Number" "CL05B104KO5NNNC"
 			(at 273.05 76.2 0)
 			(effects
 				(font
@@ -15647,7 +15647,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 217.17 102.8699 0)
 			(effects
 				(font
@@ -15656,7 +15656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 214.63 101.6 0)
 			(effects
 				(font
@@ -15764,7 +15764,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 214.63 101.6 0)
 			(effects
 				(font
@@ -15773,7 +15773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 214.63 101.6 0)
 			(effects
 				(font
@@ -16510,7 +16510,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "12k"
 			(at 90.17 167.6399 0)
 			(effects
 				(font
@@ -16519,7 +16519,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 87.63 166.37 0)
 			(effects
 				(font
@@ -16627,7 +16627,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4211"
+		(property "LCSC" "C25752"
 			(at 87.63 166.37 0)
 			(effects
 				(font
@@ -16636,7 +16636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0603WAF3001T5E"
+		(property "Part_Number" "0402WGF1202TCE"
 			(at 87.63 166.37 0)
 			(effects
 				(font
@@ -16744,7 +16744,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 72.39 162.5599 0)
 			(effects
 				(font
@@ -16861,7 +16861,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25796"
+		(property "LCSC" "C25792"
 			(at 69.85 161.29 0)
 			(effects
 				(font
@@ -16870,7 +16870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF5602TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 69.85 161.29 0)
 			(effects
 				(font

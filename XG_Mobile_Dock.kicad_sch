@@ -11613,7 +11613,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 27.94) (xy 189.23 24.13)
+			(xy 189.23 24.13) (xy 189.23 27.94)
 		)
 		(stroke
 			(width 0)
@@ -12362,17 +12362,6 @@
 		)
 		(uuid "66b87f70-ad45-475a-9794-7c1bb05fbe54")
 	)
-	(label "+12V0"
-		(at 229.87 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6a3bbcbd-176a-48c2-a11e-7e2e44b6be43")
-	)
 	(label "TX7P"
 		(at 97.79 59.69 180)
 		(fields_autoplaced yes)
@@ -13055,17 +13044,6 @@
 		)
 		(uuid "e92ad7b2-616c-4970-b27e-e81fe674adb0")
 	)
-	(label "+12V0"
-		(at 189.23 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "edf88b46-821a-422d-9eca-c0a6c54573f7")
-	)
 	(label "RX2N"
 		(at 223.52 91.44 0)
 		(fields_autoplaced yes)
@@ -13165,6 +13143,50 @@
 		)
 		(uuid "fcf10cbb-1d19-49c2-b1f4-5578331b4cc5")
 	)
+	(global_label "+12V"
+		(shape input)
+		(at 229.87 24.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d73b8c3-e58b-450e-80c5-a815f02ce8f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.9352 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+12V"
+		(shape input)
+		(at 189.23 24.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d7c7d6f3-0e30-4f29-8271-efe6cf265d3d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.2952 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
 		(at 35.56 44.45 0)
@@ -13193,7 +13215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 44.45 0)
 			(effects
 				(font
@@ -13472,7 +13494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 46.99 0)
 			(effects
 				(font
@@ -13889,7 +13911,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCIE-164-02-F-D-TH-TR:SAMTEC_PCIE-164-02-F-D-TH-TR"
+		(property "Footprint" "SAMTEC_PCIE-164-02-F-D-TH-TR:SAMTEC_PCIE-164-02-F-D-TH-TR"
 			(at 252.73 78.74 0)
 			(effects
 				(font
@@ -14475,7 +14497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 43.18 146.05 0)
 			(effects
 				(font
@@ -15177,7 +15199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 49.53 0)
 			(effects
 				(font
@@ -16638,7 +16660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 57.15 0)
 			(effects
 				(font
@@ -16786,7 +16808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 54.61 0)
 			(effects
 				(font
@@ -16934,7 +16956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 39.37 0)
 			(effects
 				(font
@@ -17214,7 +17236,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 41.91 0)
 			(effects
 				(font
@@ -17494,7 +17516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 74.93 118.11 0)
 			(effects
 				(font
@@ -17775,7 +17797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 64.77 0)
 			(effects
 				(font
@@ -17922,7 +17944,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCIE-164-02-F-D-TH-TR:SAMTEC_PCIE-164-02-F-D-TH-TR"
+		(property "Footprint" "SAMTEC_PCIE-164-02-F-D-TH-TR:SAMTEC_PCIE-164-02-F-D-TH-TR"
 			(at 210.82 78.74 0)
 			(effects
 				(font
@@ -18508,7 +18530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 43.18 135.89 0)
 			(effects
 				(font
@@ -18656,7 +18678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 62.23 0)
 			(effects
 				(font
@@ -19105,7 +19127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 40.64 52.07 0)
 			(effects
 				(font
