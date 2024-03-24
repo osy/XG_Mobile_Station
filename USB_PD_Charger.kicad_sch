@@ -9512,7 +9512,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX25L8006EM1I-12G:SOIC127P600X175-8N"
+		(property "Footprint" "MX25L8006EM1I-12G:MX25L8006EM1I-12G"
 			(at 214.63 128.27 0)
 			(effects
 				(font

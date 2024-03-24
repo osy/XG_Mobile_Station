@@ -15347,7 +15347,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20455-040E-76:IPEX_20455-040E-76"
+		(property "Footprint" "20455-040E-76:20455-040E-76"
 			(at 25.4 69.85 0)
 			(effects
 				(font
@@ -15911,7 +15911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "20455-040E-76:IPEX_20455-040E-76"
+		(property "Footprint" "20455-040E-76:20455-040E-76"
 			(at 59.69 69.85 0)
 			(effects
 				(font
@@ -17493,7 +17493,7 @@
 		(at 69.85 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ac16a618-a44f-44ce-a24e-5b92e3be40af")

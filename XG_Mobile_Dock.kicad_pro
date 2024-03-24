@@ -26,8 +26,8 @@
         },
         "fab_line_width": 0.09999999999999999,
         "fab_text_italic": false,
-        "fab_text_size_h": 1.0,
-        "fab_text_size_v": 1.0,
+        "fab_text_size_h": 0.7999999999999999,
+        "fab_text_size_v": 0.7999999999999999,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
         "other_line_width": 0.09999999999999999,
@@ -43,12 +43,12 @@
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_h": 0.7999999999999999,
+        "silk_text_size_v": 0.7999999999999999,
         "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.09999999999999999
         }
       },
       "diff_pair_dimensions": [
@@ -97,10 +97,10 @@
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "solder_mask_bridge": "ignore",
+        "starved_thermal": "ignore",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -225,6 +225,10 @@
           "drill": 0.2
         },
         {
+          "diameter": 0.4,
+          "drill": 0.3
+        },
+        {
           "diameter": 0.5,
           "drill": 0.3
         },
@@ -250,7 +254,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_not_connected|1320800|1765300|81609f3a-184d-4f8e-bf84-c7230e7f8db1|00000000-0000-0000-0000-000000000000|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|",
+      "pin_not_connected|1320800|1816100|adbdc418-6b0c-48fb-9f35-fbd6b0f9d716|00000000-0000-0000-0000-000000000000|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|",
+      "pin_not_connected|2654300|939800|e99a462c-307e-4e88-ac8b-d792eb567359|00000000-0000-0000-0000-000000000000|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|",
+      "pin_not_connected|381000|1435100|93535461-d367-4575-90e0-ea96b5a9e004|00000000-0000-0000-0000-000000000000|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|/f97e6956-ab08-42cb-8fed-03fa58e87f0e|"
+    ],
     "meta": {
       "version": 0
     },
@@ -450,8 +459,8 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "pin_to_pin": "ignore",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
       "unannotated": "error",

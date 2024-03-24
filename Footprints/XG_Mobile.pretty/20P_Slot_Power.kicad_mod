@@ -69,7 +69,7 @@
 	(attr smd)
 	(fp_line
 		(start -2.413 3.386)
-		(end -2.413 -5.85)
+		(end -2.413 -3.754)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -109,7 +109,7 @@
 	)
 	(fp_line
 		(start 25.4 3.386)
-		(end 25.4 -5.85)
+		(end 25.4 -3.754)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -118,7 +118,7 @@
 		(uuid "d98722b1-3ec7-489a-809a-9a5b09dfc0dd")
 	)
 	(fp_rect
-		(start -3.81 -6.35)
+		(start -3.81 -3.81)
 		(end 26.67 5.08)
 		(stroke
 			(width 0.05)

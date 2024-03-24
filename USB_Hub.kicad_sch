@@ -3109,6 +3109,12 @@
 		(uuid "d8d68a5b-566e-4ac3-8917-a559920b861e")
 	)
 	(junction
+		(at 26.67 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da3c710d-a99d-45c7-b63a-61e9d42b37e3")
+	)
+	(junction
 		(at 20.32 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4328,6 +4334,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 182.88) (xy 26.67 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58976db5-153b-499e-b86b-c5d524500f27")
+	)
+	(wire
+		(pts
 			(xy 245.11 93.98) (xy 245.11 102.87)
 		)
 		(stroke
@@ -4415,6 +4431,16 @@
 			(type default)
 		)
 		(uuid "5c974319-403c-4c9b-bc6f-970da83304b2")
+	)
+	(wire
+		(pts
+			(xy 35.56 182.88) (xy 26.67 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d688fbc-1644-4e0b-b5e9-acf412e592ca")
 	)
 	(wire
 		(pts
@@ -4738,7 +4764,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 181.61) (xy 26.67 185.42)
+			(xy 26.67 181.61) (xy 26.67 182.88)
 		)
 		(stroke
 			(width 0)
@@ -4845,6 +4871,16 @@
 			(type default)
 		)
 		(uuid "8e0270c2-7fce-4c77-b81b-f4a575f3639f")
+	)
+	(wire
+		(pts
+			(xy 38.1 177.8) (xy 35.56 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e51db02-f823-4843-8cae-4510fb12d23c")
 	)
 	(wire
 		(pts
@@ -5845,6 +5881,16 @@
 			(type default)
 		)
 		(uuid "f3ceb858-79b2-4bba-8ff5-d045f712d6b5")
+	)
+	(wire
+		(pts
+			(xy 35.56 177.8) (xy 35.56 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3f844a0-bddb-40ae-9c02-74b471a97273")
 	)
 	(wire
 		(pts
@@ -12715,7 +12761,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C376770"
+		(property "LCSC" "C1653"
 			(at 256.54 123.19 0)
 			(effects
 				(font
@@ -12724,7 +12770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "TCC0603COG180J500CT"
+		(property "Part_Number" "CL10C220JB8NNNC"
 			(at 256.54 123.19 0)
 			(effects
 				(font
@@ -13119,7 +13165,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C376770"
+		(property "LCSC" "C1653"
 			(at 266.7 123.19 0)
 			(effects
 				(font
@@ -13128,7 +13174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "TCC0603COG180J500CT"
+		(property "Part_Number" "CL10C220JB8NNNC"
 			(at 266.7 123.19 0)
 			(effects
 				(font
