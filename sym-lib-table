@@ -15,4 +15,6 @@
   (lib (name "AZ1045-04F")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AZ1045-04F.kicad_sym")(options "")(descr ""))
   (lib (name "TPS2003CDRCR")(type "KiCad")(uri "${KIPRJMOD}/Symbols/TPS2003CDRCR.kicad_sym")(options "")(descr ""))
   (lib (name "KEYSTONE_8730")(type "KiCad")(uri "${KIPRJMOD}/Symbols/KEYSTONE_8730.kicad_sym")(options "")(descr ""))
+  (lib (name "STUSB4710AQ1TR")(type "KiCad")(uri "${KIPRJMOD}/Symbols/STUSB4710AQ1TR.kicad_sym")(options "")(descr ""))
+  (lib (name "SI4925DDY-T1-GE3")(type "KiCad")(uri "${KIPRJMOD}/Symbols/SI4925DDY-T1-GE3.kicad_sym")(options "")(descr ""))
 )

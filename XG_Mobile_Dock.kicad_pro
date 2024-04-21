@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.09999999999999999
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -59,19 +59,12 @@
         }
       ],
       "drc_exclusions": [
-        "hole_clearance|148386500|10214000|698ba7d3-dbee-4fd8-89bf-eeb26f07c728|7c172958-e334-42d3-9e4f-844516af43ae",
-        "hole_clearance|148386500|2786000|da700975-c07b-425b-bf08-582195148b18|9efd34ca-73d6-4d31-9aae-906522f2d7ab",
-        "hole_clearance|149041500|9507000|698ba7d3-dbee-4fd8-89bf-eeb26f07c728|58c90f32-bd3e-48bf-875b-02e5c82c7148",
         "hole_clearance|2458500|22743000|a26b0b30-0547-452d-bbc6-74e0b7bbdcae|9a81a623-8a8e-453b-93c7-2aa14bd409b4",
         "hole_clearance|2458500|7493000|fbd19fb0-aed0-4179-a6de-3188b20930c4|4344e22d-d4eb-497f-a55f-43c07c14ced2",
         "hole_clearance|3113500|14214000|af29d2be-1ba9-4196-97a7-bd86b30d815c|8bd59066-a010-47f4-9a6a-9b557667a5fa",
         "hole_clearance|3113500|22036000|a26b0b30-0547-452d-bbc6-74e0b7bbdcae|a947c8e8-26b3-41a3-9f2f-10d802c26515",
         "hole_clearance|3113500|29464000|379f3f5c-1f5d-4ecd-99e4-2f59bb82c6a9|4942686c-c972-48fb-a5d9-a36e2c1f284b",
         "hole_clearance|3113500|6786000|fbd19fb0-aed0-4179-a6de-3188b20930c4|b4d8c870-b4f2-4d57-974e-95540ba46d40",
-        "hole_near_hole|155110000|16510000|46e05d7b-f594-4fd2-b8be-c6d5da5375cd|1e898a21-473a-4597-8aad-1573cb5ee0ef",
-        "hole_near_hole|155110000|17310000|587cfe9c-997e-464e-af45-0b793cc5661a|46e05d7b-f594-4fd2-b8be-c6d5da5375cd",
-        "hole_near_hole|157310000|16510000|c928e486-343b-41e5-90af-adaf1801b37a|6e7edcde-d262-4d4d-9727-1a74b5436718",
-        "hole_near_hole|157310000|17310000|0863430f-8771-4789-b0bf-bc6f613e44e3|c928e486-343b-41e5-90af-adaf1801b37a",
         "silk_edge_clearance|-3640871|21448000|5cc2eb99-6c2a-43fc-bd5d-5bd1741492f4|42cc6192-f9e6-4b0d-812f-c02f38b24f02",
         "silk_edge_clearance|-3640871|6198000|866f08ec-d999-493e-bdff-d78540d28582|33e2836c-4805-43b0-91bf-bf90c847d857",
         "silk_edge_clearance|-3641500|21453310|5cc2eb99-6c2a-43fc-bd5d-5bd1741492f4|dc58a544-364d-4e09-bdb6-aeb8c116eae2",
@@ -79,12 +72,7 @@
         "silk_edge_clearance|-3649687|14838182|e30461de-6edf-42d1-a075-4157cd88f60a|fb35d4d4-007e-4f1d-b3b5-507617f70603",
         "silk_edge_clearance|-3650000|14810001|e30461de-6edf-42d1-a075-4157cd88f60a|73cfac1f-e4c5-44da-b411-636abc9a550b",
         "silk_edge_clearance|0|46390000|40974ebd-1422-4d92-b78c-31bf036b0ce9|a4fd0ad3-fb97-49ae-8c7e-55b698d87996",
-        "silk_edge_clearance|0|56610000|40974ebd-1422-4d92-b78c-31bf036b0ce9|e7299fa8-10e2-4dce-99f7-8a267b19685b",
-        "silk_edge_clearance|154911716|2162000|0d8ae8eb-1a22-41be-ba40-ead4b6314df5|998d4f3a-a2e5-48c8-ae65-4c1718154721",
-        "silk_edge_clearance|154940000|10802000|394e011b-3796-4f5a-83bf-35b5a6bbbd25|a4bd436e-6852-440d-8a33-ad9eb8d5a10e",
-        "silk_edge_clearance|154940000|14180000|394e011b-3796-4f5a-83bf-35b5a6bbbd25|0d288777-a3ab-42cc-9b86-5faa0c32bda1",
-        "silk_edge_clearance|154940000|18840000|8b17ace9-a133-4c5e-a4c2-6cf74169b519|99daa300-b785-4b82-98d8-e62bb3ca97b7",
-        "unconnected_items|154801998|15269882|7d24e844-80bd-4766-9512-57044b8ca153|6383dfc9-437b-4fb5-8abb-ffdd6d06104a"
+        "silk_edge_clearance|0|56610000|40974ebd-1422-4d92-b78c-31bf036b0ce9|e7299fa8-10e2-4dce-99f7-8a267b19685b"
       ],
       "meta": {
         "version": 2
@@ -934,8 +922,8 @@
       "Root"
     ],
     [
-      "fa35204a-fbf7-48de-bc5b-11fc2e29f675",
-      "USB PD Charger"
+      "42b0823b-da4f-4966-a202-b5d2b8f4715b",
+      "ST PD Charger"
     ],
     [
       "ef21a87f-222f-4a81-a291-59975487be1d",

@@ -21,4 +21,6 @@
   (lib (name "TPS2003CDRCR")(type "KiCad")(uri "${KIPRJMOD}/Footprints/TPS2003CDRCR.pretty")(options "")(descr ""))
   (lib (name "MX25L8006EM1I-12G")(type "KiCad")(uri "${KIPRJMOD}/Footprints/MX25L8006EM1I-12G.pretty")(options "")(descr ""))
   (lib (name "KEYSTONE_8730")(type "KiCad")(uri "${KIPRJMOD}/Footprints/KEYSTONE_8730.pretty")(options "")(descr ""))
+  (lib (name "STUSB4710AQ1TR")(type "KiCad")(uri "${KIPRJMOD}/Footprints/STUSB4710AQ1TR.pretty")(options "")(descr ""))
+  (lib (name "SI4925DDY-T1-GE3")(type "KiCad")(uri "${KIPRJMOD}/Footprints/SI4925DDY-T1-GE3.pretty")(options "")(descr ""))
 )
