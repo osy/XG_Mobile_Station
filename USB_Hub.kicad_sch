@@ -6272,17 +6272,6 @@
 		)
 		(uuid "241e0dee-17e1-4e16-ae48-4feb7c973e13")
 	)
-	(label "VBUSDET"
-		(at 177.8 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "257728f3-997e-4c8b-999b-0e7f8b44cae7")
-	)
 	(label "+1V0"
 		(at 198.12 95.25 0)
 		(fields_autoplaced yes)
@@ -6829,6 +6818,18 @@
 			(justify right)
 		)
 		(uuid "591e8542-b071-4cc0-b9b9-2056c310d635")
+	)
+	(hierarchical_label "VBUSDET"
+		(shape input)
+		(at 177.8 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "65a7bfdf-ee08-4397-8495-c2c791fd8c47")
 	)
 	(hierarchical_label "USB_DFP2_TXN"
 		(shape input)

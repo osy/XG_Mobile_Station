@@ -10633,6 +10633,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 152.4) (xy 96.52 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc016121-82dc-4a77-8085-fd1c1c56d4f6")
+	)
+	(wire
+		(pts
 			(xy 82.55 123.19) (xy 82.55 124.46)
 		)
 		(stroke
@@ -20782,6 +20792,16 @@
 			)
 			(uuid "ec3f59c6-3a5e-462c-8c97-e59efc3e6e20")
 		)
+		(pin "VBUSDET" input
+			(at 96.52 152.4 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "484aab18-0d1d-4311-8a42-c9e105f9d94d")
+		)
 		(instances
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
@@ -20839,6 +20859,16 @@
 				(justify left)
 			)
 			(uuid "898643be-76de-4a79-bfa8-94e9043c60c9")
+		)
+		(pin "VBUSDET" output
+			(at 77.47 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "80936ede-1309-4c2e-98a0-085d618b1f48")
 		)
 		(instances
 			(project "XG_Mobile_Dock"
