@@ -10479,7 +10479,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PMEG4050EP"
+		(property "Value" "PDS1040L-13"
 			(at 172.72 39.0524 90)
 			(effects
 				(font
@@ -10488,7 +10488,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-128"
+		(property "Footprint" "Diode_SMD:D_PowerDI-5"
 			(at 179.705 38.1 0)
 			(effects
 				(font
@@ -10506,7 +10506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "40V, 5A low Vf Schottky barrier rectifier, SOD-128"
+		(property "Description" "40V, 10A Schottky barrier rectifier"
 			(at 175.26 38.1 0)
 			(effects
 				(font
@@ -10515,7 +10515,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "PMEG4050EP,115"
+		(property "Part_Number" "PDS1040L-13"
 			(at 175.26 38.1 90)
 			(effects
 				(font
@@ -10524,7 +10524,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C96235"
+		(property "LCSC" "C154714"
 			(at 175.26 38.1 90)
 			(effects
 				(font

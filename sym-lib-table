@@ -16,4 +16,6 @@
   (lib (name "TPS2003CDRCR")(type "KiCad")(uri "${KIPRJMOD}/Symbols/TPS2003CDRCR.kicad_sym")(options "")(descr ""))
   (lib (name "KEYSTONE_8730")(type "KiCad")(uri "${KIPRJMOD}/Symbols/KEYSTONE_8730.kicad_sym")(options "")(descr ""))
   (lib (name "AON7403")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AON7403.kicad_sym")(options "")(descr ""))
+  (lib (name "PJ-096H")(type "KiCad")(uri "${KIPRJMOD}/Symbols/PJ-096H.kicad_sym")(options "")(descr ""))
+  (lib (name "0039281083")(type "KiCad")(uri "${KIPRJMOD}/Symbols/0039281083.kicad_sym")(options "")(descr ""))
 )
