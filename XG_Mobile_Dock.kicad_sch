@@ -11701,7 +11701,7 @@
 		)
 		(uuid "077751b4-00f0-4bb9-abd9-cac0798b45b4")
 	)
-	(label "TX1RN"
+	(label "TX1N"
 		(at 198.12 76.2 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11734,18 +11734,7 @@
 		)
 		(uuid "03c42810-fd58-442d-b4bf-1ea4ac9e9e50")
 	)
-	(label "TX0RP"
-		(at 119.38 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "055a9802-b052-4db2-9ed7-c2fe49c53409")
-	)
-	(label "RX5P"
+	(label "RX5N"
 		(at 223.52 124.46 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11766,17 +11755,6 @@
 			(justify left bottom)
 		)
 		(uuid "0813358e-c5e1-41b2-9fa2-01a3f3b6e1af")
-	)
-	(label "TX4RN"
-		(at 119.38 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "08148dd0-68cf-4a0c-a6bc-5e6871d1d507")
 	)
 	(label "RST"
 		(at 118.11 20.32 180)
@@ -11800,7 +11778,7 @@
 		)
 		(uuid "0ffcf2e7-6eb8-420a-9884-d369c18bed1c")
 	)
-	(label "TX3RP"
+	(label "TX3P"
 		(at 198.12 93.98 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11822,7 +11800,7 @@
 		)
 		(uuid "1484e20c-9aeb-40e2-9541-6037498bd0de")
 	)
-	(label "RX3P"
+	(label "RX3N"
 		(at 223.52 99.06 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11832,17 +11810,6 @@
 			(justify left bottom)
 		)
 		(uuid "1b8c0978-95b4-4301-a9a1-c83a8647de78")
-	)
-	(label "TX2RP"
-		(at 119.38 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1bd688bd-aaee-4109-bb28-a52cbf8c86ed")
 	)
 	(label "RX0P"
 		(at 223.52 66.04 0)
@@ -11854,17 +11821,6 @@
 			(justify left bottom)
 		)
 		(uuid "1c1e3d3d-0ce3-4ca8-94c8-0cbe5872957a")
-	)
-	(label "TX7N"
-		(at 97.79 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1c8094fd-f447-407c-a976-a05195c95a24")
 	)
 	(label "CLKN"
 		(at 223.52 60.96 0)
@@ -11888,28 +11844,6 @@
 		)
 		(uuid "1f8142ee-ea0b-4dcc-89ba-08a663d81d2b")
 	)
-	(label "TX5N"
-		(at 97.79 67.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "200d56ea-5602-4c6c-9ec0-725db1d06374")
-	)
-	(label "TX1RN"
-		(at 119.38 87.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "20dcd568-496c-4acf-afc4-46b9a996bb7c")
-	)
 	(label "CLKN"
 		(at 40.64 92.71 0)
 		(fields_autoplaced yes)
@@ -11920,28 +11854,6 @@
 			(justify left bottom)
 		)
 		(uuid "2212e9fc-d51c-46ac-b8d5-e8df2d0c3982")
-	)
-	(label "TX3P"
-		(at 97.79 80.01 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "277993a7-4f09-4e6f-8552-1d2c9ba300fd")
-	)
-	(label "TX7RN"
-		(at 119.38 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "27a41134-f512-41af-b733-3edebe4bd6b4")
 	)
 	(label "TX0N"
 		(at 74.93 102.87 0)
@@ -11954,7 +11866,7 @@
 		)
 		(uuid "283642cc-baf2-438c-8358-8bb825c7d05e")
 	)
-	(label "TX4RP"
+	(label "TX4P"
 		(at 198.12 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11976,7 +11888,7 @@
 		)
 		(uuid "2a59fa6f-a715-4788-a0e4-de6190ab7615")
 	)
-	(label "TX2RP"
+	(label "TX2P"
 		(at 198.12 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11987,7 +11899,7 @@
 		)
 		(uuid "2aa31e57-fc92-4136-888b-9d1bb35a0ebf")
 	)
-	(label "TX4RN"
+	(label "TX4N"
 		(at 198.12 111.76 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12019,17 +11931,6 @@
 			(justify left bottom)
 		)
 		(uuid "3506bb0c-6ae9-4d53-bb53-389120495ae4")
-	)
-	(label "TX6N"
-		(at 97.79 62.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "35eb9963-917f-43ad-b6c6-d9cd7cc9e599")
 	)
 	(label "C_DP"
 		(at 40.64 72.39 0)
@@ -12075,7 +11976,7 @@
 		)
 		(uuid "3a0b5933-7b58-4f71-b905-41e90e69f1a5")
 	)
-	(label "TX3RN"
+	(label "TX3N"
 		(at 198.12 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12096,17 +11997,6 @@
 			(justify right bottom)
 		)
 		(uuid "3c40d764-ccfb-42d9-bbbf-479f95bbb5d4")
-	)
-	(label "TX2RN"
-		(at 119.38 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "404b68b4-547f-4f6c-adfd-8d324955602a")
 	)
 	(label "PWR_SW"
 		(at 139.7 90.17 0)
@@ -12130,17 +12020,6 @@
 		)
 		(uuid "41c4acda-0b70-4e72-b8b8-098119c5e660")
 	)
-	(label "TX6P"
-		(at 97.79 64.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "42a0945d-1be1-4fdc-95c3-c2b07d9d2633")
-	)
 	(label "C_RXN"
 		(at 93.98 144.78 180)
 		(fields_autoplaced yes)
@@ -12152,7 +12031,7 @@
 		)
 		(uuid "4759b41e-630d-4a5d-87c7-546f03f647cd")
 	)
-	(label "RX4N"
+	(label "RX4P"
 		(at 223.52 116.84 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12185,17 +12064,6 @@
 		)
 		(uuid "5349f614-2cdb-4fb9-8eb4-8c8dd56425ba")
 	)
-	(label "TX4N"
-		(at 97.79 72.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5381d434-112b-4cde-9a64-539fdb7811a5")
-	)
 	(label "RX2P"
 		(at 74.93 82.55 0)
 		(fields_autoplaced yes)
@@ -12207,7 +12075,7 @@
 		)
 		(uuid "53df523e-3e5e-4031-9f6d-485114393c47")
 	)
-	(label "RX6P"
+	(label "RX6N"
 		(at 262.89 30.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12251,7 +12119,7 @@
 		)
 		(uuid "59f5c9de-e7ff-4c53-af0a-595b61cfe62d")
 	)
-	(label "TX5RP"
+	(label "TX5P"
 		(at 198.12 119.38 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12262,7 +12130,7 @@
 		)
 		(uuid "5a648d14-4f91-4227-a49d-8a2a06905057")
 	)
-	(label "RX4P"
+	(label "RX4N"
 		(at 223.52 114.3 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12284,7 +12152,7 @@
 		)
 		(uuid "5bfc0a0b-32f5-49f4-9f8e-b251c75656b6")
 	)
-	(label "TX7RN"
+	(label "TX7N"
 		(at 240.03 38.1 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12294,28 +12162,6 @@
 			(justify right bottom)
 		)
 		(uuid "5cdd3ea9-25c1-4852-9f2d-4c01450ce3e2")
-	)
-	(label "TX0N"
-		(at 97.79 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5d2b9bac-0b88-4521-92e5-ec5bd9e178ba")
-	)
-	(label "TX7RP"
-		(at 119.38 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5fb3f9b4-3588-49e4-bd3f-798b35cef1dc")
 	)
 	(label "DET1"
 		(at 40.64 39.37 0)
@@ -12339,17 +12185,6 @@
 		)
 		(uuid "615c2eeb-7055-496b-9575-27483ccebd51")
 	)
-	(label "TX2P"
-		(at 97.79 85.09 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "65920194-e17a-4616-b028-cdf080efd037")
-	)
 	(label "TX5N"
 		(at 74.93 26.67 0)
 		(fields_autoplaced yes)
@@ -12372,29 +12207,7 @@
 		)
 		(uuid "66b87f70-ad45-475a-9794-7c1bb05fbe54")
 	)
-	(label "TX7P"
-		(at 97.79 59.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6b814fdf-bd3c-4f0a-a21e-6b1b7d587ddb")
-	)
-	(label "TX6RP"
-		(at 119.38 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7001f413-f1e7-4c69-9799-2b37f6856227")
-	)
-	(label "RX6N"
+	(label "RX6P"
 		(at 262.89 33.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12405,7 +12218,7 @@
 		)
 		(uuid "7540b3f6-2965-4edd-bb0d-d59b464d8abe")
 	)
-	(label "TX7RP"
+	(label "TX7P"
 		(at 240.03 35.56 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12438,7 +12251,7 @@
 		)
 		(uuid "7acf95d4-0d6a-4b58-9970-6dd919ff7ba8")
 	)
-	(label "TX0RP"
+	(label "TX0P"
 		(at 198.12 60.96 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12449,7 +12262,7 @@
 		)
 		(uuid "7ff4c09b-69a9-4972-8988-1b27a04eace5")
 	)
-	(label "TX1RP"
+	(label "TX1P"
 		(at 198.12 73.66 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12460,18 +12273,7 @@
 		)
 		(uuid "83282564-4f3a-499a-9db2-b675d9763f0e")
 	)
-	(label "TX1N"
-		(at 97.79 87.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "83bf1077-b762-4965-a9bc-3e9b00c6e5e2")
-	)
-	(label "RX7P"
+	(label "RX7N"
 		(at 262.89 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12493,18 +12295,7 @@
 		)
 		(uuid "8429c93d-3aaf-4471-8422-9ee405e8c2a8")
 	)
-	(label "TX4P"
-		(at 97.79 74.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "86525e8a-5525-4097-967c-ea469c1da122")
-	)
-	(label "TX2RN"
+	(label "TX2N"
 		(at 198.12 86.36 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12548,7 +12339,7 @@
 		)
 		(uuid "8d600627-ad0a-480c-a945-1b99a7870b45")
 	)
-	(label "RX5N"
+	(label "RX5P"
 		(at 223.52 127 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12647,7 +12438,7 @@
 		)
 		(uuid "996f6101-4b55-470f-b4d1-09c1bc226b8a")
 	)
-	(label "RX1N"
+	(label "RX1P"
 		(at 223.52 81.28 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12668,17 +12459,6 @@
 			(justify right bottom)
 		)
 		(uuid "9be3b79f-b81a-4790-9259-ff72b14b75d3")
-	)
-	(label "TX5RN"
-		(at 119.38 67.31 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9c86f640-d3c7-4d06-8372-14cce3d3e5c9")
 	)
 	(label "CLKP"
 		(at 40.64 95.25 0)
@@ -12713,7 +12493,7 @@
 		)
 		(uuid "a7edf83a-c7a8-4be5-9105-309d42eeebcb")
 	)
-	(label "RX1P"
+	(label "RX1N"
 		(at 223.52 78.74 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12723,17 +12503,6 @@
 			(justify left bottom)
 		)
 		(uuid "a84dd2ae-d836-4093-856d-968ef0c87af9")
-	)
-	(label "TX3N"
-		(at 97.79 77.47 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b1280de4-7fdc-49a4-917e-650e66f9e474")
 	)
 	(label "C_TXP"
 		(at 93.98 137.16 180)
@@ -12746,28 +12515,6 @@
 		)
 		(uuid "b48d7605-1b07-43c6-9719-79c3eebe4d01")
 	)
-	(label "TX2N"
-		(at 97.79 82.55 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b494b708-7752-4375-a3fe-e84563325615")
-	)
-	(label "TX5RP"
-		(at 119.38 69.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b976f9d4-3741-4b18-a605-332e4e8c00f5")
-	)
 	(label "CLKREQ"
 		(at 198.12 55.88 180)
 		(fields_autoplaced yes)
@@ -12778,28 +12525,6 @@
 			(justify right bottom)
 		)
 		(uuid "bd2763df-c476-4968-b607-c3bdcf7f6420")
-	)
-	(label "TX3RP"
-		(at 119.38 80.01 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bf4bfdae-eb93-4880-a2af-3f7a363e82f3")
-	)
-	(label "TX4RP"
-		(at 119.38 74.93 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c1350cba-d8fd-4af8-8ea3-4098766827d9")
 	)
 	(label "RST"
 		(at 40.64 49.53 0)
@@ -12823,7 +12548,7 @@
 		)
 		(uuid "cb4215f1-ae51-4266-901e-4997766b93cb")
 	)
-	(label "TX0RN"
+	(label "TX0N"
 		(at 198.12 63.5 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12834,29 +12559,7 @@
 		)
 		(uuid "cbeed707-c6ab-4615-8e36-4a8ef86ee21a")
 	)
-	(label "TX0RN"
-		(at 119.38 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cd1a36da-78c1-4540-9fe0-5933fe40a885")
-	)
-	(label "TX1P"
-		(at 97.79 90.17 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cf51d24d-cc05-4893-b3e0-b92ccacaf4f4")
-	)
-	(label "TX6RN"
+	(label "TX6N"
 		(at 240.03 27.94 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12933,18 +12636,7 @@
 		)
 		(uuid "dce93ae4-7ad0-43bc-9062-3c52ddd0b69e")
 	)
-	(label "TX3RN"
-		(at 119.38 77.47 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dfda6692-82e2-4393-b07f-d22446b1fd5b")
-	)
-	(label "TX5RN"
+	(label "TX5N"
 		(at 198.12 121.92 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12955,7 +12647,7 @@
 		)
 		(uuid "e02049e4-bc6b-45b9-8e3d-ff090b141f0e")
 	)
-	(label "TX6RP"
+	(label "TX6P"
 		(at 198.12 129.54 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12999,28 +12691,6 @@
 		)
 		(uuid "e435e839-f124-424e-a25f-505d4c7d13ca")
 	)
-	(label "TX0P"
-		(at 97.79 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e5933cb8-432b-4456-a4ff-cda45c5b34e5")
-	)
-	(label "TX6RN"
-		(at 119.38 62.23 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e6e1246f-0a96-47eb-811b-f4f92fc06fcb")
-	)
 	(label "RX1P"
 		(at 74.93 97.79 0)
 		(fields_autoplaced yes)
@@ -13054,7 +12724,7 @@
 		)
 		(uuid "e92ad7b2-616c-4970-b27e-e81fe674adb0")
 	)
-	(label "RX2N"
+	(label "RX2P"
 		(at 223.52 91.44 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13065,7 +12735,7 @@
 		)
 		(uuid "ee3f62d1-826b-4c06-859a-4ce1896a7b07")
 	)
-	(label "RX2P"
+	(label "RX2N"
 		(at 223.52 88.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13075,17 +12745,6 @@
 			(justify left bottom)
 		)
 		(uuid "ee73c5a2-aa20-426e-9894-5f0bc78285d9")
-	)
-	(label "TX5P"
-		(at 97.79 69.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eea39cc0-06f2-4b20-bd80-f1baa301aeaa")
 	)
 	(label "TX0P"
 		(at 74.93 105.41 0)
@@ -13098,7 +12757,7 @@
 		)
 		(uuid "eecda085-289e-4a2f-adbe-6e7db2783149")
 	)
-	(label "RX7N"
+	(label "RX7P"
 		(at 262.89 43.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13131,18 +12790,7 @@
 		)
 		(uuid "f4b33968-3822-4840-95d7-7a22a173b39e")
 	)
-	(label "TX1RP"
-		(at 119.38 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fb51ca8b-079c-42ec-b42d-21fa9b7df8b4")
-	)
-	(label "RX3N"
+	(label "RX3P"
 		(at 223.52 101.6 0)
 		(fields_autoplaced yes)
 		(effects
