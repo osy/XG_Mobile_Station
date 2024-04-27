@@ -5752,7 +5752,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DRC10_1P65X2P40_TEX"
+		(property "Footprint" "TPS2003CDRCR:DRC10_1P65X2P40_TEX"
 			(at 209.55 130.81 0)
 			(effects
 				(font

@@ -9042,7 +9042,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LM3489QMM-NOPB"
+		(property "Footprint" "LM3489QMM-NOPB:LM3489QMM-NOPB"
 			(at 125.73 49.53 0)
 			(effects
 				(font
@@ -10622,7 +10622,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LM3489QMM-NOPB"
+		(property "Footprint" "LM3489QMM-NOPB:LM3489QMM-NOPB"
 			(at 107.95 163.83 0)
 			(effects
 				(font
@@ -13293,7 +13293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LM3489QMM-NOPB"
+		(property "Footprint" "LM3489QMM-NOPB:LM3489QMM-NOPB"
 			(at 125.73 106.68 0)
 			(effects
 				(font

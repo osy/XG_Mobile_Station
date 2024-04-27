@@ -4633,18 +4633,6 @@
 		)
 		(uuid "5e83eb3a-1b31-405f-b0b5-08a6f9c4aa32")
 	)
-	(hierarchical_label "SDA"
-		(shape bidirectional)
-		(at 107.95 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "61e6c908-0ec5-4a1c-81f9-4eec0641dcab")
-	)
 	(hierarchical_label "TX3N"
 		(shape output)
 		(at 153.67 24.13 180)
@@ -4692,18 +4680,6 @@
 			(justify right)
 		)
 		(uuid "72e9b881-7f53-420a-a2ea-d4c460f5e990")
-	)
-	(hierarchical_label "SCL"
-		(shape bidirectional)
-		(at 234.95 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "75152e70-7760-49cf-bec6-62ae3fac82b0")
 	)
 	(hierarchical_label "TX5N"
 		(shape output)
@@ -4800,18 +4776,6 @@
 			(justify left)
 		)
 		(uuid "a41764a7-25d1-4eda-a4ea-262fce69e065")
-	)
-	(hierarchical_label "SCL"
-		(shape bidirectional)
-		(at 107.95 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a4896689-1e4e-47b8-bc0a-75a68cb5e9ff")
 	)
 	(hierarchical_label "TX6N"
 		(shape output)
@@ -4932,18 +4896,6 @@
 			(justify right)
 		)
 		(uuid "f755744f-7081-492a-b7f7-bb17441d77a4")
-	)
-	(hierarchical_label "SDA"
-		(shape bidirectional)
-		(at 234.95 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f8208c46-2f85-4909-8769-a9d01cb945e5")
 	)
 	(hierarchical_label "TX2P"
 		(shape output)
@@ -7160,7 +7112,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN75LVPE4410RNQR"
+		(property "Footprint" "SN75LVPE4410RNQR:SN75LVPE4410RNQR"
 			(at 52.07 71.12 0)
 			(effects
 				(font
@@ -12813,7 +12765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN75LVPE4410RNQR"
+		(property "Footprint" "SN75LVPE4410RNQR:SN75LVPE4410RNQR"
 			(at 179.07 25.4 0)
 			(effects
 				(font

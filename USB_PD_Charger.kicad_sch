@@ -4904,6 +4904,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 158.75) (xy 111.76 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c4b626-bfa9-4e6c-acf1-91f259d61921")
+	)
+	(wire
+		(pts
 			(xy 53.34 123.19) (xy 50.8 123.19)
 		)
 		(stroke
@@ -9075,6 +9085,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 111.76 158.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56816dfe-8bee-4cbf-8a95-0e2cc47e8544")
+		(property "Reference" "#PWR080"
+			(at 118.11 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 158.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48b7d8ae-b0ab-4d4d-9094-95b90aca42a0")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/fa35204a-fbf7-48de-bc5b-11fc2e29f675"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 220.98 69.85 90)
 		(unit 1)
@@ -12440,7 +12517,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LM3489QMM-NOPB"
+		(property "Footprint" "LM3489QMM-NOPB:LM3489QMM-NOPB"
 			(at 128.27 54.61 0)
 			(effects
 				(font
@@ -12948,7 +13025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS65987DDHRSHR"
+		(property "Footprint" "TPS65987DDHRSHR:TPS65987DDHRSHR"
 			(at 109.22 110.49 0)
 			(effects
 				(font
