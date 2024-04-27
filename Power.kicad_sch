@@ -6604,6 +6604,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C351119"
+			(at 181.61 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4dce8554-d4a1-4f2f-bc1f-20c5a2bb5b74")
 		)
@@ -8100,6 +8109,15 @@
 		)
 		(property "Status" ""
 			(at 181.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C351119"
+			(at 181.61 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13825,6 +13843,15 @@
 		)
 		(property "Status" ""
 			(at 163.83 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C351119"
+			(at 163.83 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
