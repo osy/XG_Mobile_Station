@@ -3657,12 +3657,6 @@
 		(uuid "1916bff2-1acb-4710-9efa-68932eafb2e8")
 	)
 	(junction
-		(at 137.16 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1d09d21b-0d98-42b7-8e13-7e03eef39b6d")
-	)
-	(junction
 		(at 128.27 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4360,16 +4354,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 166.37) (xy 137.16 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30a560b8-7c14-4c87-b09d-93b424dd58cc")
-	)
-	(wire
-		(pts
 			(xy 60.96 33.02) (xy 60.96 35.56)
 		)
 		(stroke
@@ -4377,6 +4361,16 @@
 			(type default)
 		)
 		(uuid "31c78c4d-22c5-4e03-9a4f-291233d7a549")
+	)
+	(wire
+		(pts
+			(xy 109.22 179.07) (xy 111.76 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "334656c6-ac6a-46de-a11c-60735b7518f2")
 	)
 	(wire
 		(pts
@@ -4650,16 +4644,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 176.53) (xy 127 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5710eff3-5d39-409d-88ae-e613830e64b9")
-	)
-	(wire
-		(pts
 			(xy 231.14 46.99) (xy 231.14 49.53)
 		)
 		(stroke
@@ -4687,16 +4671,6 @@
 			(type default)
 		)
 		(uuid "58810764-a161-43e0-a09d-81c908d80b3b")
-	)
-	(wire
-		(pts
-			(xy 127 167.64) (xy 127 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59bf3744-4cdc-41f3-b00d-e381ca31b8bd")
 	)
 	(wire
 		(pts
@@ -5160,16 +5134,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 166.37) (xy 137.16 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9449c756-339d-430c-938c-887a8d0178ac")
-	)
-	(wire
-		(pts
 			(xy 199.39 128.27) (xy 171.45 128.27)
 		)
 		(stroke
@@ -5240,13 +5204,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 179.07) (xy 137.16 179.07)
+			(xy 50.8 138.43) (xy 53.34 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f98b205-02e3-4c9e-bf04-131a6a294f49")
+		(uuid "9fdaff47-d27c-4658-977e-078902a6d1b6")
 	)
 	(wire
 		(pts
@@ -5500,6 +5464,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 176.53) (xy 111.76 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baf2addd-c55b-42fe-8a28-773fb5324027")
+	)
+	(wire
+		(pts
 			(xy 73.66 46.99) (xy 60.96 46.99)
 		)
 		(stroke
@@ -5710,16 +5684,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 176.53) (xy 127 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d424da3c-79c7-4448-90ff-9d7dcce66ec9")
-	)
-	(wire
-		(pts
 			(xy 199.39 125.73) (xy 180.34 125.73)
 		)
 		(stroke
@@ -5797,16 +5761,6 @@
 			(type default)
 		)
 		(uuid "dae81ed1-56e3-4da8-a4b2-e138bb975c49")
-	)
-	(wire
-		(pts
-			(xy 137.16 166.37) (xy 137.16 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd51d2d0-3a34-452f-8269-833c57e53fe6")
 	)
 	(wire
 		(pts
@@ -6298,6 +6252,17 @@
 		)
 		(uuid "46d3b929-88ea-4ce6-91fd-609a7a6de40d")
 	)
+	(label "POWER_EN"
+		(at 50.8 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "529eb997-f5b1-46cb-9800-33070d4f53b9")
+	)
 	(label "BOOT"
 		(at 111.76 123.19 0)
 		(fields_autoplaced yes)
@@ -6352,6 +6317,17 @@
 			(justify right bottom)
 		)
 		(uuid "7f5c8980-07a4-4631-b72b-2e344c0de0b4")
+	)
+	(label "POWER_EN"
+		(at 110.49 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "84081f47-42c2-4327-8f70-1e30574c3f6f")
 	)
 	(label "SPI_MOSI"
 		(at 50.8 166.37 180)
@@ -6496,6 +6472,18 @@
 		)
 		(uuid "feaada3d-bef4-4633-bfd7-43c0ed02e45a")
 	)
+	(hierarchical_label "SDA"
+		(shape bidirectional)
+		(at 111.76 179.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "037ba3ad-bc76-4b80-9816-1625e64b80eb")
+	)
 	(hierarchical_label "CC"
 		(shape input)
 		(at 120.65 168.91 0)
@@ -6519,6 +6507,18 @@
 			(justify left)
 		)
 		(uuid "18f5c0ca-96f4-4ef8-9df9-eb9cfb43bbae")
+	)
+	(hierarchical_label "SCL"
+		(shape bidirectional)
+		(at 111.76 176.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c1f5855-a7e0-4bfb-b045-63ef613396cd")
 	)
 	(hierarchical_label "VBUS"
 		(shape output)
@@ -10271,72 +10271,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 137.16 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c69a131-317b-48c6-9115-208a09fd994a")
-		(property "Reference" "#PWR01"
-			(at 137.16 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 137.16 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 137.16 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1057c9d6-41f3-4f2f-8a02-7a9df5ed3983")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/fa35204a-fbf7-48de-bc5b-11fc2e29f675"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 17.78 185.42 0)
 		(unit 1)
@@ -12078,175 +12012,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 137.16 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "adde5339-2967-4b53-a38b-59f434be8b50")
-		(property "Reference" "R37"
-			(at 139.7 173.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 139.7 176.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 135.382 175.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part_Number" "0402WGF4701TCE"
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vend" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DK_Datasheet_Link" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DK_Detail_Page" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Family" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status" ""
-			(at 137.16 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3bc481dc-c924-435b-b838-0413ac160278")
-		)
-		(pin "1"
-			(uuid "ac87f7d4-c2fb-496f-84ab-3bef60c56f20")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/fa35204a-fbf7-48de-bc5b-11fc2e29f675"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 271.78 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13727,175 +13492,6 @@
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/fa35204a-fbf7-48de-bc5b-11fc2e29f675"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 127 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dea2e84a-7660-4318-8e86-6ab6c62c7aaf")
-		(property "Reference" "R36"
-			(at 129.54 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 129.54 172.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 125.222 171.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part_Number" "0402WGF4701TCE"
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25900"
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vend" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DK_Datasheet_Link" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DK_Detail_Page" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Family" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Status" ""
-			(at 127 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "42f07168-9c42-4853-a9ad-5493414f9455")
-		)
-		(pin "1"
-			(uuid "d5594067-a7ae-42da-82ee-50c70865df40")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/fa35204a-fbf7-48de-bc5b-11fc2e29f675"
-					(reference "R36")
 					(unit 1)
 				)
 			)

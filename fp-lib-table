@@ -21,5 +21,4 @@
   (lib (name "KEYSTONE_8730")(type "KiCad")(uri "${KIPRJMOD}/Footprints/KEYSTONE_8730.pretty")(options "")(descr ""))
   (lib (name "AON7403")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AON7403.pretty")(options "")(descr ""))
   (lib (name "PJ-096H")(type "KiCad")(uri "${KIPRJMOD}/Footprints/PJ-096H.pretty")(options "")(descr ""))
-  (lib (name "0039281083")(type "KiCad")(uri "${KIPRJMOD}/Footprints/0039281083.pretty")(options "")(descr ""))
 )

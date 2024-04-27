@@ -571,10 +571,6 @@
       {
         "netclass": "USB",
         "pattern": "*USB_DFP*_D*"
-      },
-      {
-        "netclass": "PCIe Signal",
-        "pattern": "/PCIe Redriver/RX*"
       }
     ]
   },
@@ -924,6 +920,10 @@
     [
       "a3b2a21f-8ec8-47a2-b22f-af76a539c18d",
       "Power"
+    ],
+    [
+      "ee7d8714-c34c-4773-b74b-c8779559fec9",
+      "MCU"
     ]
   ],
   "text_variables": {}
