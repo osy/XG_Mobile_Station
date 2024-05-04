@@ -4414,16 +4414,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 22.86) (xy 177.8 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60476ce3-fd6f-41f8-ac0f-ed94a68c8547")
-	)
-	(wire
-		(pts
 			(xy 110.49 52.07) (xy 111.76 52.07)
 		)
 		(stroke
@@ -4581,6 +4571,16 @@
 			(type default)
 		)
 		(uuid "731fdec1-ef00-4e3b-a7e0-5c56c5eef59b")
+	)
+	(wire
+		(pts
+			(xy 175.26 22.86) (xy 177.8 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "732a0fe2-d567-4086-bcde-6cbae127da18")
 	)
 	(wire
 		(pts
@@ -6120,17 +6120,6 @@
 		(uuid "241e0dee-17e1-4e16-ae48-4feb7c973e13")
 	)
 	(label "+1V0"
-		(at 198.12 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "264773d6-e313-44a5-a2d2-732a40df084e")
-	)
-	(label "+1V0"
 		(at 20.32 26.67 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6185,17 +6174,6 @@
 		)
 		(uuid "42a6d0fd-c841-40b4-84ad-ee09302e85d3")
 	)
-	(label "USB_DFP3_FLT"
-		(at 166.37 194.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "46733260-4fb6-4eb4-b30f-fa66b016f049")
-	)
 	(label "USB_DFP1_FLT"
 		(at 148.59 189.23 180)
 		(fields_autoplaced yes)
@@ -6205,7 +6183,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5491c558-d796-41ba-9bda-d499c3e0f6e9")
+		(uuid "63b9d0ec-8e12-44c3-aa59-da34a67d0c46")
 	)
 	(label "SSTX3+"
 		(at 120.65 81.28 0)
@@ -6261,6 +6239,17 @@
 			(justify right bottom)
 		)
 		(uuid "849b8bdc-ec33-4e7c-94dc-5012dd3e34c4")
+	)
+	(label "USB_DFP3_FLT"
+		(at 166.37 194.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8724cbaa-5371-4ff9-b7ef-0bf72a80e3c5")
 	)
 	(label "+1V0"
 		(at 76.2 85.09 0)
@@ -6429,6 +6418,18 @@
 			(justify right)
 		)
 		(uuid "088753fa-6247-4fab-9ae8-5a8438d989d1")
+	)
+	(hierarchical_label "USB_DFP1_FLT"
+		(shape input)
+		(at 177.8 22.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0adb9a7e-1beb-4c3e-a9ac-edef88fc1c32")
 	)
 	(hierarchical_label "SCL"
 		(shape bidirectional)
@@ -6837,18 +6838,6 @@
 			(justify right)
 		)
 		(uuid "d7c2173d-3279-4102-94c2-70970ea4be56")
-	)
-	(hierarchical_label "USB_DFP1_FLT"
-		(shape input)
-		(at 177.8 22.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dc0f3c5d-5ea6-4237-8144-75b87d309ca6")
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
@@ -12061,6 +12050,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 198.12 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62d39190-0ad9-4ce8-87d8-5c031e115fe2")
+		(property "Reference" "#PWR0129"
+			(at 198.12 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 198.12 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 198.12 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70498b10-fcec-4d81-8a32-daf88cc1e46c")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
+					(reference "#PWR0129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 266.7 58.42 180)
 		(unit 1)
@@ -12579,73 +12634,6 @@
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 198.12 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85ec2ed3-d595-44a4-b6cb-b37ec4581aa5")
-		(property "Reference" "#FLG09"
-			(at 198.12 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 198.12 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 198.12 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 198.12 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d6cc52d-72e7-44e9-b072-b946722c920b")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
-					(reference "#FLG09")
 					(unit 1)
 				)
 			)
