@@ -87,7 +87,6 @@ void Error_Handler(void);
 #define PCI_12V_EN_GPIO_Port GPIOA
 #define PWR_SW_Pin GPIO_PIN_3
 #define PWR_SW_GPIO_Port GPIOB
-#define PWR_SW_EXTI_IRQn EXTI2_3_IRQn
 #define WAKE_Pin GPIO_PIN_4
 #define WAKE_GPIO_Port GPIOB
 #define PERST_Pin GPIO_PIN_5

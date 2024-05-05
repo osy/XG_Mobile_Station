@@ -61,7 +61,7 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#include "xg_mobile_dock.c"
+extern void main_fsm_iteration(void);
 
 /* USER CODE END 0 */
 
@@ -106,7 +106,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
 
     /* USER CODE BEGIN 3 */
     main_fsm_iteration();
@@ -302,10 +301,13 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LOCK_DET_GPIO_Port, LOCK_DET_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, PWROK_Pin|AC_LOSS_Pin|MCU_IRQ_Pin|PCI_12V_EN_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOA, PWROK_Pin|PCI_12V_EN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, WAKE_Pin|PERST_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOA, AC_LOSS_Pin|MCU_IRQ_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, PWR_SW_Pin|WAKE_Pin|PERST_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(CLKREQ_GPIO_Port, CLKREQ_Pin, GPIO_PIN_RESET);
@@ -338,7 +340,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : CON_DET_Pin PWREN_Pin RST_Pin */
   GPIO_InitStruct.Pin = CON_DET_Pin|PWREN_Pin|RST_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -358,8 +360,9 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PWR_SW_Pin */
   GPIO_InitStruct.Pin = PWR_SW_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(PWR_SW_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : WAKE_Pin PERST_Pin CLKREQ_Pin */

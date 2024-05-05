@@ -164,7 +164,6 @@ void EXTI2_3_IRQHandler(void)
 
   /* USER CODE END EXTI2_3_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(RST_Pin);
-  HAL_GPIO_EXTI_IRQHandler(PWR_SW_Pin);
   /* USER CODE BEGIN EXTI2_3_IRQn 1 */
 
   /* USER CODE END EXTI2_3_IRQn 1 */
