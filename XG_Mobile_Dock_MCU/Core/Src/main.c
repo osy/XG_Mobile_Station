@@ -43,6 +43,8 @@
 SMBUS_HandleTypeDef hsmbus1;
 I2C_HandleTypeDef hi2c2;
 
+TIM_HandleTypeDef htim1;
+
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
@@ -55,6 +57,7 @@ static void MX_GPIO_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_I2C1_SMBUS_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -97,6 +100,7 @@ int main(void)
   MX_I2C2_Init();
   MX_I2C1_SMBUS_Init();
   MX_USART1_UART_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -109,6 +113,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     main_fsm_iteration();
+    __WFI();
   }
   /* USER CODE END 3 */
 }
@@ -243,6 +248,52 @@ static void MX_I2C2_Init(void)
 }
 
 /**
+  * @brief TIM1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM1_Init(void)
+{
+
+  /* USER CODE BEGIN TIM1_Init 0 */
+
+  /* USER CODE END TIM1_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM1_Init 1 */
+
+  /* USER CODE END TIM1_Init 1 */
+  htim1.Instance = TIM1;
+  htim1.Init.Prescaler = 8000;
+  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim1.Init.Period = 1;
+  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim1.Init.RepetitionCounter = 0;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM1_Init 2 */
+
+  /* USER CODE END TIM1_Init 2 */
+
+}
+
+/**
   * @brief USART1 Initialization Function
   * @param None
   * @retval None
@@ -301,20 +352,17 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LOCK_DET_GPIO_Port, LOCK_DET_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, PWROK_Pin|PCI_12V_EN_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, PWROK_Pin|AC_LOSS_Pin|PCI_12V_EN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, AC_LOSS_Pin|MCU_IRQ_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(MCU_IRQ_GPIO_Port, MCU_IRQ_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, PWR_SW_Pin|WAKE_Pin|PERST_Pin, GPIO_PIN_SET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(CLKREQ_GPIO_Port, CLKREQ_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, PWR_SW_Pin|WAKE_Pin|PERST_Pin|CLKREQ_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : LOCK_SW_Pin */
   GPIO_InitStruct.Pin = LOCK_SW_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(LOCK_SW_GPIO_Port, &GPIO_InitStruct);
 
@@ -344,19 +392,26 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PWROK_Pin */
-  GPIO_InitStruct.Pin = PWROK_Pin;
+  /*Configure GPIO pins : PWROK_Pin AC_LOSS_Pin */
+  GPIO_InitStruct.Pin = PWROK_Pin|AC_LOSS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(PWROK_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : AC_LOSS_Pin MCU_IRQ_Pin PCI_12V_EN_Pin */
-  GPIO_InitStruct.Pin = AC_LOSS_Pin|MCU_IRQ_Pin|PCI_12V_EN_Pin;
+  /*Configure GPIO pin : MCU_IRQ_Pin */
+  GPIO_InitStruct.Pin = MCU_IRQ_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(MCU_IRQ_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PCI_12V_EN_Pin */
+  GPIO_InitStruct.Pin = PCI_12V_EN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(PCI_12V_EN_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PWR_SW_Pin */
   GPIO_InitStruct.Pin = PWR_SW_Pin;
