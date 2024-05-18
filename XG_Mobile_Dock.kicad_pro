@@ -571,6 +571,14 @@
       {
         "netclass": "USB",
         "pattern": "*USB_DFP*_D*"
+      },
+      {
+        "netclass": "PCIe Signal",
+        "pattern": "*HSO*"
+      },
+      {
+        "netclass": "PCIe Signal",
+        "pattern": "*HSI*"
       }
     ]
   },
@@ -912,10 +920,6 @@
     [
       "072f0da4-01d9-42e5-a497-e5d835d93a6e",
       "USB C DFPs"
-    ],
-    [
-      "d036ae9a-d1d1-4622-af22-431f93f78728",
-      "PCIe Redriver"
     ],
     [
       "a3b2a21f-8ec8-47a2-b22f-af76a539c18d",

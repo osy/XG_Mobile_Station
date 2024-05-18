@@ -143,141 +143,141 @@
 	(pad "1" smd rect
 		(at 0 0)
 		(size 1.35 4.572)
-		(layers "B.Cu")
-		(thermal_bridge_angle 45)
-		(uuid "eff6fbca-8241-4a3e-bc1e-9957e43a9a41")
-	)
-	(pad "2" smd rect
-		(at 0 0)
-		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "fd03538a-a0d3-4cda-bc92-307c007fd51e")
 	)
-	(pad "3" smd rect
-		(at 2.54 0)
+	(pad "2" smd rect
+		(at 0 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "f66d0a41-26ec-4039-b249-876b87ce3040")
+		(uuid "eff6fbca-8241-4a3e-bc1e-9957e43a9a41")
 	)
-	(pad "4" smd rect
+	(pad "3" smd rect
 		(at 2.54 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "438d3ad5-7a83-466e-8a21-195eac5313bb")
 	)
-	(pad "5" smd rect
-		(at 5.08 0)
+	(pad "4" smd rect
+		(at 2.54 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "cb228132-8f42-4d1b-b45c-eb87d461c0c3")
+		(uuid "f66d0a41-26ec-4039-b249-876b87ce3040")
 	)
-	(pad "6" smd rect
+	(pad "5" smd rect
 		(at 5.08 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "7ca18336-578c-48a3-ae1e-e85ba52e585f")
 	)
-	(pad "7" smd rect
-		(at 7.62 0)
+	(pad "6" smd rect
+		(at 5.08 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "34817471-04ec-4031-9f86-1737671db65e")
+		(uuid "cb228132-8f42-4d1b-b45c-eb87d461c0c3")
 	)
-	(pad "8" smd rect
+	(pad "7" smd rect
 		(at 7.62 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "a3e50452-5c77-4a36-9c4d-86a13c857eaa")
 	)
-	(pad "9" smd rect
-		(at 10.16 0)
+	(pad "8" smd rect
+		(at 7.62 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "17f180ca-d78d-401e-8d95-d777c01d6af3")
+		(uuid "34817471-04ec-4031-9f86-1737671db65e")
 	)
-	(pad "10" smd rect
+	(pad "9" smd rect
 		(at 10.16 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "68ef0800-9d38-44e2-81c3-f8d2bff1e811")
 	)
-	(pad "11" smd rect
-		(at 12.7 0)
+	(pad "10" smd rect
+		(at 10.16 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "927099bc-f616-4c58-ac67-e2c01238464b")
+		(uuid "17f180ca-d78d-401e-8d95-d777c01d6af3")
 	)
-	(pad "12" smd rect
+	(pad "11" smd rect
 		(at 12.7 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "a262411f-fbeb-4f42-882d-8669a4b34046")
 	)
-	(pad "13" smd rect
-		(at 15.24 0)
+	(pad "12" smd rect
+		(at 12.7 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "448059bb-78bc-498a-b1c3-fb41407c3c61")
+		(uuid "927099bc-f616-4c58-ac67-e2c01238464b")
 	)
-	(pad "14" smd rect
+	(pad "13" smd rect
 		(at 15.24 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "fc5628bd-cd14-4403-acf1-ef2736fd595e")
 	)
-	(pad "15" smd rect
-		(at 17.78 0)
+	(pad "14" smd rect
+		(at 15.24 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "15d3acde-3507-4211-9d63-e18943543ac5")
+		(uuid "448059bb-78bc-498a-b1c3-fb41407c3c61")
 	)
-	(pad "16" smd rect
+	(pad "15" smd rect
 		(at 17.78 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "b3693d55-2529-4481-9989-31d86fc86122")
 	)
-	(pad "17" smd rect
-		(at 20.32 0)
+	(pad "16" smd rect
+		(at 17.78 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "75b2d353-47b8-431e-ad05-21ef2ba8d682")
+		(uuid "15d3acde-3507-4211-9d63-e18943543ac5")
 	)
-	(pad "18" smd rect
+	(pad "17" smd rect
 		(at 20.32 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "2c88fa7a-331e-4a6c-8d65-f040ab3402c2")
 	)
-	(pad "19" smd rect
-		(at 22.86 0)
+	(pad "18" smd rect
+		(at 20.32 0)
 		(size 1.35 4.572)
 		(layers "B.Cu")
 		(thermal_bridge_angle 45)
-		(uuid "ef1f7478-6aca-4009-b6f0-490159e6a7b1")
+		(uuid "75b2d353-47b8-431e-ad05-21ef2ba8d682")
 	)
-	(pad "20" smd rect
+	(pad "19" smd rect
 		(at 22.86 0)
 		(size 1.35 4.572)
 		(layers "F.Cu")
 		(thermal_bridge_angle 45)
 		(uuid "8b6ac87b-7b0b-439a-a8ec-596d267224cf")
+	)
+	(pad "20" smd rect
+		(at 22.86 0)
+		(size 1.35 4.572)
+		(layers "B.Cu")
+		(thermal_bridge_angle 45)
+		(uuid "ef1f7478-6aca-4009-b6f0-490159e6a7b1")
 	)
 )
