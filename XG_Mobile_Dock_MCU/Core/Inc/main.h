@@ -83,10 +83,12 @@ void Error_Handler(void);
 #define AC_LOSS_GPIO_Port GPIOA
 #define MCU_IRQ_Pin GPIO_PIN_5
 #define MCU_IRQ_GPIO_Port GPIOA
+#define SYS_ON_Pin GPIO_PIN_6
+#define SYS_ON_GPIO_Port GPIOA
+#define PWR_SW_Pin GPIO_PIN_7
+#define PWR_SW_GPIO_Port GPIOA
 #define PCI_12V_EN_Pin GPIO_PIN_15
 #define PCI_12V_EN_GPIO_Port GPIOA
-#define PWR_SW_Pin GPIO_PIN_3
-#define PWR_SW_GPIO_Port GPIOB
 #define WAKE_Pin GPIO_PIN_4
 #define WAKE_GPIO_Port GPIOB
 #define PERST_Pin GPIO_PIN_5

@@ -11,7 +11,6 @@ typedef enum {
     CABLE_LOCK,
     POWER_OFF,
     POWER_ON,
-    PCIE_RESET,
     CONNECTED,
 } fsm_state_t;
 
@@ -27,7 +26,6 @@ static const char * const gFSMStateStrings[] = {
     [CABLE_LOCK] = "CABLE_LOCK",
     [POWER_OFF] = "POWER_OFF",
     [POWER_ON] = "POWER_ON",
-    [PCIE_RESET] = "PCIE_RESET",
     [CONNECTED] = "CONNECTED",
 };
 
@@ -37,7 +35,6 @@ typedef struct {
     int lock_switch;
     int connector_detect;
     int power_enable;
-    int host_reset;
 } state_t;
 
 static state_t gState;
@@ -53,15 +50,19 @@ int __io_putchar(int ch) {
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     if (GPIO_Pin == RST_Pin) {
-        gState.host_reset = HAL_GPIO_ReadPin(RST_GPIO_Port, RST_Pin) == GPIO_PIN_RESET;
-        printf("Pin changed: RST = %d\n", gState.host_reset);
+        GPIO_PinState reset = HAL_GPIO_ReadPin(RST_GPIO_Port, RST_Pin);
+        // passthrough directly to PERST#
+        HAL_GPIO_WritePin(PERST_GPIO_Port, PERST_Pin, reset);
+        printf("Pin changed: RST = %d\n", reset == GPIO_PIN_RESET);
     } else if (GPIO_Pin == PWREN_Pin) {
         gState.power_enable = HAL_GPIO_ReadPin(PWREN_GPIO_Port, PWREN_Pin) == GPIO_PIN_RESET;
         printf("Pin changed: PWREN = %d\n", gState.power_enable);
     } else {
-        if (!gState.debounce_pins) {
-            HAL_TIM_Base_Start_IT(&htim1);
+        if (gState.debounce_pins) {
+            // reset timer, wait for last bounce
+            HAL_TIM_Base_Stop_IT(&htim1);
         }
+        HAL_TIM_Base_Start_IT(&htim1);
         gState.debounce_pins |= GPIO_Pin;
     }
 }
@@ -86,8 +87,10 @@ void init_gpio_state(state_t *state) {
     printf("CON_DET = %d, ", gState.connector_detect);
     state->power_enable = HAL_GPIO_ReadPin(PWREN_GPIO_Port, PWREN_Pin) == GPIO_PIN_RESET;
     printf("PWREN = %d, ", gState.power_enable);
-    state->host_reset = HAL_GPIO_ReadPin(RST_GPIO_Port, RST_Pin) == GPIO_PIN_RESET;
-    printf("RST = %d\n", gState.host_reset);
+    GPIO_PinState reset = HAL_GPIO_ReadPin(RST_GPIO_Port, RST_Pin);
+    printf("RST = %d, ", reset == GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(PERST_GPIO_Port, PERST_Pin, reset);
+    printf("SYS_ON = %d\n", HAL_GPIO_ReadPin(SYS_ON_GPIO_Port, SYS_ON_Pin) == GPIO_PIN_SET);
 }
 
 void update_cable_led(led_colour_t colour) {
@@ -117,15 +120,6 @@ void update_cable_led(led_colour_t colour) {
     }
 }
 
-void pcie_reset(int enable) {
-    printf("PCIe reset = %d\n", enable);
-    if (enable) {
-        HAL_GPIO_WritePin(PERST_GPIO_Port, PERST_Pin, GPIO_PIN_RESET);
-    } else {
-        HAL_GPIO_WritePin(PERST_GPIO_Port, PERST_Pin, GPIO_PIN_SET);
-    }
-}
-
 void toggle_external_board(void) {
     HAL_GPIO_WritePin(PWR_SW_GPIO_Port, PWR_SW_Pin, GPIO_PIN_RESET);
     HAL_Delay(1000);
@@ -134,8 +128,12 @@ void toggle_external_board(void) {
 
 void turn_power_on() {
     printf("Turning on PCIe power\n");
+    if (HAL_GPIO_ReadPin(SYS_ON_GPIO_Port, SYS_ON_Pin) == GPIO_PIN_SET) {
+        printf("External board already on.\n");
+    } else {
+        toggle_external_board();
+    }
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_SET);
-    toggle_external_board();
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_SET);
 }
 
@@ -143,7 +141,11 @@ void turn_power_off() {
     printf("Turning off PCIe power\n");
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_RESET);
-    toggle_external_board();
+    if (HAL_GPIO_ReadPin(SYS_ON_GPIO_Port, SYS_ON_Pin) == GPIO_PIN_SET) {
+        toggle_external_board();
+    } else {
+        printf("External board already off.\n");
+    }
 }
 
 void transition_state(state_t *state, fsm_state_t next) {
@@ -158,12 +160,6 @@ void transition_state(state_t *state, fsm_state_t next) {
     } else if (next <= CABLE_DETECT && prev > next) {
         update_cable_led(NONE);
     }
-    // PCIe reset
-    if (next == PCIE_RESET) {
-        pcie_reset(1);
-    } else if (prev == PCIE_RESET) {
-        pcie_reset(0);
-    }
     // power off/on
     if (prev > POWER_OFF && next <= POWER_OFF) {
         turn_power_off();
@@ -174,8 +170,10 @@ void transition_state(state_t *state, fsm_state_t next) {
 }
 
 void main_fsm_iteration(void) {
+    fsm_state_t prev = gState.fsm;
+
     //printf("Enter main FSM with state = %s\n", gFSMStateStrings[gState.fsm]);
-    switch (gState.fsm) {
+    switch (prev) {
         case MCU_RESET: {
             init_gpio_state(&gState);
             transition_state(&gState, CABLE_DETECT);
@@ -212,19 +210,7 @@ void main_fsm_iteration(void) {
                 transition_state(&gState, CABLE_LOCK);
             } else if (!gState.power_enable) {
                 transition_state(&gState, POWER_OFF);
-            } else if (gState.host_reset) {
-                transition_state(&gState, PCIE_RESET);
-            }
-            break;
-        }
-        case PCIE_RESET: {
-            if (!gState.connector_detect) {
-                transition_state(&gState, CABLE_DETECT);
-            } else if (!gState.lock_switch) {
-                transition_state(&gState, CABLE_LOCK);
-            } else if (!gState.power_enable) {
-                transition_state(&gState, POWER_OFF);
-            } else if (!gState.host_reset) {
+            } else {
                 transition_state(&gState, CONNECTED);
             }
             break;
@@ -236,8 +222,6 @@ void main_fsm_iteration(void) {
                 transition_state(&gState, CABLE_LOCK);
             } else if (!gState.power_enable) {
                 transition_state(&gState, POWER_OFF);
-            } else if (gState.host_reset) {
-                transition_state(&gState, PCIE_RESET);
             }
             break;
         }
@@ -245,5 +229,8 @@ void main_fsm_iteration(void) {
             printf("Unknown state = %d\n", gState.fsm);
             break;
         }
+    }
+    if (gState.fsm == prev) {
+        __WFI();
     }
 }
