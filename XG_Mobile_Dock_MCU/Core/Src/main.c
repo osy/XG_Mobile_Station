@@ -391,12 +391,19 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PWROK_Pin AC_LOSS_Pin */
-  GPIO_InitStruct.Pin = PWROK_Pin|AC_LOSS_Pin;
+  /*Configure GPIO pin : PWROK_Pin */
+  GPIO_InitStruct.Pin = PWROK_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(PWROK_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : AC_LOSS_Pin */
+  GPIO_InitStruct.Pin = AC_LOSS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(AC_LOSS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : MCU_IRQ_Pin */
   GPIO_InitStruct.Pin = MCU_IRQ_Pin;
@@ -408,7 +415,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : SYS_ON_Pin */
   GPIO_InitStruct.Pin = SYS_ON_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(SYS_ON_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PWR_SW_Pin PCI_12V_EN_Pin */

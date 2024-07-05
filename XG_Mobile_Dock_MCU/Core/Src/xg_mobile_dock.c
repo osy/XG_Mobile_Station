@@ -11,7 +11,6 @@ typedef enum {
     CABLE_LOCK,
     POWER_OFF,
     POWER_ON,
-    CONNECTED,
 } fsm_state_t;
 
 typedef enum {
@@ -26,7 +25,6 @@ static const char * const gFSMStateStrings[] = {
     [CABLE_LOCK] = "CABLE_LOCK",
     [POWER_OFF] = "POWER_OFF",
     [POWER_ON] = "POWER_ON",
-    [CONNECTED] = "CONNECTED",
 };
 
 typedef struct {
@@ -80,6 +78,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     HAL_TIM_Base_Stop_IT(htim);
 }
 
+int is_external_board_on(void) {
+    return HAL_GPIO_ReadPin(SYS_ON_GPIO_Port, SYS_ON_Pin) == GPIO_PIN_SET;
+}
+
 void init_gpio_state(state_t *state) {
     state->lock_switch = HAL_GPIO_ReadPin(LOCK_SW_GPIO_Port, LOCK_SW_Pin) == GPIO_PIN_SET;
     printf("LOCK_SW = %d, ", gState.lock_switch);
@@ -90,7 +92,7 @@ void init_gpio_state(state_t *state) {
     GPIO_PinState reset = HAL_GPIO_ReadPin(RST_GPIO_Port, RST_Pin);
     printf("RST = %d, ", reset == GPIO_PIN_RESET);
     HAL_GPIO_WritePin(PERST_GPIO_Port, PERST_Pin, reset);
-    printf("SYS_ON = %d\n", HAL_GPIO_ReadPin(SYS_ON_GPIO_Port, SYS_ON_Pin) == GPIO_PIN_SET);
+    printf("SYS_ON = %d\n", is_external_board_on());
 }
 
 void update_cable_led(led_colour_t colour) {
@@ -120,32 +122,36 @@ void update_cable_led(led_colour_t colour) {
     }
 }
 
-void toggle_external_board(void) {
-    HAL_GPIO_WritePin(PWR_SW_GPIO_Port, PWR_SW_Pin, GPIO_PIN_RESET);
-    HAL_Delay(1000);
-    HAL_GPIO_WritePin(PWR_SW_GPIO_Port, PWR_SW_Pin, GPIO_PIN_SET);
+void toggle_external_board(int on) {
+    int tries = 5;
+
+    printf("Toggling external power switch.");
+    while (is_external_board_on() != on && tries-- > 0) {
+        printf(".");
+        HAL_Delay(1000);
+        HAL_GPIO_WritePin(PWR_SW_GPIO_Port, PWR_SW_Pin, GPIO_PIN_RESET);
+        HAL_Delay(1000);
+        HAL_GPIO_WritePin(PWR_SW_GPIO_Port, PWR_SW_Pin, GPIO_PIN_SET);
+    }
+    if (tries >= 0) {
+        printf("Done\n");
+    } else {
+        printf("Failed\n");
+    }
 }
 
 void turn_power_on() {
     printf("Turning on PCIe power\n");
-    if (HAL_GPIO_ReadPin(SYS_ON_GPIO_Port, SYS_ON_Pin) == GPIO_PIN_SET) {
-        printf("External board already on.\n");
-    } else {
-        toggle_external_board();
-    }
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_SET);
+    toggle_external_board(1);
 }
 
 void turn_power_off() {
     printf("Turning off PCIe power\n");
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_RESET);
-    if (HAL_GPIO_ReadPin(SYS_ON_GPIO_Port, SYS_ON_Pin) == GPIO_PIN_SET) {
-        toggle_external_board();
-    } else {
-        printf("External board already off.\n");
-    }
+    toggle_external_board(0);
 }
 
 void transition_state(state_t *state, fsm_state_t next) {
@@ -175,6 +181,7 @@ void main_fsm_iteration(void) {
     //printf("Enter main FSM with state = %s\n", gFSMStateStrings[gState.fsm]);
     switch (prev) {
         case MCU_RESET: {
+            toggle_external_board(0);
             init_gpio_state(&gState);
             transition_state(&gState, CABLE_DETECT);
             break;
@@ -204,18 +211,6 @@ void main_fsm_iteration(void) {
             break;
         }
         case POWER_ON: {
-            if (!gState.connector_detect) {
-                transition_state(&gState, CABLE_DETECT);
-            } else if (!gState.lock_switch) {
-                transition_state(&gState, CABLE_LOCK);
-            } else if (!gState.power_enable) {
-                transition_state(&gState, POWER_OFF);
-            } else {
-                transition_state(&gState, CONNECTED);
-            }
-            break;
-        }
-        case CONNECTED: {
             if (!gState.connector_detect) {
                 transition_state(&gState, CABLE_DETECT);
             } else if (!gState.lock_switch) {
