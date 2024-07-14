@@ -3002,6 +3002,18 @@
 		)
 		(uuid "dc969b03-ac2e-4fe5-817a-2e23dfecd504")
 	)
+	(hierarchical_label "PB0"
+		(shape bidirectional)
+		(at 40.64 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e188b737-6ba5-45b5-b491-5684044a5b57")
+	)
 	(hierarchical_label "SCL1"
 		(shape bidirectional)
 		(at 40.64 93.98 180)

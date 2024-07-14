@@ -8593,16 +8593,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 82.55) (xy 116.84 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bafc237-6920-4712-aa4c-ec3013c95be3")
-	)
-	(wire
-		(pts
 			(xy 46.99 67.31) (xy 46.99 74.93)
 		)
 		(stroke
@@ -12378,6 +12368,17 @@
 		)
 		(uuid "53df523e-3e5e-4031-9f6d-485114393c47")
 	)
+	(label "SYS_DET"
+		(at 116.84 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5493cf95-294a-46cd-ba73-d898688dda91")
+	)
 	(label "HSI6P"
 		(at 265.43 30.48 0)
 		(fields_autoplaced yes)
@@ -12421,6 +12422,17 @@
 			(justify left bottom)
 		)
 		(uuid "59f5c9de-e7ff-4c53-af0a-595b61cfe62d")
+	)
+	(label "SYS_DET"
+		(at 158.75 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a57924d-b72a-43d4-8c59-6781b388738e")
 	)
 	(label "HSO5P"
 		(at 198.12 119.38 180)
@@ -19684,7 +19696,7 @@
 	)
 	(sheet
 		(at 137.16 21.59)
-		(size 21.59 33.02)
+		(size 21.59 34.29)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -19704,7 +19716,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 137.16 55.1946 0)
+			(at 137.16 56.4646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19931,6 +19943,16 @@
 				(justify right)
 			)
 			(uuid "2268153b-4ce0-4899-83e4-688619115259")
+		)
+		(pin "PB0" bidirectional
+			(at 158.75 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "69a51832-94c2-4e30-be88-ac298cba658f")
 		)
 		(instances
 			(project "XG_Mobile_Dock"
