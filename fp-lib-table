@@ -3,7 +3,6 @@
   (lib (name "XG_Mobile")(type "KiCad")(uri "${KIPRJMOD}/Footprints/XG_Mobile.pretty")(options "")(descr ""))
   (lib (name "20455-040E-76")(type "KiCad")(uri "${KIPRJMOD}/Footprints/20455-040E-76.pretty")(options "")(descr ""))
   (lib (name "5-5530843-0")(type "KiCad")(uri "${KIPRJMOD}/Footprints/5-5530843-0.pretty")(options "")(descr ""))
-  (lib (name "SAMTEC_PCIE-164-02-F-D-TH-TR")(type "KiCad")(uri "${KIPRJMOD}/Footprints/SAMTEC_PCIE-164-02-F-D-TH-TR.pretty")(options "")(descr ""))
   (lib (name "SOIC127P600X175-8N")(type "KiCad")(uri "${KIPRJMOD}/Footprints/SOIC127P600X175-8N.pretty")(options "")(descr ""))
   (lib (name "TPS62177DQCR")(type "KiCad")(uri "${KIPRJMOD}/Footprints/TPS62177DQCR.pretty")(options "")(descr ""))
   (lib (name "LM3489QMM-NOPB")(type "KiCad")(uri "${KIPRJMOD}/Footprints/LM3489QMM-NOPB.pretty")(options "")(descr ""))
@@ -22,4 +21,5 @@
   (lib (name "AON7403")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AON7403.pretty")(options "")(descr ""))
   (lib (name "PJ-096H")(type "KiCad")(uri "${KIPRJMOD}/Footprints/PJ-096H.pretty")(options "")(descr ""))
   (lib (name "2N7002W")(type "KiCad")(uri "${KIPRJMOD}/Footprints/2N7002W.pretty")(options "")(descr ""))
+  (lib (name "3113-113T")(type "KiCad")(uri "${KIPRJMOD}/Footprints/3113-113T.pretty")(options "")(descr ""))
 )

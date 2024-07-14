@@ -11938,7 +11938,7 @@
 		)
 		(uuid "0ffcf2e7-6eb8-420a-9884-d369c18bed1c")
 	)
-	(label "HSO3N"
+	(label "HSO3P"
 		(at 198.12 93.98 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12103,7 +12103,7 @@
 		)
 		(uuid "2a59fa6f-a715-4788-a0e4-de6190ab7615")
 	)
-	(label "HSO2N"
+	(label "HSO2P"
 		(at 198.12 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12213,7 +12213,7 @@
 		)
 		(uuid "3a0b5933-7b58-4f71-b905-41e90e69f1a5")
 	)
-	(label "HSO3P"
+	(label "HSO3N"
 		(at 198.12 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12455,7 +12455,7 @@
 		)
 		(uuid "5bfc0a0b-32f5-49f4-9f8e-b251c75656b6")
 	)
-	(label "HSO7P"
+	(label "HSO7N"
 		(at 240.03 38.1 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12565,7 +12565,7 @@
 		)
 		(uuid "7540b3f6-2965-4edd-bb0d-d59b464d8abe")
 	)
-	(label "HSO7N"
+	(label "HSO7P"
 		(at 240.03 35.56 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12631,7 +12631,7 @@
 		)
 		(uuid "8429c93d-3aaf-4471-8422-9ee405e8c2a8")
 	)
-	(label "HSO2P"
+	(label "HSO2N"
 		(at 198.12 86.36 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14307,7 +14307,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SAMTEC_PCIE-164-02-F-D-TH-TR:SAMTEC_PCIE-164-02-F-D-TH-TR"
+		(property "Footprint" "3113-113T:CONN-SMD_164P-P1.00-V_3133"
 			(at 252.73 78.74 0)
 			(effects
 				(font
@@ -14345,7 +14345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "3183-10203P1T"
+		(property "Part_Number" "3113-113T"
 			(at 252.73 78.74 0)
 			(effects
 				(font
@@ -14354,7 +14354,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C404116"
+		(property "LCSC" "C404104"
 			(at 252.73 78.74 0)
 			(effects
 				(font
@@ -17950,7 +17950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SAMTEC_PCIE-164-02-F-D-TH-TR:SAMTEC_PCIE-164-02-F-D-TH-TR"
+		(property "Footprint" "3113-113T:CONN-SMD_164P-P1.00-V_3133"
 			(at 210.82 78.74 0)
 			(effects
 				(font
@@ -17988,7 +17988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "3183-10203P1T"
+		(property "Part_Number" "3113-113T"
 			(at 210.82 78.74 0)
 			(effects
 				(font
@@ -17997,7 +17997,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C404116"
+		(property "LCSC" "C404104"
 			(at 210.82 78.74 0)
 			(effects
 				(font
