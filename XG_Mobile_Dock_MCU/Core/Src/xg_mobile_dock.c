@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
+extern I2C_HandleTypeDef hi2c1;
 extern I2C_HandleTypeDef hi2c2;
 extern UART_HandleTypeDef huart1;
 extern TIM_HandleTypeDef htim1;
@@ -12,6 +14,15 @@ typedef enum {
     POWER_OFF,
     POWER_ON,
 } fsm_state_t;
+
+typedef enum {
+    I2C_STATE_IDLE,
+    I2C_STATE_ACCESS_REG,
+    I2C_STATE_ACCESS_SIZE,
+    I2C_STATE_WAIT_DATA,
+    I2C_STATE_SEND_DATA,
+    I2C_STATE_WAIT_ACK,
+} i2c_state_t;
 
 typedef enum {
     NONE,
@@ -33,6 +44,11 @@ typedef struct {
     int lock_switch;
     int connector_detect;
     int power_enable;
+    i2c_state_t i2c;
+    unsigned char i2cBuffer[256];
+    int i2cCmd;
+    int i2cReg;
+    int i2cSize;
 } state_t;
 
 static state_t gState;
@@ -182,6 +198,7 @@ void main_fsm_iteration(void) {
     switch (prev) {
         case MCU_RESET: {
             toggle_external_board(0);
+            HAL_I2C_EnableListen_IT(&hi2c1);
             init_gpio_state(&gState);
             transition_state(&gState, CABLE_DETECT);
             break;
@@ -228,4 +245,101 @@ void main_fsm_iteration(void) {
     if (gState.fsm == prev) {
         __WFI();
     }
+}
+
+/* I2C Handling */
+
+void HAL_I2C_ListenCpltCallback(I2C_HandleTypeDef *hi2c)
+{
+	HAL_I2C_EnableListen_IT(hi2c);
+}
+
+void HAL_I2C_AddrCallback(I2C_HandleTypeDef *hi2c, uint8_t TransferDirection, uint16_t AddrMatchCode)
+{
+	if(TransferDirection == I2C_DIRECTION_TRANSMIT)  // if the master wants to transmit the data
+	{
+        //printf("Got I2C transmit!\n");
+        gState.i2c = I2C_STATE_IDLE;
+        HAL_I2C_Slave_Seq_Receive_IT(hi2c, gState.i2cBuffer, 1, I2C_FIRST_AND_LAST_FRAME);
+	}
+	else
+	{
+        if (gState.i2c == I2C_STATE_SEND_DATA) {
+            gState.i2c = I2C_STATE_WAIT_ACK;
+            HAL_I2C_Slave_Seq_Transmit_IT(hi2c, gState.i2cBuffer, gState.i2cSize, I2C_FIRST_AND_LAST_FRAME);
+        } else {
+            gState.i2c = I2C_STATE_IDLE;
+            printf("I2C: Unexpected read!\n");
+            HAL_I2C_Slave_Seq_Transmit_IT(hi2c, NULL, 0, I2C_FIRST_AND_LAST_FRAME);
+        }
+	}
+}
+
+void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
+{
+    if (gState.i2c == I2C_STATE_IDLE) {
+        gState.i2cCmd = gState.i2cBuffer[0];
+        if (gState.i2cCmd == 0xA0 || gState.i2cCmd == 0xA1) {
+            gState.i2c = I2C_STATE_ACCESS_REG;
+            HAL_I2C_Slave_Seq_Receive_IT(hi2c, gState.i2cBuffer, 1, I2C_NEXT_FRAME);
+        } else if (gState.i2cCmd == 0xA2 || gState.i2cCmd == 0xA3) {
+            gState.i2cReg = 0;
+            if (gState.i2cCmd == 0xA2) {
+                gState.i2cBuffer[0] = 2;
+                gState.i2cSize = 1;
+            } else if (gState.i2cCmd == 0xA3) {
+                gState.i2cBuffer[0] = 1;
+                gState.i2cSize = 1;
+            }
+            gState.i2c = I2C_STATE_SEND_DATA;
+        } else {
+            gState.i2c = I2C_STATE_IDLE;
+            printf("I2C: Unsupported CMD = 0x%02X\n", gState.i2cCmd);
+        }
+    } else if (gState.i2c == I2C_STATE_ACCESS_REG) {
+        gState.i2cReg = gState.i2cBuffer[0];
+        gState.i2c = I2C_STATE_ACCESS_SIZE;
+        HAL_I2C_Slave_Seq_Receive_IT(hi2c, gState.i2cBuffer, 1, I2C_NEXT_FRAME);
+    } else if (gState.i2c == I2C_STATE_ACCESS_SIZE) {
+        gState.i2cSize = gState.i2cBuffer[0];
+        if (gState.i2cCmd == 0xA0) {
+            gState.i2c = I2C_STATE_WAIT_DATA;
+        } else {
+            memset(gState.i2cBuffer, 0, gState.i2cSize); // we don't care about reads
+            gState.i2c = I2C_STATE_SEND_DATA;
+        }
+        HAL_I2C_Slave_Seq_Receive_IT(hi2c, gState.i2cBuffer, gState.i2cSize, I2C_LAST_FRAME);
+    } else if (gState.i2c == I2C_STATE_WAIT_DATA) {
+        printf("I2C: CMD = 0x%02X, reg = 0x%02X, size = %d\n", gState.i2cCmd, gState.i2cReg, gState.i2cSize);
+        printf("I2C: Data = ");
+        for (int i = 0; i < gState.i2cSize; i++) {
+            printf("0x%02X ", gState.i2cBuffer[i]);
+        }
+        printf("\n");
+        gState.i2c = I2C_STATE_IDLE;
+    }
+}
+
+void HAL_I2C_SlaveTxCpltCallback(I2C_HandleTypeDef *hi2c)
+{
+    if (gState.i2c == I2C_STATE_WAIT_ACK) {
+        if (gState.i2cCmd != 0xA3) { // too verbose
+            printf("I2C: CMD = 0x%02X, reg = 0x%02X, size = %d\n", gState.i2cCmd, gState.i2cReg, gState.i2cSize);
+            printf("I2C: Sent data = ");
+            for (int i = 0; i < gState.i2cSize; i++) {
+                printf("0x%02X ", gState.i2cBuffer[i]);
+            }
+            printf("\n");
+        }
+        gState.i2c = I2C_STATE_IDLE;
+    } else {
+        printf("I2C: Unexpected TX complete callback!\n");
+        gState.i2c = I2C_STATE_IDLE;
+    }
+}
+
+void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
+{
+    printf("I2C: Bus error seen!\n");
+    gState.i2c = I2C_STATE_IDLE;
 }
