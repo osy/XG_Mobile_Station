@@ -44,6 +44,7 @@ typedef struct {
     int lock_switch;
     int connector_detect;
     int power_enable;
+    int external_board_detected;
     i2c_state_t i2c;
     unsigned char i2cBuffer[256];
     int i2cCmd;
@@ -100,14 +101,16 @@ int is_external_board_on(void) {
 
 void init_gpio_state(state_t *state) {
     state->lock_switch = HAL_GPIO_ReadPin(LOCK_SW_GPIO_Port, LOCK_SW_Pin) == GPIO_PIN_SET;
-    printf("LOCK_SW = %d, ", gState.lock_switch);
+    printf("LOCK_SW = %d, ", state->lock_switch);
     state->connector_detect = HAL_GPIO_ReadPin(CON_DET_GPIO_Port, CON_DET_Pin) == GPIO_PIN_RESET;
-    printf("CON_DET = %d, ", gState.connector_detect);
+    printf("CON_DET = %d, ", state->connector_detect);
     state->power_enable = HAL_GPIO_ReadPin(PWREN_GPIO_Port, PWREN_Pin) == GPIO_PIN_RESET;
-    printf("PWREN = %d, ", gState.power_enable);
+    printf("PWREN = %d, ", state->power_enable);
     GPIO_PinState reset = HAL_GPIO_ReadPin(RST_GPIO_Port, RST_Pin);
     printf("RST = %d, ", reset == GPIO_PIN_RESET);
     HAL_GPIO_WritePin(PERST_GPIO_Port, PERST_Pin, reset);
+    state->external_board_detected = HAL_GPIO_ReadPin(SYS_DET_GPIO_Port, SYS_DET_Pin) == GPIO_PIN_RESET;
+    printf("SYS_DET = %d, ", state->external_board_detected);
     printf("SYS_ON = %d\n", is_external_board_on());
 }
 
@@ -141,6 +144,9 @@ void update_cable_led(led_colour_t colour) {
 void toggle_external_board(int on) {
     int tries = 5;
 
+    if (!gState.external_board_detected) {
+        return;
+    }
     printf("Toggling external power switch.");
     while (is_external_board_on() != on && tries-- > 0) {
         printf(".");
@@ -197,9 +203,9 @@ void main_fsm_iteration(void) {
     //printf("Enter main FSM with state = %s\n", gFSMStateStrings[gState.fsm]);
     switch (prev) {
         case MCU_RESET: {
-            toggle_external_board(0);
             HAL_I2C_EnableListen_IT(&hi2c1);
             init_gpio_state(&gState);
+            toggle_external_board(0);
             transition_state(&gState, CABLE_DETECT);
             break;
         }

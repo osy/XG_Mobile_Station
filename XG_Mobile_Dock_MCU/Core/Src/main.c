@@ -435,6 +435,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : SYS_DET_Pin */
+  GPIO_InitStruct.Pin = SYS_DET_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(SYS_DET_GPIO_Port, &GPIO_InitStruct);
+
   /*Configure GPIO pins : WAKE_Pin PERST_Pin CLKREQ_Pin */
   GPIO_InitStruct.Pin = WAKE_Pin|PERST_Pin|CLKREQ_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
