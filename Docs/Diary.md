@@ -40,7 +40,8 @@ In 2018, ASUS released the [XG Station Pro](https://www.asus.com/motherboards-co
 
 For no reason other than because we want to repurpose this obsolete piece of hardware, we decided to design a replacement PCB that can interface with the XGM port. The idea is that we can take advantage of the included 330W power supply to power our board and also pass-through power to the original PCB as well. The original PCB will plug in at a right angle and drive the FETs which will power the PCIe graphics card as well as the fans and RGB lights.
 
-[![XG Station PCB, credits: https://egpu.io/asus-xg-station-pro-review-cool-calm-collected/#comment-2453](images/asus-xg-station-pro-main-tbt-board.jpg)](images/asus-xg-station-pro-main-tbt-board.jpg)
+[![XG Station PCB](images/asus-xg-station-pro-main-tbt-board.jpg)](images/asus-xg-station-pro-main-tbt-board.jpg)
+(Photo credits: [itsage](https://egpu.io/asus-xg-station-pro-review-cool-calm-collected/#comment-2453))
 
 To get the positions of the screw holes correct, we used a digital caliper to get a rough measurement of the relative position of all the holes. Next, with trial and error, we printed out the PCB layout, compared the screw holes with a pencil outline, and made fine adjustments until all the holes lined up perfectly.
 
