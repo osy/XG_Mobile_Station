@@ -103,3 +103,19 @@ If you are ordering a low quantity (2-5 units) of PCBA boards and don't mind doi
 * M2.5 screw is highly recommended to secure the cable to the board (through the post in J17).
 * SPI flasher is needed to program the firmware for the TI PD charger. You can also use a RaspberryPi with [Flashrom](https://wiki.flashrom.org/RaspberryPi) for this purpose.
 * ST-LINK v2 is needed to program the STM32 MCU. You can buy a cheap clone from AliExpress for under $10 but note that the pinout listing printed on the dongle may be incorrect.
+
+## Building Firmware
+Check the [readme](../README.md) for directions on flashing.
+
+### MCU
+To build the MCU, you need an GCC ARM toolchain. The easiest way is to install [Homebrew](https://formulae.brew.sh) and run `brew install --cask gcc-arm-embedded`. Then you can run `make` in the `XG_Mobile_Dock_MCU` directory to build the MCU firmware.
+
+Alternatively, if you want to build and develop the firmware, the easiest way is to install Visual Studio Code and the [STM32 extension](https://marketplace.visualstudio.com/items?itemName=bmd.stm32-for-vscode). Then you can open the project directory and run build and debug commands from the IDE.
+
+### TI PD Controller
+1. Download the [TPS65982 Configuration Tool](https://www.ti.com/tool/TPS6598X-CONFIG) and install it.
+2. Project -> Load Project and select "xg_mobile_dock_charger.pjt". This will load the settings for this board.
+3. Binary -> Save Binary and check "Full Binary Image"
+4. Click "Change File" and save it as "XG_Mobile_Dock_Charger.bin".
+5. Press Ok and Ok to save the firmware image.
+6. Some flashers like Flashrom requires the image to be the same size as the flash device. You can run `dd if=/dev/zero of=XG_Mobile_Dock_Charger.bin bs=1 seek=1048575 count=1 conv=notrunc` to ensure this.
