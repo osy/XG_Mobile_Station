@@ -298,6 +298,9 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
                 gState.i2cSize = 1;
             }
             gState.i2c = I2C_STATE_SEND_DATA;
+        } else if (gState.i2cCmd == 0xE6) {
+            gState.i2c = I2C_STATE_IDLE;
+            // ignore this, we might get spammed it
         } else {
             gState.i2c = I2C_STATE_IDLE;
             printf("I2C: Unsupported CMD = 0x%02X\n", gState.i2cCmd);
