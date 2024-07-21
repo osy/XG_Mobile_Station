@@ -50,6 +50,16 @@ XGMActivator is a simple Windows service that tricks ARMORY CRATE software into 
 ### Error 43 or no video output on NVIDIA GPUs
 This is a well known issue with NVIDIA eGPUs. Once the eGPU is installed along with the correct drivers, you will need to install [this script][5].
 
+## References
+Knowledge base for all things XGM gathered from reverse engineering the hardware and software.
+
+* [XGM connector information](Docs/Connector.md)
+* [XGM software interfaces](Docs/Software.md)
+* [MCU command interface](Docs/MCU.md)
+* [PCB design diary](Docs/Diary.md)
+* [Reversed ACPI tables](Docs/ACPI_Annotated.asl)
+* [Reversed BIOS detection](Docs/BIOS_Detect.c)
+
 [1]: https://www.asus.com/motherboards-components/external-graphics-docks/all-series/xg-station-pro/
 [2]: https://www.st.com/en/development-tools/stm32cubeprog.html
 [3]: https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/
