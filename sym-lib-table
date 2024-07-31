@@ -9,7 +9,6 @@
   (lib (name "PCIE-164-02-F-D-TH-TR")(type "KiCad")(uri "${KIPRJMOD}/Symbols/PCIE-164-02-F-D-TH-TR.kicad_sym")(options "")(descr ""))
   (lib (name "XG_Mobile")(type "KiCad")(uri "${KIPRJMOD}/Symbols/XG_Mobile.kicad_sym")(options "")(descr ""))
   (lib (name "VL822-QFN76")(type "KiCad")(uri "${KIPRJMOD}/Symbols/VL822-QFN76.kicad_sym")(options "")(descr ""))
-  (lib (name "AP7331-10WG-7")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AP7331-10WG-7.kicad_sym")(options "")(descr ""))
   (lib (name "SN75LVPE4410RNQR")(type "KiCad")(uri "${KIPRJMOD}/Symbols/SN75LVPE4410RNQR.kicad_sym")(options "")(descr ""))
   (lib (name "5-1775443-8")(type "KiCad")(uri "${KIPRJMOD}/Symbols/5-1775443-8.kicad_sym")(options "")(descr ""))
   (lib (name "AZ1045-04F")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AZ1045-04F.kicad_sym")(options "")(descr ""))
@@ -17,4 +16,5 @@
   (lib (name "KEYSTONE_8730")(type "KiCad")(uri "${KIPRJMOD}/Symbols/KEYSTONE_8730.kicad_sym")(options "")(descr ""))
   (lib (name "AON7403")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AON7403.kicad_sym")(options "")(descr ""))
   (lib (name "PJ-096H")(type "KiCad")(uri "${KIPRJMOD}/Symbols/PJ-096H.kicad_sym")(options "")(descr ""))
+  (lib (name "AP7361-10ER-13")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AP7361-10ER-13.kicad_sym")(options "")(descr ""))
 )

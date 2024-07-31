@@ -8,7 +8,6 @@
   (lib (name "LM3489QMM-NOPB")(type "KiCad")(uri "${KIPRJMOD}/Footprints/LM3489QMM-NOPB.pretty")(options "")(descr ""))
   (lib (name "TPS65987DDHRSHR")(type "KiCad")(uri "${KIPRJMOD}/Footprints/TPS65987DDHRSHR.pretty")(options "")(descr ""))
   (lib (name "5-1775443-8")(type "KiCad")(uri "${KIPRJMOD}/Footprints/5-1775443-8.pretty")(options "")(descr ""))
-  (lib (name "AP7331-10WG-7")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AP7331-10WG-7.pretty")(options "")(descr ""))
   (lib (name "AZ1045-04F")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AZ1045-04F.pretty")(options "")(descr ""))
   (lib (name "IRF7807")(type "KiCad")(uri "${KIPRJMOD}/Footprints/IRF7807.pretty")(options "")(descr ""))
   (lib (name "LM3478MA-NOPB")(type "KiCad")(uri "${KIPRJMOD}/Footprints/LM3478MA-NOPB.pretty")(options "")(descr ""))
@@ -22,4 +21,5 @@
   (lib (name "PJ-096H")(type "KiCad")(uri "${KIPRJMOD}/Footprints/PJ-096H.pretty")(options "")(descr ""))
   (lib (name "2N7002W")(type "KiCad")(uri "${KIPRJMOD}/Footprints/2N7002W.pretty")(options "")(descr ""))
   (lib (name "3113-113T")(type "KiCad")(uri "${KIPRJMOD}/Footprints/3113-113T.pretty")(options "")(descr ""))
+  (lib (name "AP7361-10ER-13")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AP7361-10ER-13.pretty")(options "")(descr ""))
 )
