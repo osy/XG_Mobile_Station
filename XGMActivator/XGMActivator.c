@@ -320,7 +320,7 @@ static int ServiceInstall(void)
 
     if (!StartService(schService, 0, NULL))
     {
-        _tprintf(TEXT("StartService failed (%d)\n", GetLastError()));
+        _tprintf(TEXT("StartService failed (%d)\n"), GetLastError());
     }
 
     CloseServiceHandle(schService);
