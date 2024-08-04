@@ -1,4 +1,4 @@
-The dock was designed from the beginning to be assembled at JLCPCB because of their low cost PCB assembly option. If you have not ordered from JLCPCB before, this guide will help you get started. There are two configurations you can build and some minor differences between them. This will be indicated in the notes. If you wish to replace the board for the XG Station Pro eGPU enclosure, follow the notes regarding XGM Station builds. If you wish to build the board standalone or for a custom enclosure, follow the notes regarding XGM Dock builds.
+The dock was designed from the beginning to be assembled at JLCPCB because of their low cost PCB assembly option. If you have not ordered from JLCPCB before, this guide will help you get started. There are two configurations you can build and some minor differences between them. This will be indicated in the notes. If you wish to replace the board for the XG Station Pro eGPU enclosure, follow this guide. **[If you wish to build a standalone board that runs on a standard ATX power supply, follow the guide linked here.](https://github.com/osy/XG_Mobile_Station/blob/atx-powered/Docs/Build_Guide.md)**
 
 Some options differ for low volume (<= 10) and high volume (>= 100) orders. This is because for low volume, we will optimize for cost and for high volume, we care about reliability (the per-unit cost of some options are reduced at high quantity). If you are ordering some number of units in between, use your best judgment. Note that Economic PCBA is cost effective for low volume because the per-component feeder loading fee is waived for basic components while at high volumes, the per-unit cost of this fee is negligible.
 
@@ -61,9 +61,9 @@ Some options differ for low volume (<= 10) and high volume (>= 100) orders. This
 ## Parts Guide
 
 ### Power Connector
-For XGM Station, you will need part `5-5530843-0` to connect the power board header. For XGM Dock, you will need part `PJ-096H` to connect a barrel jack. In the Bill of Materials screen when placing the PCBA order, you will check the right part if you want to save some money. If you do not know which configuration you will end up using or if you plan to resell it for both configurations, you can check both connectors (just be sure not to plug in both power inputs at once).
+For XGM Station, you will need part `5-5530843-0` to connect the power board header. To test this board without an XG Station Pro power supply, you will need part `PJ-096H` to connect a barrel jack. In the Bill of Materials screen when placing the PCBA order, you will check the right part if you want to save some money. If you do not know which configuration you will end up using or if you plan to resell it for both configurations, you can check both connectors (just be sure not to plug in both power inputs at once).
 
-| Designator | XGM Station | XGM Dock | Flexible |
+| Designator | For XG Station PSU | No XG Station PSU | Flexible |
 |------------|-------------|----------|----------|
 | J7         | ✅           |          | ✅        |
 | J16        |             | ✅        | ✅        |
@@ -85,8 +85,8 @@ The following parts do not have a JLCPCB Part # yet and must be bought from Glob
 
 | Designator | Part Number | Note                                                                           |
 |------------|-------------|--------------------------------------------------------------------------------|
-| J7         | 5-5530843-0 | Only for XGM Station builds                                                    |
-| J16        | PJ-096H     | Only for XGM Dock builds                                                       |
+| J7         | 5-5530843-0 | XG Station Pro PSU connector                                                    |
+| J16        | PJ-096H     | Only to test without PSU                                                       |
 | J17        | 8730        | Search "TERM BINDING POST M2.5 1 PIN PCB" in Global Parts Sourcing to find it. |
 
 ### Cost Reduction
@@ -99,8 +99,7 @@ If you are ordering a low quantity (2-5 units) of PCBA boards and don't mind doi
 
 ## Additional Parts
 * [XG Mobile connector cable](https://www.a-accessories.com/asus-connection-cable-62505-79153.htm)
-* A DC7450 connector power supply if for XGM Dock builds ([e.g. Dell 330W](https://www.dell.com/en-us/shop/dell-330w-74mm-ac-adapter/apd/450-bbqg/pc-accessories))
-* M2.5 screw is highly recommended to secure the cable to the board (through the post in J17).
+* A DC7450 connector power supply if you do not have an XG Station Pro PSU and built the board with the barrel jack connector ([e.g. Dell 330W](https://www.dell.com/en-us/shop/dell-330w-74mm-ac-adapter/apd/450-bbqg/pc-accessories))
 * SPI flasher is needed to program the firmware for the TI PD charger. You can also use a RaspberryPi with [Flashrom](https://wiki.flashrom.org/RaspberryPi) for this purpose.
 * ST-LINK v2 is needed to program the STM32 MCU. You can buy a cheap clone from AliExpress for under $10 but note that the pinout listing printed on the dongle may be incorrect.
 
