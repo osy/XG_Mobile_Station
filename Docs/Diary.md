@@ -81,6 +81,51 @@ This revision fixed the MOSFET issue and also switched the PCIe connector from t
 
 Through extensive testing, we found an issue with the USB PD circuit. If the external power is disconnected while the XGM connector is engaged, the +3V3 rail loses power and therefore the SPI flash loses power. The TI PD chip resets and draws power from the Ally. Since it is not able to read the firmware settings from SPI, it falls back to the default which is to negotiate a power sink role and now the Ally is powering the board. This is undesirable because it could drain the battery. The recommended layout from TI is that the SPI flash is powered by LDO_3V3 output from the TI chip and so we changed the design follow this recommendation.
 
-Another issue discovered was that devices plugged into the USB hub would be disconnected after a few seconds and proceed to go into a detection and disconnect loop. When debugging this issue we found that the cause for this disconnect loop was the +1V0 rail was falling and then coming back up. This was an issue with the LDO and upon close reading of the data sheet we learned that it was overheating and going through thermal shutdown. Once the device cooled down, it reset, then overheats again, and so on. To confirm that overheating was the issue, we used some compressed air to cool the LDO during operation and found the disconnect issue no longer occurs spontaneously. However, when plugging in two devices, disconnection shows up again. We suspect that the LDO was also going into overcurrent protection as well. Since there was no public datasheet available for the VIA USB hub IC, we looked at schematics of other designs online and used a 300mA LDO because that is what others have used. However, upon measuring the current with an ammeter, we found that it can hit above 300mA at peaks. The final solution is to select a 500mA LDO to handle the maximum current and we also chose a physically larger component which should have better heat dissipation. Finally, we increased the copper contact area under the LDO as well.
+Another issue discovered was that devices plugged into the USB hub would be disconnected after a few seconds and proceed to go into a detection and disconnect loop. When debugging this issue we found that the cause for this disconnect loop was the +1V0 rail was falling and then coming back up. This was an issue with the LDO and upon close reading of the data sheet we learned that it was overheating and going through thermal shutdown. Once the device cooled down, it reset, then overheats again, and so on. To confirm that overheating was the issue, we used some compressed air to cool the LDO during operation and found the disconnect issue no longer occurs spontaneously. However, when plugging in two devices, disconnection shows up again. We suspect that the LDO was also going into overcurrent protection as well. Since there was no public datasheet available for the VIA USB hub IC, we looked at schematics of other designs online and used a 300mA LDO because that is what others have used. However, upon measuring the current with an ammeter, we found that it can hit above 500mA at peaks. The final solution is to select a 1A LDO to handle the maximum current and we also chose a physically larger component which should have better heat dissipation. Finally, we increased the copper contact area under the LDO as well.
 
 [![Board current measurement](images/current_measure.jpg)](images/current_measure.jpg)
+
+## Final Build
+Originally, we wanted to fit a 2 slot GPU into the case, which meant we could have daisy chained the PCIe power PCB on the side. However, after getting a NVIDIA RTX 4070 Ti SUPER (a 2.7 slot card), we had to adapt the power connector. The solution was to make a [riser cable](../Power_Riser) for the power connector which allowed us to mount (tape) the power PCB to the top of the enclosure.
+
+[![Power riser cable](images/power_riser_cable.jpg)](images/power_riser_cable.jpg)
+
+Next, we tested the complete setup for stability before stuffing it into the enclosure.
+
+[![Breakout setup](images/breakout.jpg)](images/breakout.jpg)
+
+On the top is the original XG Station Pro PCB which we use to drive the two 8-pin PCIe power connectors that goes into a single 12-pin adapter for the GPU. On the right is the XG Mobile Station rev. 4 board with some modded fixes for the USB overheating issue (we re-wired a larger LDO and stuck on a heat sink for both the LDO and the USB IC). These two are connected by the power riser cable so the 20V power supply can be passed from the custom board to the original board.
+
+[![Completed (no GPU)](images/completed_no_gpu.jpg)](images/completed_no_gpu.jpg)
+
+After doing some stability testing with FurMark and making sure we didn't start any fires with the custom riser cable that can carry 16.5A of current, we fitted the custom board to where the original board used to sit and then with electrical tape, we moved the original board to the top of the case and connected the two with the riser cable.
+
+[![Completed (with GPU)](images/completed_gpu.jpg)](images/completed_gpu.jpg)
+
+The GPU sits snugly inside the enclosure. Due to a design limitation of the XG Station Pro case, it does not fit a 2.7 slot bracket even though it fits a 2.7 slot card. That means the mounting bracket had to be removed which unfortunately means that the card is sitting loose on the PCIe slot and can cause damage if it was ever tipped over. We hope to design a custom stable mounting solution in the future.
+
+[![Completed (back)](images/completed_back.jpg)](images/completed_back.jpg)
+[![Completed (side)](images/completed_side.jpg)](images/completed_side.jpg)
+[![Completed (Ally)](images/completed_ally.jpg)](images/completed_ally.jpg)
+
+### Performance
+We are able to get PCIe 4.0 x4 speeds meaning that it will perform similar to an OCuLink x4 setup.
+
+[![GPU-Z](images/gpuz_4070_ti_super.png)](images/gpuz_4070_ti_super.png)
+[![Timespy](images/timespy_4070_ti_super.png)](images/timespy_4070_ti_super.png)
+
+Some context for the Timespy graphics score (note that real world performance will often differ from benchmarks):
+
+* It is 4% lower than the average score for 4070 Ti SUPER
+* It is 15% higher than the score for the XG Mobile 4090
+* It is 26% higher than the same GPU connected to an Ally X through Thunderbolt
+
+### Thermals
+The XG Station Pro's power supply is rated for 330W and the Ally charging maxes out at 60W so realistically we have 270W for the GPU (or less if USB devices are connected). Although for short bursts, it seems that the power supply was able to drive upwards of 380W without issue, that may be dangerous for long term use. We decided to undervolt the 4070 Ti SUPER to 265W which reduced performance by about 1.5%.
+
+The XG Station Pro has two case fans but we removed one of them for space issues and we kept the other one disconnected in order to reduce power consumption (and because the fan sit behind the GPU's backplate). As a result, the case fans were not used.
+
+At 265W, we ran FurMark for 45 minutes and there was no thermal throttling. The GPU temperatures stabilized at 70C while the outside of the case got to 47C. The power supply was around 38C. Ambient temperature was 25C.
+
+## Remaining Issue
+Although this project is considered "finished", there is still an unresolved issue with the USB hub. It seems that only USB 2.0 works and that many USB 3.0 devices error out. Additionally, we were made aware of the fact that the VL822-Q7 has been discontinued and will not be available for new purchase at JLCPCB. This means that one of the first things to do in a follow up project would be to replace the VL822-Q7 with either a newer (and properly documented) chip or to just pass through the USB signals directly to a port where an external charging hub can be used.
