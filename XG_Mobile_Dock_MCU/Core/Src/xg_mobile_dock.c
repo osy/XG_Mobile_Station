@@ -166,14 +166,12 @@ void turn_power_on() {
     printf("Turning on PCIe power\n");
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_SET);
-    toggle_external_board(1);
 }
 
 void turn_power_off() {
     printf("Turning off PCIe power\n");
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_RESET);
-    toggle_external_board(0);
 }
 
 void transition_state(state_t *state, fsm_state_t next) {
@@ -183,10 +181,12 @@ void transition_state(state_t *state, fsm_state_t next) {
     // update cable LED
     if (next == CABLE_LOCK) {
         update_cable_led(WHITE);
+        toggle_external_board(1);
     } else if (next == POWER_OFF && prev < next) {
         update_cable_led(RED);
     } else if (next <= CABLE_DETECT && prev > next) {
         update_cable_led(NONE);
+        toggle_external_board(0);
     }
     // power off/on
     if (prev > POWER_OFF && next <= POWER_OFF) {
