@@ -22,4 +22,6 @@
   (lib (name "2N7002W")(type "KiCad")(uri "${KIPRJMOD}/Footprints/2N7002W.pretty")(options "")(descr ""))
   (lib (name "3113-113T")(type "KiCad")(uri "${KIPRJMOD}/Footprints/3113-113T.pretty")(options "")(descr ""))
   (lib (name "AP7361-10ER-13")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AP7361-10ER-13.pretty")(options "")(descr ""))
+  (lib (name "1-1775099-3")(type "KiCad")(uri "${KIPRJMOD}/Footprints/1-1775099-3.pretty")(options "")(descr ""))
+  (lib (name "3-1775099-2")(type "KiCad")(uri "${KIPRJMOD}/Footprints/3-1775099-2.pretty")(options "")(descr ""))
 )
