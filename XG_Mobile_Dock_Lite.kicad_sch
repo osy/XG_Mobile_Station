@@ -5500,108 +5500,6 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_Pad_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "PCIE-164-02-F-D-TH-TR:PCIE-164-02-F-D-TH-TR"
 			(pin_names
 				(offset 1.016)
@@ -9313,12 +9211,6 @@
 		(uuid "49633803-322a-4104-80a4-6cf706027d94")
 	)
 	(junction
-		(at 251.46 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4b75a5f9-5a51-43a6-8342-72d15889370e")
-	)
-	(junction
 		(at 21.59 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9413,12 +9305,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6dce9c45-e534-40f3-8601-6dfd7df586c5")
-	)
-	(junction
-		(at 222.25 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6ebe3cb6-2a6f-4c68-925b-5b7d1678c0b9")
 	)
 	(junction
 		(at 82.55 69.85)
@@ -9547,22 +9433,10 @@
 		(uuid "a23d3c07-d54c-4f91-8cab-c3f4a86ea584")
 	)
 	(junction
-		(at 237.49 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a329dbff-d190-452e-9904-6ad0cba15a54")
-	)
-	(junction
 		(at 231.14 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a7bdea9a-7aae-4d82-bed6-d89cb47a7282")
-	)
-	(junction
-		(at 245.11 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a862a2c9-52ca-41cf-80b4-8c5d67935e41")
 	)
 	(junction
 		(at 273.05 119.38)
@@ -9587,12 +9461,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad3cf7de-0d22-4225-85cb-11069692a3d4")
-	)
-	(junction
-		(at 229.87 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad8d1f07-3d5e-4292-b8b7-c513a0a973a2")
 	)
 	(junction
 		(at 172.72 78.74)
@@ -9757,12 +9625,6 @@
 		(uuid "debbe179-f377-43db-a69b-0ad9d0be1caf")
 	)
 	(junction
-		(at 214.63 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df11a8d8-71ff-4f68-9eb5-2aa0d0180e70")
-	)
-	(junction
 		(at 273.05 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9851,16 +9713,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ffce4e3b-38e2-425a-a3f8-d4c3c452c0f5")
-	)
-	(wire
-		(pts
-			(xy 214.63 156.21) (xy 222.25 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01332507-0057-4da6-b7e4-baf51e71709b")
 	)
 	(wire
 		(pts
@@ -10264,7 +10116,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 156.21) (xy 251.46 158.75)
+			(xy 251.46 153.67) (xy 251.46 158.75)
 		)
 		(stroke
 			(width 0)
@@ -10734,16 +10586,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 156.21) (xy 229.87 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40c1ba75-5a04-41c7-b31e-2b416b02c47c")
-	)
-	(wire
-		(pts
 			(xy 189.23 33.02) (xy 189.23 30.48)
 		)
 		(stroke
@@ -10851,16 +10693,6 @@
 			(type default)
 		)
 		(uuid "49963f0c-0774-42a7-afcd-6944e1dc46e7")
-	)
-	(wire
-		(pts
-			(xy 229.87 156.21) (xy 237.49 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a248a39-6b18-4e1f-9ad6-496411b4a4cb")
 	)
 	(wire
 		(pts
@@ -11191,16 +11023,6 @@
 			(type default)
 		)
 		(uuid "633abf7e-03dc-4e15-9b19-257ef42857c0")
-	)
-	(wire
-		(pts
-			(xy 237.49 156.21) (xy 245.11 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63a42159-d607-4c45-97ab-0fba799fb01e")
 	)
 	(wire
 		(pts
@@ -11901,16 +11723,6 @@
 			(type default)
 		)
 		(uuid "94f482c9-a1e1-47fd-b99d-bc32e94a8d6c")
-	)
-	(wire
-		(pts
-			(xy 245.11 156.21) (xy 251.46 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9647b19a-1fc3-4f4e-bd84-d5c541380a02")
 	)
 	(wire
 		(pts
@@ -12834,16 +12646,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 156.21) (xy 214.63 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7971952-0c83-4f7c-8724-b07b56366c3a")
-	)
-	(wire
-		(pts
 			(xy 57.15 163.83) (xy 59.69 163.83)
 		)
 		(stroke
@@ -13161,16 +12963,6 @@
 			(type default)
 		)
 		(uuid "f2be47cf-6966-410d-9890-4a226fc2b812")
-	)
-	(wire
-		(pts
-			(xy 251.46 153.67) (xy 251.46 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f422d955-a316-4a44-8ca7-eb1704c6d8ea")
 	)
 	(wire
 		(pts
@@ -14979,7 +14771,7 @@
 			(uuid "9ab832bd-4b46-470c-8b96-d653fd9d2f2c")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR03")
 					(unit 1)
@@ -15154,7 +14946,7 @@
 			(uuid "9ec6c9e6-cd93-484b-af42-4ddef05c1653")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "TP3")
 					(unit 1)
@@ -15220,7 +15012,7 @@
 			(uuid "25f1d981-63d2-499b-81af-1c9692a1cbad")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR082")
 					(unit 1)
@@ -15365,7 +15157,7 @@
 			(uuid "0643a438-afad-46cd-8c96-96c87e9865b1")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J17")
 					(unit 1)
@@ -15540,7 +15332,7 @@
 			(uuid "094cecbf-a3b6-4cf0-867e-ed67344cd1a7")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "TP4")
 					(unit 1)
@@ -15606,7 +15398,7 @@
 			(uuid "97864a94-7815-476c-b5e6-94039bf47900")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR086")
 					(unit 1)
@@ -16217,7 +16009,7 @@
 			(uuid "e3282925-9658-4c86-a10e-260715055e4d")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J4")
 					(unit 2)
@@ -16392,7 +16184,7 @@
 			(uuid "84946afb-0443-4905-8490-de416b5bc5d6")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "TP12")
 					(unit 1)
@@ -16459,7 +16251,7 @@
 			(uuid "e904c071-cde3-4ce8-9a76-04818d560cf0")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#FLG011")
 					(unit 1)
@@ -16723,7 +16515,7 @@
 			(uuid "9028557d-a492-4ce4-b2c9-ba739dd69e88")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J5")
 					(unit 1)
@@ -16749,7 +16541,7 @@
 				)
 			)
 		)
-		(property "Value" "1-1775099-3"
+		(property "Value" "39300240"
 			(at 69.85 130.81 0)
 			(effects
 				(font
@@ -16757,7 +16549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "1-1775099-3:1-1775099-3"
+		(property "Footprint" "39300240:CON_39300240"
 			(at 69.85 148.59 0)
 			(effects
 				(font
@@ -16785,116 +16577,6 @@
 				(hide yes)
 			)
 		)
-		(property "Comment" "1-1775099-3"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MF" "TE Connectivity"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Product_Type" "Connector"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\nConn Power PL 24 POS 4.2mm Solder ST Thru-Hole 24 Terminal 1 Port Box/Tray\n"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/1-1775099-3/TE+Connectivity+AMP+Connectors/view-part/?ref=eda"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "G"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1-1775099-3/TE+Connectivity+AMP+Connectors/view-part/?ref=snap"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "1-1775099-3"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "Number_of_Positions" "24"
 			(at 69.85 148.59 0)
 			(effects
@@ -16905,37 +16587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Availability" "In Stock"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Centerline_Pitch" "4.2 mm[.165 in]"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "TE Connectivity"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Part_Number" "1-1775099-3"
+		(property "Part_Number" "39300240"
 			(at 69.85 148.59 0)
 			(effects
 				(font
@@ -16944,7 +16596,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3250053"
+		(property "LCSC" "C492361"
 			(at 69.85 148.59 0)
 			(effects
 				(font
@@ -17026,7 +16678,7 @@
 			(uuid "62571a09-d0b4-4e2d-96b7-24c54209cb19")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J13")
 					(unit 1)
@@ -17092,7 +16744,7 @@
 			(uuid "bc8e0999-98c3-4082-92ed-d95c0e6b270f")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR013")
 					(unit 1)
@@ -17159,7 +16811,7 @@
 			(uuid "62943947-104d-47fd-acda-0868890e7d9e")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR011")
 					(unit 1)
@@ -17438,7 +17090,7 @@
 			(uuid "5120e5ce-0575-4b0b-ba3b-3c12e46ce24e")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J1")
 					(unit 1)
@@ -17505,7 +17157,7 @@
 			(uuid "16f4dba2-608c-4635-a858-74a8a4a53ef8")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR05")
 					(unit 1)
@@ -17683,7 +17335,7 @@
 			(uuid "4fdc92d5-d1a0-4b87-ab68-73065b1ea1fa")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "C37")
 					(unit 1)
@@ -17858,7 +17510,7 @@
 			(uuid "9af99901-737f-407d-959d-5d735bdd4fa1")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "TP5")
 					(unit 1)
@@ -18281,7 +17933,7 @@
 			(uuid "c5f7d8bb-9cd4-4c24-a2fe-64987361496b")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J3")
 					(unit 1)
@@ -18705,7 +18357,7 @@
 			(uuid "636f3cad-088b-4597-92ce-5909d45720c3")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J2")
 					(unit 1)
@@ -18932,7 +18584,7 @@
 			(uuid "a5f5e5f5-c639-4a6a-8799-812a7ca30f6f")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "D2")
 					(unit 1)
@@ -18998,103 +18650,9 @@
 			(uuid "c12c7597-96bd-4e43-9a95-a9d8b01aa91c")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR081")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 222.25 153.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e72b945-9312-4952-a275-c0c1593baa03")
-		(property "Reference" "H3"
-			(at 224.79 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 224.79 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "XG_Mobile:Hole_200mil"
-			(at 222.25 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 222.25 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 222.25 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 222.25 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 222.25 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "38a568ef-fd66-4945-bc5a-884a703e86a4")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
-					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -19159,7 +18717,7 @@
 			(uuid "43163878-4061-4031-8933-e3ac4b4de793")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR09")
 					(unit 1)
@@ -19225,7 +18783,7 @@
 			(uuid "1fd714d1-f5ec-4078-8296-4a8e0972f258")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR077")
 					(unit 1)
@@ -19291,7 +18849,7 @@
 			(uuid "f24f52c5-3ada-44f1-b3c3-22ca53be36b1")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR014")
 					(unit 1)
@@ -19357,7 +18915,7 @@
 			(uuid "fb24e40b-e503-4440-898b-84777768bf2f")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR079")
 					(unit 1)
@@ -19532,7 +19090,7 @@
 			(uuid "31a1eb72-aef3-44e5-b0cf-cc677aa2f209")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "TP2")
 					(unit 1)
@@ -19759,7 +19317,7 @@
 			(uuid "a4d27add-6ad3-4aae-8bef-8021443c35ef")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "D3")
 					(unit 1)
@@ -19825,7 +19383,7 @@
 			(uuid "9b8ec23e-d6cb-44bd-bee6-502ca8589328")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR083")
 					(unit 1)
@@ -19891,7 +19449,7 @@
 			(uuid "ebd61df4-0cbb-4cb7-9608-64d2d9bae37e")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR085")
 					(unit 1)
@@ -19957,7 +19515,7 @@
 			(uuid "6d1f582c-f19c-4021-82a2-abdce1a01b90")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR0118")
 					(unit 1)
@@ -20024,103 +19582,9 @@
 			(uuid "86d7e874-03a1-43dc-a378-58c228ccf7e4")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 214.63 153.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4d53074-242e-4b39-a9d0-ea0b5f6cc689")
-		(property "Reference" "H2"
-			(at 217.17 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 217.17 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "XG_Mobile:Hole_200mil"
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ff757d8-84a0-4b1c-a2fe-05ae2b030446")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
-					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -20185,7 +19649,7 @@
 			(uuid "f33a0934-a5fb-4e80-950d-9acde1efd9a0")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#FLG012")
 					(unit 1)
@@ -20250,7 +19714,7 @@
 			(uuid "4fc39f7d-73c0-494b-9ccb-f3dc05d6b4dd")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR016")
 					(unit 1)
@@ -20315,7 +19779,7 @@
 			(uuid "50f2e3a1-9935-43c3-b790-46bed4f12d2f")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR015")
 					(unit 1)
@@ -20382,103 +19846,9 @@
 			(uuid "2e2dd22d-eb0b-4f82-88af-508051e3ce74")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 207.01 153.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce20a757-596b-4d69-bc3e-70340b18e5db")
-		(property "Reference" "H1"
-			(at 209.55 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 209.55 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "XG_Mobile:Hole_200mil"
-			(at 207.01 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 207.01 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 207.01 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 207.01 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 207.01 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 207.01 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82f6f5e6-68dd-44c0-8389-c43863fd14af")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
-					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -20543,7 +19913,7 @@
 			(uuid "9ecb0777-afc5-4020-8c9c-130ff7d80231")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR02")
 					(unit 1)
@@ -20610,7 +19980,7 @@
 			(uuid "c83a764c-0d45-4548-944e-291f92cda318")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR06")
 					(unit 1)
@@ -20677,7 +20047,7 @@
 			(uuid "3fac970f-5f71-42cf-808a-0142a264c23e")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR08")
 					(unit 1)
@@ -20743,7 +20113,7 @@
 			(uuid "612424bc-91aa-4a17-b1aa-2b32fab1eab6")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR0100")
 					(unit 1)
@@ -20808,7 +20178,7 @@
 			(uuid "fe32d826-10fa-4f78-9ddd-357f0b0b9b64")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR04")
 					(unit 1)
@@ -21419,7 +20789,7 @@
 			(uuid "e3282925-9658-4c86-a10e-260715055e4e")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J4")
 					(unit 1)
@@ -21594,7 +20964,7 @@
 			(uuid "50fa26a7-b5f2-4106-a225-adef65ad96d5")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "TP11")
 					(unit 1)
@@ -21620,7 +20990,7 @@
 				)
 			)
 		)
-		(property "Value" "3-1775099-2"
+		(property "Value" "469911008"
 			(at 34.29 171.45 0)
 			(effects
 				(font
@@ -21628,7 +20998,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3-1775099-2:317750992"
+		(property "Footprint" "469911008:CON_469911008"
 			(at 40.64 271.45 0)
 			(effects
 				(font
@@ -21638,7 +21008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1775099&DocType=Customer+Drawing&DocLang=English"
+		(property "Datasheet" ""
 			(at 40.64 371.45 0)
 			(effects
 				(font
@@ -21648,7 +21018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Connector Header Through Hole 8 position 0.165\" (4.20mm)"
+		(property "Description" ""
 			(at 24.13 176.53 0)
 			(effects
 				(font
@@ -21657,27 +21027,7 @@
 				(hide yes)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 24.13 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "TE"
-			(at 24.13 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Part_Number" "3-1775099-2"
+		(property "Part_Number" "469911008"
 			(at 24.13 176.53 0)
 			(effects
 				(font
@@ -21686,77 +21036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "13"
-			(at 40.64 571.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 40.64 671.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "3-1775099-2"
-			(at 40.64 771.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "571-3-1775099-2"
-			(at 40.64 871.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/3-1775099-2?qs=FRrguYyK0tw7qcDXv%2FD8Kg%3D%3D"
-			(at 40.64 971.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 40.64 1071.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 40.64 1171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17582043"
+		(property "LCSC" "C17470577"
 			(at 24.13 176.53 0)
 			(effects
 				(font
@@ -21790,7 +21070,7 @@
 			(uuid "46698459-15df-4b53-9b1e-512926cce294")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "J14")
 					(unit 1)
@@ -21986,291 +21266,9 @@
 			(uuid "7fa2333a-3527-4a36-8db4-2b2f0caf6af2")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "R63")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 229.87 153.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e72d7faf-8b43-4985-9d29-09a7344bd478")
-		(property "Reference" "H4"
-			(at 232.41 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 232.41 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "XG_Mobile:Hole_200mil"
-			(at 229.87 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 229.87 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 229.87 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 229.87 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 229.87 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 229.87 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a2e29281-6435-43ca-ba2b-8d0522123ef0")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 245.11 153.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e84990c5-7fa1-49f0-a109-dc798d36a06b")
-		(property "Reference" "H6"
-			(at 247.65 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 247.65 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "XG_Mobile:Hole_200mil"
-			(at 245.11 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 245.11 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 245.11 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 245.11 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 245.11 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 245.11 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80a6c164-5e1f-4e25-95c1-391e4c4989f9")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
-					(reference "H6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 237.49 153.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e86dfae6-a6d7-4c95-8dc4-a0d08042361a")
-		(property "Reference" "H5"
-			(at 240.03 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 240.03 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "XG_Mobile:Hole_200mil"
-			(at 237.49 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 237.49 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 237.49 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 237.49 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 237.49 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 237.49 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ee957771-1dc8-4cbe-90a8-c8242d8f8181")
-		)
-		(instances
-			(project "XG_Mobile_Dock"
-				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
-					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -22334,7 +21332,7 @@
 			(uuid "4d7129a5-0651-40fc-bd14-e51a23e1bb5a")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR084")
 					(unit 1)
@@ -22447,7 +21445,7 @@
 			(uuid "d9c59132-b73b-4f51-bb18-5e2278d96311")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "SW1")
 					(unit 1)
@@ -22622,7 +21620,7 @@
 			(uuid "eff4eb34-ef3f-4341-a4e3-ce58db2419c2")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "TP6")
 					(unit 1)
@@ -22689,7 +21687,7 @@
 			(uuid "313d5445-a615-4d90-b9af-894f455d21e5")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR010")
 					(unit 1)
@@ -22754,7 +21752,7 @@
 			(uuid "33e7cdad-9f10-4757-9299-e07fa7c24dea")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(reference "#PWR087")
 					(unit 1)
@@ -23023,7 +22021,7 @@
 			(uuid "69a51832-94c2-4e30-be88-ac298cba658f")
 		)
 		(instances
-			(project "XG_Mobile_Dock"
+			(project "XG_Mobile_Dock_Lite"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
 					(page "7")
 				)
