@@ -102,11 +102,21 @@ After doing some stability testing with FurMark and making sure we didn't start 
 
 [![Completed (with GPU)](images/completed_gpu.jpg)](images/completed_gpu.jpg)
 
-The GPU sits snugly inside the enclosure. Due to a design limitation of the XG Station Pro case, it does not fit a 2.7 slot bracket even though it fits a 2.7 slot card. That means the mounting bracket had to be removed which unfortunately means that the card is sitting loose on the PCIe slot and can cause damage if it was ever tipped over. We hope to design a custom stable mounting solution in the future.
+The GPU sits snugly inside the enclosure. Due to a design limitation of the XG Station Pro case, it does not fit a 2.7 slot bracket even though it fits a 2.7 slot card. That means the mounting bracket had to be removed which unfortunately means that the card is sitting loose on the PCIe slot and can cause damage if it was ever tipped over.
 
 [![Completed (back)](images/completed_back.jpg)](images/completed_back.jpg)
 [![Completed (side)](images/completed_side.jpg)](images/completed_side.jpg)
 [![Completed (Ally)](images/completed_ally.jpg)](images/completed_ally.jpg)
+
+The last part of this build was to find a replacement mounting bracket which can accommodate the case as well as the XGM cable.
+
+[![IO shield modded](images/io_shield.jpg)](images/io_shield.jpg)
+
+We removed the bracket from a PNY 3050 because it had the same mounting screws as the 4070 Ti SUPER. Next, we used pliers to remove the right side (which protruded a little) and create a hole large enough to fit the XGM cable.
+
+[![IO shield modded](images/final_back.jpg)](images/final_back.jpg)
+
+With the mounting bracket installed, the GPU fits securely inside the enclosure and the cable is also protected against accidental pulls.
 
 ### Performance
 We are able to get PCIe 4.0 x4 speeds meaning that it will perform similar to an OCuLink x4 setup.
