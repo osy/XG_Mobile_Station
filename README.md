@@ -1,15 +1,21 @@
-XG Mobile Station
-=================
+XG Mobile Dock
+==============
+This open source hardware allows you to connect any PCIe card to an ASUS ROG device with the XG Mobile connector.
+
 [![Board 3D model](Docs/images/board-3d.png)](Docs/images/board-3d.png)
 
-This open source hardware allows you to connect any PCIe card to an ASUS ROG device with the XG Mobile connector. It is intended to be a drop-in replacement PCB for the [XG Station Pro Thunderbolt 3 eGPU dock][1] but can also be used standalone with an external power adapter.
+The standard variant is a drop-in replacement PCB for the [XG Station Pro Thunderbolt 3 eGPU dock][1]. It contains a built in USB 3.1 Gen 2 hub and a 100W USB PD charger.
+
+[![Board 3D model](Docs/images/board-lite-3d.png)](Docs/images/board-lite-3d.png)
+
+The lite variant is a drop-in replacement PCB for the [ADT-UT3G][6]. It requires a standard ATX power supply and passes through the USB to an external port.
 
 ## Features
 * PCIe 4.0 x8 support for 2022/2023 ROG Flow
 * PCIe 4.0 x4 support for 2023 ROG Ally
 * MCU handling cable detection and LEDs
-* 100W USB PD charger
-* 2 USB-C ports connected to a USB 3.1 Gen 2 hub
+* 100W USB PD charger (standard variant)
+* 2 USB-C ports connected to a USB 3.1 Gen 2 hub (standard variant)
 
 ## Getting Started
 1. [Build the PCB](Docs/Build_Guide.md)
@@ -50,6 +56,9 @@ XGMActivator is a simple Windows service that tricks ARMORY CRATE software into 
 ### Error 43 or no video output on NVIDIA GPUs
 This is a well known issue with NVIDIA eGPUs. Once the eGPU is installed along with the correct drivers, you will need to install [this script][5].
 
+### PCIe is only getting 3.0 speeds
+You need to restart your device. For some reason, hot plugging sometimes results in 3.0 speeds.
+
 ## References
 Knowledge base for all things XGM gathered from reverse engineering the hardware and software.
 
@@ -65,3 +74,4 @@ Knowledge base for all things XGM gathered from reverse engineering the hardware
 [3]: https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/
 [4]: https://pinout.xyz
 [5]: https://egpu.io/nvidia-error43-fixer
+[6]: https://www.adt.link/product/UT3G.html
