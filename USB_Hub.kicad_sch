@@ -3941,6 +3941,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 33.02) (xy 177.8 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33add753-cafe-4069-bec8-50f05bd88de4")
+	)
+	(wire
+		(pts
 			(xy 156.21 149.86) (xy 156.21 156.21)
 		)
 		(stroke
@@ -5031,6 +5041,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 38.1) (xy 177.8 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96e517b4-a487-41e2-aec2-efad01f78758")
+	)
+	(wire
+		(pts
 			(xy 110.49 99.06) (xy 110.49 100.33)
 		)
 		(stroke
@@ -5531,6 +5551,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 30.48) (xy 177.8 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d09227be-315b-44cb-9b4b-563783849f0c")
+	)
+	(wire
+		(pts
 			(xy 175.26 78.74) (xy 187.96 78.74)
 		)
 		(stroke
@@ -5978,6 +6008,16 @@
 			(type default)
 		)
 		(uuid "fa4945a4-85bd-444d-9dfd-10d1095f3641")
+	)
+	(wire
+		(pts
+			(xy 175.26 35.56) (xy 177.8 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa9405a2-8251-49a1-8a5c-46ae26924a39")
 	)
 	(wire
 		(pts
@@ -6490,6 +6530,18 @@
 		)
 		(uuid "ff3c6ba2-7855-4dee-b589-56a97993dbc7")
 	)
+	(hierarchical_label "SCLK"
+		(shape input)
+		(at 177.8 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "00dc8f55-2d9b-4c66-b716-f9d3e88dd829")
+	)
 	(hierarchical_label "USB_DFP0_DN"
 		(shape input)
 		(at 109.22 43.18 180)
@@ -6718,6 +6770,30 @@
 		)
 		(uuid "4d50fcae-55a6-4142-8e2d-b24f7a74705a")
 	)
+	(hierarchical_label "MISO"
+		(shape output)
+		(at 177.8 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "540ab81d-348d-4705-8dd5-1bef980b6d7e")
+	)
+	(hierarchical_label "MOSI"
+		(shape input)
+		(at 177.8 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5556a758-e337-4d84-b4a8-91fb9fb61cc5")
+	)
 	(hierarchical_label "USB_DFP1_DP"
 		(shape input)
 		(at 109.22 63.5 180)
@@ -6933,6 +7009,18 @@
 			(justify right)
 		)
 		(uuid "bd963473-7ead-4d05-81c7-72394a125102")
+	)
+	(hierarchical_label "CS"
+		(shape input)
+		(at 177.8 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c47a50a2-9cfc-43dc-b5bd-3fb74526c388")
 	)
 	(hierarchical_label "USB_DFP0_EN"
 		(shape output)
@@ -13069,7 +13157,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22pF"
+		(property "Value" "18pF"
 			(at 254 124.4662 0)
 			(effects
 				(font
@@ -13105,7 +13193,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1653"
+		(property "LCSC" "C1647"
 			(at 256.54 123.19 0)
 			(effects
 				(font
@@ -13114,7 +13202,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL10C220JB8NNNC"
+		(property "Part_Number" "CL10C180JB8NNNC"
 			(at 256.54 123.19 0)
 			(effects
 				(font
@@ -13527,7 +13615,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22pF"
+		(property "Value" "18pF"
 			(at 269.24 124.4662 0)
 			(effects
 				(font
@@ -13563,7 +13651,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1653"
+		(property "LCSC" "C1647"
 			(at 266.7 123.19 0)
 			(effects
 				(font
@@ -13572,7 +13660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL10C220JB8NNNC"
+		(property "Part_Number" "CL10C180JB8NNNC"
 			(at 266.7 123.19 0)
 			(effects
 				(font

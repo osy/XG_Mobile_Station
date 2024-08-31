@@ -126,10 +126,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.15,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.09,
         "min_via_annular_width": 0.05,
-        "min_via_diameter": 0.25,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -215,14 +215,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.3,
-          "drill": 0.15
-        },
-        {
-          "diameter": 0.4,
-          "drill": 0.2
         },
         {
           "diameter": 0.4,
@@ -487,8 +479,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.3,
-        "via_drill": 0.15,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -504,8 +496,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.205486,
-        "via_diameter": 0.3,
-        "via_drill": 0.15,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -521,8 +513,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.170434,
-        "via_diameter": 0.3,
-        "via_drill": 0.15,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -586,7 +578,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../../Applications/KiCad/",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",

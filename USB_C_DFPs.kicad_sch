@@ -3826,7 +3826,7 @@
 		)
 		(uuid "0eb75405-c234-47e4-8e88-db0787264363")
 	)
-	(label "USB_DFP1_D1N"
+	(label "USB_DFP1_RX2P"
 		(at 149.86 186.69 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3848,7 +3848,7 @@
 		)
 		(uuid "25278d55-7418-4f9f-abb6-9ed445b9793a")
 	)
-	(label "USB_DFP1_TX2P"
+	(label "USB_DFP1_D1N"
 		(at 149.86 149.86 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3870,7 +3870,7 @@
 		)
 		(uuid "4376d594-95ef-48ab-9d59-27633fc4c8c5")
 	)
-	(label "USB_DFP1_D2N"
+	(label "USB_DFP1_D2P"
 		(at 97.79 166.37 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3914,7 +3914,7 @@
 		)
 		(uuid "5e9d267f-b08a-4ef0-ac5d-9ea9c1eaf24b")
 	)
-	(label "USB_DFP1_D1P"
+	(label "USB_DFP1_RX2N"
 		(at 149.86 181.61 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3947,7 +3947,7 @@
 		)
 		(uuid "6b8e314e-63e5-4e3e-97cb-2decb6fd88df")
 	)
-	(label "USB_DFP1_RX2N"
+	(label "USB_DFP1_TX2N"
 		(at 149.86 161.29 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3991,7 +3991,7 @@
 		)
 		(uuid "8ce5f42e-5a05-4dea-bdf5-9bc4546361a0")
 	)
-	(label "USB_DFP1_D2P"
+	(label "USB_DFP1_D2N"
 		(at 97.79 161.29 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4057,7 +4057,7 @@
 		)
 		(uuid "b467a6a1-136c-4aa3-9882-f7908e4af7fa")
 	)
-	(label "USB_DFP1_TX2N"
+	(label "USB_DFP1_D1P"
 		(at 149.86 144.78 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4068,7 +4068,7 @@
 		)
 		(uuid "b4e613cc-b714-4018-a160-f1464e9d9edb")
 	)
-	(label "USB_DFP1_RX2P"
+	(label "USB_DFP1_TX2P"
 		(at 149.86 166.37 0)
 		(fields_autoplaced yes)
 		(effects
