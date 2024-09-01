@@ -2774,6 +2774,18 @@
 		)
 		(uuid "022a723a-0a4a-42f4-ab2c-04e3c2b678c1")
 	)
+	(hierarchical_label "PB12"
+		(shape bidirectional)
+		(at 40.64 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0f14fb1c-7b59-42c2-8959-1785ff0f3226")
+	)
 	(hierarchical_label "PA2"
 		(shape bidirectional)
 		(at 71.12 45.72 0)
@@ -2821,6 +2833,18 @@
 			(justify left)
 		)
 		(uuid "317be348-19f9-4fe0-8439-bceeebf3c121")
+	)
+	(hierarchical_label "PB14"
+		(shape bidirectional)
+		(at 40.64 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3b0d2d04-085b-4789-94f4-cef1e5d23d95")
 	)
 	(hierarchical_label "PB5"
 		(shape bidirectional)
@@ -2882,17 +2906,17 @@
 		)
 		(uuid "86174a3d-3f86-480e-a9b7-f8b3f49015c8")
 	)
-	(hierarchical_label "PA7"
+	(hierarchical_label "PB13"
 		(shape bidirectional)
-		(at 71.12 58.42 0)
+		(at 40.64 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "8d5c066b-c22e-4743-a094-06978bd23e72")
+		(uuid "8afe2ada-54e8-4e53-b28d-0f54e17d3df8")
 	)
 	(hierarchical_label "SDA1"
 		(shape bidirectional)
@@ -2978,18 +3002,6 @@
 		)
 		(uuid "bd43a81d-df86-46fd-9532-d50d826f723b")
 	)
-	(hierarchical_label "PA6"
-		(shape bidirectional)
-		(at 71.12 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bfdf09b7-01ae-4523-a24d-733baccdf40a")
-	)
 	(hierarchical_label "PF1"
 		(shape bidirectional)
 		(at 40.64 53.34 180)
@@ -3001,18 +3013,6 @@
 			(justify right)
 		)
 		(uuid "dc969b03-ac2e-4fe5-817a-2e23dfecd504")
-	)
-	(hierarchical_label "PB0"
-		(shape bidirectional)
-		(at 40.64 73.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e188b737-6ba5-45b5-b491-5684044a5b57")
 	)
 	(hierarchical_label "SCL1"
 		(shape bidirectional)
