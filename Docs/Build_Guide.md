@@ -26,13 +26,13 @@ Some options differ for low volume (<= 10) and high volume (>= 100) orders. This
     | Impedance Control          | **Yes**                 | **Yes**                 |                                                              |
     | Layer Stackup              | **JLC04161H-7628**      | **JLC04161H-7628**      |                                                              |
     | Via Covering               | Plugged                 | Plugged                 |                                                              |
-    | Min via hole size/diameter | **0.15mm/(0.25/0.3mm)** | **0.15mm/(0.25/0.3mm)** |                                                              |
+    | Min via hole size/diameter | 0.3mm/(0.4/0.45mm)      | 0.3mm/(0.4/0.45mm)      |                                                              |
     | Board Outline Tolerance    | ±0.2mm(Regular)         | ±0.2mm(Regular)         |                                                              |
     | Confirm Production file    | No                      | No                      |                                                              |
     | Remove Order Number        | No                      | No                      |                                                              |
     | Flying Probe Test          | Fully Test              | Fully Test              |                                                              |
-    | Gold Fingers               | No                      | No / **Yes**            | Only recommended for standard build                          |
-    | 30° finger chamfered       | No                      | No / **Yes**            | Only recommended for standard build                          |
+    | Gold Fingers               | No                      | No                      |                                                              |
+    | 30° finger chamfered       | No                      | No                      |                                                              |
     | Castellated Holes          | No                      | No                      |                                                              |
     | Press-Fit Hole             | No                      | No                      |                                                              |
     | Edge Plating               | No                      | No                      |                                                              |
@@ -42,7 +42,7 @@ Some options differ for low volume (<= 10) and high volume (>= 100) orders. This
     | Option                  | Low Volume      | High Volume     | Notes                                  |
     |-------------------------|-----------------|-----------------|----------------------------------------|
     | PCBA Type               | Economic        | **Standard**    | Economic saves on per-component cost   |
-    | Assembly Side           | Top Side        | Top Side        |                                        |
+    | Assembly Side           | Top Side        | Both Sides      | Lite only needs top side               |
     | PCBA Qty                | >= 2            | >= 100          |                                        |
     | Edge Rails/Fiducials    | Added by JLCPCB | Added by JLCPCB |                                        |
     | Confirm Parts Placement | No              | No              |                                        |
@@ -63,7 +63,7 @@ Some options differ for low volume (<= 10) and high volume (>= 100) orders. This
 ### Ordering Parts
 Some parts may not be currently available in JLCPCB. This will be indicated with a red "xxx shortfall" text under the select column or they may appear on the bottom under unmatched parts. For each unavailable, part you need to manually order the part before you can order the assembled boards. It will typically take a few days to two weeks for the parts to arrive at JLCPCB.
 
-1. Locate the part number. If this is a shortfall part, click the row and then select "Part Info". Copy the "MFR.Part #". If this is an unmatched part, use the table [below](#unmatched-parts). Also note the number required in the "Qty" column. This is the minimum number you need to buy. It may not always be possible to buy the exact number, so you may end up with extra parts. If this is an expensive part and you are cost conscious, consider buying some number of PCBs to get the number of missing parts to be an exact amount you can buy for all the missing parts. This will increase your total cost but decrease your per-unit cost.
+1. Locate the part number. If this is a shortfall part, click the row and then select "Part Info". Copy the "MFR.Part #". Also note the number required in the "Qty" column. This is the minimum number you need to buy. It may not always be possible to buy the exact number, so you may end up with extra parts. If this is an expensive part and you are cost conscious, consider buying some number of PCBs to get the number of missing parts to be an exact amount you can buy for all the missing parts. This will increase your total cost but decrease your per-unit cost.
 2. Order the Order Parts page: https://jlcpcb.com/user-center/smtPrivateLibrary/orderParts
 3. You have a choice between JLCPCB Parts or Global Sourcing Parts. JLCPCB Parts is recommended for cost and ease but not all parts will be available.
 4. First, try to search in JLCPCB Parts: paste the part number and search. If there are multiple results, click the one with the exact match on the part number. You will either see a box to type in the quantity or "Unavailable".
@@ -72,19 +72,11 @@ Some parts may not be currently available in JLCPCB. This will be indicated with
 7. You will be presented with a list of distributors. Some of these will be mismatches, check the number in bold above each table of distributors. This must be an exact match with your part number. Note the "Distributor Part #" may not match but that is okay. Each distributor has a minimum order quantity and a unit price breakdown. The easiest way to find the cheapest distributor is to enter your desired Qty from step 1 into each text box and look at the "Ext. Price" which is automatically calculated. Once you select a distributor, add the component to your cart. You can now repeat these steps for other missing parts.
 8. Once you have all the missing parts added, visit the [Parts Cart](https://jlcpcb.com/user-center/smtPrivateLibrary/orderParts) and checkout your "JLCPCB Parts" and/or your "Global Sourcing Parts".
 
-### Unmatched Parts
-The following parts do not have a JLCPCB Part # yet and must be bought from Global Sourcing Parts. When ordering the PCBA, in the Bill of Materials screen, you must manually select the part you purchased for each designator.
-
-| Designator | Part Number | Note                                                                           |
-|------------|-------------|--------------------------------------------------------------------------------|
-| J7         | 5-5530843-0 | XG Station Pro PSU connector only for standard builds                          |
-| J16        | PJ-096H     | Only to test standard build without J7                                         |
-| J17        | 8730        | Search "TERM BINDING POST M2.5 1 PIN PCB" in Global Parts Sourcing to find it. |
-
 ### Cost Reduction
 If you are ordering a low quantity (2-5 units) of PCBA boards and don't mind doing a bit of manual soldering with a heat gun or reflow oven, here's some tips you can follow.
 
-* Choose Economic PCBA for the lowest cost
+* Choose Economic PCBA with Top Side for the lowest cost
+* You can manually solder the capacitors on the bottom side
 * Some "Extended" components incur a $3/component fee. For certain parts, this fee exceeds the cost of the components and so it may be cheaper to purchase these parts yourself and manually solder them. Some of these "Extended" components are actually "Preferred" and do not incur this cost.
 * Some parts are unavailable at JLCPCB and will require pre-ordering or purchasing from Global Sourcing Parts which usually come with a handling fee and a minimum order quantity. It may make sense to purchase these yourself and manually solder them. This makes sense especially for the more expensive ICs where you can buy it cheaper from AliExpress than Global Sourcing Parts.
 * If you do not need the USB charger and hub, you can exclude much of the components supporting those and significantly reduce costs.
