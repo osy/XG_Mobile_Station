@@ -12505,7 +12505,7 @@
 		)
 		(uuid "35ef12cf-2070-4594-911a-6fc665ef5431")
 	)
-	(label "C_RXP"
+	(label "C_RXN"
 		(at 40.64 87.63 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13374,7 +13374,7 @@
 		)
 		(uuid "d43d0b71-c7fe-48d5-af85-c92c795f8f18")
 	)
-	(label "C_RXN"
+	(label "C_RXP"
 		(at 40.64 85.09 0)
 		(fields_autoplaced yes)
 		(effects
