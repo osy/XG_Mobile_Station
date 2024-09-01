@@ -364,10 +364,10 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, PWROK_Pin|AC_LOSS_Pin|PCI_12V_EN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, MCU_IRQ_Pin|PWR_SW_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(MCU_IRQ_GPIO_Port, MCU_IRQ_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, WAKE_Pin|PERST_Pin|CLKREQ_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, PWR_SW_Pin|WAKE_Pin|PERST_Pin|CLKREQ_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin : LOCK_SW_Pin */
   GPIO_InitStruct.Pin = LOCK_SW_Pin;
@@ -422,24 +422,31 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(MCU_IRQ_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : PWR_SW_Pin */
+  GPIO_InitStruct.Pin = PWR_SW_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(PWR_SW_GPIO_Port, &GPIO_InitStruct);
+
   /*Configure GPIO pin : SYS_ON_Pin */
   GPIO_InitStruct.Pin = SYS_ON_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(SYS_ON_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PWR_SW_Pin PCI_12V_EN_Pin */
-  GPIO_InitStruct.Pin = PWR_SW_Pin|PCI_12V_EN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
   /*Configure GPIO pin : SYS_DET_Pin */
   GPIO_InitStruct.Pin = SYS_DET_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(SYS_DET_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PCI_12V_EN_Pin */
+  GPIO_InitStruct.Pin = PCI_12V_EN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(PCI_12V_EN_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : WAKE_Pin PERST_Pin CLKREQ_Pin */
   GPIO_InitStruct.Pin = WAKE_Pin|PERST_Pin|CLKREQ_Pin;
