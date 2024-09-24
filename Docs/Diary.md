@@ -123,6 +123,7 @@ We are able to get PCIe 4.0 x4 speeds meaning that it will perform similar to an
 
 [![GPU-Z](images/gpuz_4070_ti_super.png)](images/gpuz_4070_ti_super.png)
 [![Timespy](images/timespy_4070_ti_super.png)](images/timespy_4070_ti_super.png)
+[![CUDA-Z](images/cudaz_4070_ti_super.png)](images/cudaz_4070_ti_super.png)
 
 Some context for the Timespy graphics score (note that real world performance will often differ from benchmarks):
 
