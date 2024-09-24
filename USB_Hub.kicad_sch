@@ -7255,6 +7255,12 @@
 			(uuid "d1f71cd7-f2f7-4491-928c-da087a620346")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C69")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C69")
@@ -7321,6 +7327,12 @@
 			(uuid "f4fe1569-b141-4dc4-93e9-4a74c327ceb5")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR040")
@@ -7387,6 +7399,12 @@
 			(uuid "ddfd9a8f-0052-4a5b-93b0-69d5bd89669e")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR032")
@@ -7583,6 +7601,12 @@
 			(uuid "076a36ab-d7b1-421f-9fc7-ab54e314ef51")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C29")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C29")
@@ -7650,6 +7674,12 @@
 			(uuid "379259d6-4a65-4286-b71f-8901472ed00f")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#FLG08")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#FLG08")
@@ -7717,6 +7747,12 @@
 			(uuid "0cf2ab46-bfdf-41a6-84f7-544e685176e8")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#FLG010")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#FLG010")
@@ -7913,6 +7949,12 @@
 			(uuid "ea6f6c91-ff2c-4597-a3e1-179968b46dac")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C32")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C32")
@@ -8028,6 +8070,12 @@
 			(uuid "0f1e4a71-11f9-41cd-b8e1-a91664e55d9f")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R21")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R21")
@@ -8221,6 +8269,12 @@
 			(uuid "4e42ec0c-45e2-43af-b8a5-67bb6d4912e7")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C71")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C71")
@@ -8336,6 +8390,12 @@
 			(uuid "b6f9a22a-840a-4db9-b02b-64ce793f8a65")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R36")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R36")
@@ -8529,6 +8589,12 @@
 			(uuid "d6ffafee-b3fd-4f7f-92dc-66992038809e")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C67")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C67")
@@ -8724,6 +8790,12 @@
 			(uuid "1881acbf-483a-4c61-b91d-01fea415834f")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C16")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C16")
@@ -8920,6 +8992,12 @@
 			(uuid "afb8b993-28fb-4a0f-a35b-d09789f36dfd")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R22")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R22")
@@ -9116,6 +9194,12 @@
 			(uuid "54b5d15d-bbd8-4ba6-9276-c4b2d789155e")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C116")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C116")
@@ -9182,6 +9266,12 @@
 			(uuid "aaa44602-b9a3-4b96-a337-217032f2c910")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR0102")
@@ -9378,6 +9468,12 @@
 			(uuid "b577431e-5b69-463c-b0f4-df132473c720")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C12")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C12")
@@ -9445,6 +9541,12 @@
 			(uuid "66c03684-79a2-455b-827b-456f4eb60c0e")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#FLG01")
@@ -9511,6 +9613,12 @@
 			(uuid "737e396d-1e91-473a-be06-c345503676d0")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR0103")
@@ -9939,6 +10047,12 @@
 			(uuid "46751fea-c9e5-4f04-8a75-958155284f31")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "U4")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "U4")
@@ -10135,6 +10249,12 @@
 			(uuid "ae74a651-c6f9-4d31-b4ca-bb48d97f932b")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R23")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R23")
@@ -10331,6 +10451,12 @@
 			(uuid "d31d1739-5a23-4c31-a0fd-908c36a48ffe")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C13")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C13")
@@ -10582,6 +10708,12 @@
 			(uuid "036b0296-0ade-42f6-8675-8c04fa718465")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "U5")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "U5")
@@ -10649,6 +10781,12 @@
 			(uuid "2c362b08-bb7c-431f-a635-fdb18f9e258f")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#FLG02")
@@ -10845,6 +10983,12 @@
 			(uuid "6f2480f4-fc6d-41da-a84e-25b8c9d65e31")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R7")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R7")
@@ -11041,6 +11185,12 @@
 			(uuid "600ca734-54e8-43ac-a097-6c3101d162b7")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C35")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C35")
@@ -11237,6 +11387,12 @@
 			(uuid "aee1960f-154a-4550-bbd3-72fc2d5ff635")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C19")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C19")
@@ -11430,6 +11586,12 @@
 			(uuid "d0e8ff1c-8c84-4585-a123-de93bbb886a0")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C66")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C66")
@@ -11623,6 +11785,12 @@
 			(uuid "3c7f5a52-f73f-49b2-80a5-978f7c23c248")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C73")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C73")
@@ -11819,6 +11987,12 @@
 			(uuid "08a195f8-b15a-4157-b3f7-20ae631a7130")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C11")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C11")
@@ -12015,6 +12189,12 @@
 			(uuid "29b15416-30f5-4c37-a192-e6928e1dfadb")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R24")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R24")
@@ -12208,6 +12388,12 @@
 			(uuid "222a7af3-05f4-4c3e-a2a1-29c3533084b8")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C72")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C72")
@@ -12275,6 +12461,12 @@
 			(uuid "4e07badb-66c8-4d51-b868-8de2ad9ebcd4")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#FLG07")
@@ -12341,6 +12533,12 @@
 			(uuid "70498b10-fcec-4d81-8a32-daf88cc1e46c")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR0129")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR0129")
@@ -12537,6 +12735,12 @@
 			(uuid "1949c06e-2a23-4732-94a8-0c762ecd8817")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R18")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R18")
@@ -12603,6 +12807,12 @@
 			(uuid "2872faa8-9a92-4473-9bbe-659fcff9a285")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR044")
@@ -12799,6 +13009,12 @@
 			(uuid "c1e75a6f-1a33-4885-a81c-99c988323dbd")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C34")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C34")
@@ -12865,6 +13081,12 @@
 			(uuid "cccba463-5297-4929-9cd1-6d921670aebc")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR038")
@@ -12931,6 +13153,12 @@
 			(uuid "443eebcc-b515-4d15-a6c5-4595d7ed7225")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR023")
@@ -13131,6 +13359,12 @@
 			(uuid "bf649a6c-7b25-4949-8d46-26d56c08c531")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "Y1")
@@ -13326,6 +13560,12 @@
 			(uuid "a1547520-34da-4857-b756-2c0bcbc0ecfc")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C91")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C91")
@@ -13522,6 +13762,12 @@
 			(uuid "10493235-b8c2-4570-bfe6-18ae971a4a1d")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C27")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C27")
@@ -13588,6 +13834,12 @@
 			(uuid "d22e5993-0955-4c6e-9257-9ad989027ce4")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR035")
@@ -13784,6 +14036,12 @@
 			(uuid "5a53ebc9-b7a4-466b-bdf1-bebaf62ee8a0")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C92")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C92")
@@ -13977,6 +14235,12 @@
 			(uuid "03feb338-33f7-4115-be11-d1edc2e41387")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C70")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C70")
@@ -14043,6 +14307,12 @@
 			(uuid "591482f6-6f46-43fc-a10e-5d1cb49ab113")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR030")
@@ -14239,6 +14509,12 @@
 			(uuid "3a017e26-c508-46c0-9d06-7c911719f01a")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R17")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R17")
@@ -14305,6 +14581,12 @@
 			(uuid "cdfd0d6a-3121-4415-b225-b4b711d7a716")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR041")
@@ -14371,6 +14653,12 @@
 			(uuid "34650a1e-62af-48ab-bd2c-5dd0458e8b08")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR069")
@@ -14567,6 +14855,12 @@
 			(uuid "5c26398a-d5c5-49b3-bd17-f16b8e9c135d")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R26")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R26")
@@ -14633,6 +14927,12 @@
 			(uuid "8ad06ff9-ed64-4e47-9f35-e82f7720ed47")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR0127")
@@ -14829,6 +15129,12 @@
 			(uuid "5463aa30-5665-477f-839c-da92edf20428")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C10")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C10")
@@ -15025,6 +15331,12 @@
 			(uuid "11978726-8163-4342-8e3b-fb254906a903")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R8")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R8")
@@ -15221,6 +15533,12 @@
 			(uuid "c40137a1-c759-4849-a69a-aea2cbaf4814")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C30")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C30")
@@ -15417,6 +15735,12 @@
 			(uuid "ef825f66-98d3-44a7-b245-389fc77dd0a6")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C33")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C33")
@@ -15613,6 +15937,12 @@
 			(uuid "8deffdef-c9ba-4cb3-b123-b10ca8ca9eb4")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C31")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C31")
@@ -15809,6 +16139,12 @@
 			(uuid "1d94c2e8-f9b1-4b52-bf41-08e7cbff4c23")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R2")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R2")
@@ -16005,6 +16341,12 @@
 			(uuid "35473d8b-6847-47ec-9a4e-883a85257b49")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C36")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C36")
@@ -16201,6 +16543,12 @@
 			(uuid "31d51f17-e450-48b2-b454-b05b7aa80372")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C17")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C17")
@@ -16394,6 +16742,12 @@
 			(uuid "6ac535f4-e4e6-473b-a16c-00c31e79f5e0")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C65")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C65")
@@ -16590,6 +16944,12 @@
 			(uuid "76a774ad-c3ce-4c03-9e04-7ec019b84e4b")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C14")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C14")
@@ -16786,6 +17146,12 @@
 			(uuid "3b46881d-920a-4a37-84d0-161e7b279752")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C15")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C15")
@@ -16982,6 +17348,12 @@
 			(uuid "c4ea946a-dccb-419b-95e9-aa3a4d734b67")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R25")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R25")
@@ -17048,6 +17420,12 @@
 			(uuid "ee0518e4-90e2-430e-894a-9ee6d8bc913e")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR033")
@@ -17114,6 +17492,12 @@
 			(uuid "a809f892-2c5e-4a5a-9376-cdb5aa232eac")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR054")
@@ -17180,6 +17564,12 @@
 			(uuid "b6bc07c7-e1fd-445e-97c7-0b9e3a692596")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR029")
@@ -17246,6 +17636,12 @@
 			(uuid "d6508622-2e00-441a-bddf-12e7d3d1068a")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR042")
@@ -17442,6 +17838,12 @@
 			(uuid "731ab767-a972-49ac-9223-e112a79e015c")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C28")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C28")
@@ -17638,6 +18040,12 @@
 			(uuid "3739ba0f-7d67-4b0a-a9b9-d298368b5616")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "R27")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "R27")
@@ -17704,6 +18112,12 @@
 			(uuid "450b3758-3383-4dc1-8a30-bae57e3c5317")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "#PWR028")
@@ -17897,6 +18311,12 @@
 			(uuid "a9190e59-510f-41ab-bf4f-cd3577021227")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C68")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C68")
@@ -18090,6 +18510,12 @@
 			(uuid "dbba4e18-7573-4bb1-851b-383c4275782a")
 		)
 		(instances
+			(project "USB_Hub_Test"
+				(path "/a251f5e7-b3f5-4a19-a729-3623dddc7759/b37df7e1-e3f1-4868-b8e9-c5d3c4417822"
+					(reference "C74")
+					(unit 1)
+				)
+			)
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e/ef21a87f-222f-4a81-a291-59975487be1d"
 					(reference "C74")
