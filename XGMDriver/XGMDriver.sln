@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XGMDriver", "XGMDriver.vcxp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "devinstall", "devinstall\devinstall.vcxproj", "{62FF3B66-7658-444B-B39E-689962CE8509}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsusXGDriverInst", "AsusXGDriverInst\AsusXGDriverInst.vcxproj", "{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -47,6 +49,18 @@ Global
 		{62FF3B66-7658-444B-B39E-689962CE8509}.Release|x64.Build.0 = Release|x64
 		{62FF3B66-7658-444B-B39E-689962CE8509}.Release|x86.ActiveCfg = Release|Win32
 		{62FF3B66-7658-444B-B39E-689962CE8509}.Release|x86.Build.0 = Release|Win32
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Debug|ARM64.Build.0 = Debug|ARM64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Debug|x64.ActiveCfg = Debug|x64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Debug|x64.Build.0 = Debug|x64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Debug|x86.Build.0 = Debug|Win32
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Release|ARM64.ActiveCfg = Release|ARM64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Release|ARM64.Build.0 = Release|ARM64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Release|x64.ActiveCfg = Release|x64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Release|x64.Build.0 = Release|x64
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Release|x86.ActiveCfg = Release|Win32
+		{035D08BD-AE2F-4C01-A82C-28D3DE8560ED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,6 +10,7 @@ InstallDir $PROGRAMFILES64\XGMDriver
 !include x64.nsh
 !include Sections.nsh
 !include MUI2.nsh
+!include FileFunc.nsh
 !insertmacro MUI_LANGUAGE English
 
 
@@ -20,6 +21,7 @@ UninstPage uninstConfirm
 UninstPage instfiles
 
 Var GpuModel
+Var ASUSDRIVERDIR
 
 !macro EnsureAdminRights
   UserInfo::GetAccountType
@@ -33,10 +35,14 @@ Var GpuModel
 
 Function .onInit
   !insertmacro EnsureAdminRights
+  ${GetParent} $WINDIR $R0
+  StrCpy $ASUSDRIVERDIR "$R0\eSupport\eDriver\Software\Peripherals\ExternalGraphics"
 FunctionEnd
 
 Function un.onInit
   !insertmacro EnsureAdminRights
+  ${GetParent} $WINDIR $R0
+  StrCpy $ASUSDRIVERDIR "$R0\eSupport\eDriver\Software\Peripherals\ExternalGraphics"
 FunctionEnd
 
 Section "Driver"
@@ -76,6 +82,10 @@ Section "Driver"
     RMDir "$INSTDIR"
     Abort
   ${EndIf}
+
+  ; Write XGM driver popup interposer
+  SetOutPath $ASUSDRIVERDIR
+  File "x64\Release\AsusXGDriverInst.exe"
 
   ; Write model to registry
   SetRegView 64
@@ -118,6 +128,7 @@ Section -Uninstall
   Delete $INSTDIR\RootCA.cer
   Delete $INSTDIR\uninstall.exe
   RMDir "$INSTDIR"
+  Delete $ASUSDRIVERDIR\AsusXGDriverInst.exe
 SectionEnd
 
 ; Custom page
