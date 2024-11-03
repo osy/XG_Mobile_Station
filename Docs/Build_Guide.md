@@ -1,48 +1,48 @@
 The dock was designed from the beginning to be assembled at JLCPCB because of their low cost PCB assembly option. If you have not ordered from JLCPCB before, this guide will help you get started. There are two configurations you can build and some minor differences between them. The regular configuration is designed to be a complete replacement for the XG Station Pro main board and requires its proprietary power connector. It also supports USB charging and a 2-port USB hub. The lite version requires a standard ATX power supply and passes through the USB port to an external connection.
 
-Some options differ for low volume (<= 10) and high volume (>= 100) orders. This is because for low volume, we will optimize for cost and for high volume, we care about reliability (the per-unit cost of some options are reduced at high quantity). If you are ordering some number of units in between, use your best judgment. Note that Economic PCBA is cost effective for low volume because the per-component feeder loading fee is waived for basic components while at high volumes, the per-unit cost of this fee is negligible.
+## Board Guide
 
 1. Download `GERBER-XG_Mobile_Dock[_Lite].zip`, `CPL-XG_Mobile_Dock[_Lite].csv`, and `BOM-XG_Mobile_Dock[_Lite].csv` from the [latest release on GitHub](https://github.com/osy/XG_Mobile_Station/releases). Choose the regular or lite variant depending on the build you want. Do not mix and match files.
 2. Visit https://cart.jlcpcb.com/quote and upload `GERBER-XG_Mobile_Dock[_Lite].zip`
 3. Fill the PCB options as follows
 
-    | Option                     | Low Volume              | High Volume             | Notes                                                        |
-    |----------------------------|-------------------------|-------------------------|--------------------------------------------------------------|
-    | Base Material              | FR-4                    | FR-4                    |                                                              |
-    | Layers                     | 4                       | 4                       |                                                              |
-    | Dimensions                 |                         |                         | Should be auto filled                                        |
-    | PCB Qty                    | <= 10                   | >= 100                  |                                                              |
-    | Product Type               | Industrial/Consumer     | Industrial/Consumer     |                                                              |
-    | Different Design           | 1                       | 1                       |                                                              |
-    | Delivery Format            | Single PCB              | Single PCB              |                                                              |
-    | PCB Thickness              | 1.6                     | 1.6                     |                                                              |
-    | PCB Color                  | Any                     | Any                     | Green is cheapest                                            |
-    | Silkscreen                 | White                   | White                   |                                                              |
-    | Material Type              | **FR-4 TG155**          | **FR-4 TG155**          |                                                              |
-    | Surface Finish             | HASL (with lead)        | **ENIG**                | Any would work, lead HASL is cheapest, ENIG is most reliable |
-    | Outer Copper Weight        | 1 oz                    | 1 oz                    |                                                              |
-    | Inner Copper Weight        | 0.5 oz                  | 0.5 oz                  |                                                              |
-    | Specify Layer Sequence     | No                      | No                      |                                                              |
-    | Impedance Control          | **Yes**                 | **Yes**                 |                                                              |
-    | Layer Stackup              | **JLC04161H-7628**      | **JLC04161H-7628**      |                                                              |
-    | Via Covering               | Plugged                 | Plugged                 |                                                              |
-    | Min via hole size/diameter | 0.3mm/(0.4/0.45mm)      | 0.3mm/(0.4/0.45mm)      |                                                              |
-    | Board Outline Tolerance    | ±0.2mm(Regular)         | ±0.2mm(Regular)         |                                                              |
-    | Confirm Production file    | No                      | No                      |                                                              |
-    | Remove Order Number        | No                      | No                      |                                                              |
-    | Flying Probe Test          | Fully Test              | Fully Test              |                                                              |
-    | Gold Fingers               | No                      | No                      |                                                              |
-    | 30° finger chamfered       | No                      | No                      |                                                              |
-    | Castellated Holes          | No                      | No                      |                                                              |
-    | Press-Fit Hole             | No                      | No                      |                                                              |
-    | Edge Plating               | No                      | No                      |                                                              |
+    | Option                     | Value                   | Notes                                                           |
+    |----------------------------|-------------------------|-----------------------------------------------------------------|
+    | Base Material              | FR-4                    |                                                                 |
+    | Layers                     | 4                       |                                                                 |
+    | Dimensions                 |                         | Should be auto filled                                           |
+    | PCB Qty                    | Any                     |                                                                 |
+    | Product Type               | Industrial/Consumer     |                                                                 |
+    | Different Design           | 1                       |                                                                 |
+    | Delivery Format            | Single PCB              |                                                                 |
+    | PCB Thickness              | 1.6                     |                                                                 |
+    | PCB Color                  | Any                     | Green is cheapest                                               |
+    | Silkscreen                 | White                   |                                                                 |
+    | Material Type              | **FR-4 TG155**          |                                                                 |
+    | Surface Finish             | **ENIG**                | HASL (with lead) can be used in low volume runs for cost saving |
+    | Outer Copper Weight        | 1 oz                    |                                                                 |
+    | Inner Copper Weight        | 0.5 oz                  |                                                                 |
+    | Specify Layer Sequence     | No                      |                                                                 |
+    | Impedance Control          | **Yes**                 |                                                                 |
+    | Layer Stackup              | **JLC04161H-7628**      |                                                                 |
+    | Via Covering               | Plugged                 |                                                                 |
+    | Min via hole size/diameter | 0.3mm/(0.4/0.45mm)      |                                                                 |
+    | Board Outline Tolerance    | ±0.2mm(Regular)         |                                                                 |
+    | Confirm Production file    | No                      |                                                                 |
+    | Remove Order Number        | No                      |                                                                 |
+    | Flying Probe Test          | Fully Test              |                                                                 |
+    | Gold Fingers               | No                      |                                                                 |
+    | 30° finger chamfered       | No                      |                                                                 |
+    | Castellated Holes          | No                      |                                                                 |
+    | Press-Fit Hole             | No                      |                                                                 |
+    | Edge Plating               | No                      |                                                                 |
 
 4. Check PCB Assembly and fill the following options
 
     | Option                  | Low Volume      | High Volume     | Notes                                  |
     |-------------------------|-----------------|-----------------|----------------------------------------|
     | PCBA Type               | Economic        | **Standard**    | Economic saves on per-component cost   |
-    | Assembly Side           | Top Side        | Both Sides      | Lite only needs top side               |
+    | Assembly Side           | Both Sides      | Both Sides      | Lite only needs top side               |
     | PCBA Qty                | >= 2            | >= 100          |                                        |
     | Edge Rails/Fiducials    | Added by JLCPCB | Added by JLCPCB |                                        |
     | Confirm Parts Placement | No              | No              |                                        |
@@ -51,12 +51,20 @@ Some options differ for low volume (<= 10) and high volume (>= 100) orders. This
 6. Accept the board preview and press Next
 7. Click "Add BOM File" and select your `BOM-XG_Mobile_Dock[_Lite].csv`
 8. Click "Add CPL File" and select your `CPL-XG_Mobile_Dock[_Lite].csv`
-9. Press "Process BOM & CPL" to continue
+9. Press "Process BOM & CPL" to continue (ignore any error about missing data)
 10. Select the parts to pick by following the [Parts Guide](#parts-guide) section below.
 11. Press Next. If you chose to skip some parts you will get a confirmation pop-up where you can press "Do Not Place".
 12. In the Component Placements screen, you can confirm the parts orientation. If there are any mis-rotated parts, click them and rotate it to the correct orientation. (e.g. the pin headers.) Press Next to continue.
 13. Confirm the order details and for "Product Description" select "Reserch\Education\DIY\Entertainment -> DIY - HS Code 902300"
-14. Press "Save to Cart" and proceed to checkout.
+14. Press "Save to Cart".
+
+### Power Cable
+If you are building the standard variant, you also need to build a custom power cable. This will be a second board in your cart. You do not need this if you are building the lite variant and can proceed to checkout.
+
+1. If you are in the Cart page, press "+ Add new item", otherwise visit https://cart.jlcpcb.com/quote again
+2. Upload `GERBER-Riser_M.zip`
+3. Optionally change the quantity (you need two for each board) and keep all other options default
+4. Press "Save to Cart" and proceed to checkout.
 
 ## Parts Guide
 
@@ -83,9 +91,11 @@ If you are ordering a low quantity (2-5 units) of PCBA boards and don't mind doi
 
 ## Additional Parts
 * [XG Mobile connector cable](https://www.a-accessories.com/asus-connection-cable-62505-79153.htm)
-* (Standard build only) A DC7450 connector power supply if you do not have an XG Station Pro PSU and built the board with the barrel jack connector ([e.g. Dell 330W](https://www.dell.com/en-us/shop/dell-330w-74mm-ac-adapter/apd/450-bbqg/pc-accessories))
 * (Standard build only) SPI flasher is needed to program the firmware for the TI PD charger. You can also use a RaspberryPi with [Flashrom](https://wiki.flashrom.org/RaspberryPi) for this purpose.
 * ST-LINK v2 is needed to program the STM32 MCU. You can buy a cheap clone from AliExpress for under $10 but note that the pinout listing printed on the dongle may be incorrect.
+* (Standard build only) 22AWG stranded PVC insulated wire
+* (Standard build only) [10mm diameter cable sleeve](https://www.amazon.com/dp/B0CPJ7PMFZ)
+* (Standard build only) Electrical tape (100°C rating)
 
 ## Building Firmware
 Check the [readme](../README.md) for directions on flashing.
@@ -102,3 +112,53 @@ Alternatively, if you want to build and develop the firmware, the easiest way is
 4. Click "Change File" and save it as "XG_Mobile_Dock_Charger.bin".
 5. Press Ok and Ok to save the firmware image.
 6. Some flashers like Flashrom requires the image to be the same size as the flash device. You can run `dd if=/dev/zero of=XG_Mobile_Dock_Charger.bin bs=1 seek=1048575 count=1 conv=notrunc` to ensure this.
+
+## Building Power Cable
+For the standard build, we need to build a custom cable assembly to pass power from the replacement board to the original board which we need to use to power the GPU.
+
+Warning: this cable will be handling 16.9A at 19.5V so please follow these instructions carefully and make sure to test your cable for short circuits and bad solder joints before plugging it in.
+
+1. Cut out 20 pieces wire, each one 25cm long. We chose 22AWG stranded wire because of the flexibility and their ability to handle 2.1A of load.
+2. For each wire, using a wire stripper on only one end, remove no more than 3mm of insulation
+3. Cut the cable sleeve into a 22cm long piece
+4. Bundle up all 20 wires and feed it through the cable sleeve. Feed the unstripped end to avoid tangling the conductor with the sleeve. If you are using different coloured wires, make sure to group the same colours together before feeding it to make organizing it easier later.
+5. After feeding all the wires through, strip the other end of each wire (no more than 3mm)
+
+Now you need to solder both ends of the connector using the custom PCB we ordered. Notice that one side is labeled "Front". We need to connect the same pin to each side of the wire. It may be difficult to determine both ends of a single wire, so we recommend using a multimeter's connectivity test to find the opposite end. We recommend starting on one side and alternating between the first pin and last pin, then second pin and second-to-last pin, and so on working towards the middle. This way, the tension of the cable is more evenly distributed.
+
+Finally, secure one end with electrical tape to prevent the sleeve from fraying. Then, on the other end, twist the connector 180° such that one end faces the front and the other end faces the back. Secure that end with electrical tape as well.
+
+[![Completed cable](images/power_riser_cable_v2.jpg)](images/power_riser_cable_v2.jpg)
+
+## Building XG Mobile Station
+The standard build is designed to fit inside the XG Station Pro enclosure. We will be replacing the logic board with our custom board, mounting the original logic board to the top of the case with electrical tape, and finally connecting the two boards with our custom power cable. This will allow us to use the original board to provide 12V power to the GPU. Note that we will be removing the fans to create more space as well as leave a larger power budget for the GPU.
+
+To start, completely disassemble the XG Station Pro until you have just the metal frame.
+
+[![Step 1](images/xg_mobile_station_build_1.jpg)](images/xg_mobile_station_build_1.jpg)
+
+Take the original logic board and insulate the edge with electrical tape. Because we will be mounting this board onto the top of the frame, we need to protect against short circuits. Note two areas highlighted in red which has high current. We recommend using two layers of electrical tape here just for extra protection.
+
+[![Step 2](images/xg_mobile_station_build_2.jpg)](images/xg_mobile_station_build_2.jpg)
+
+Secure the custom PCB and screw it in. You may want to also put the extra screws into the empty holes to not lose them. Plug in the power connector board and screw that in as well. Remove the EMI shielding from the top of the USB-C connectors of the original board and place it on the USB-C connectors of the custom board.
+
+[![Step 3](images/xg_mobile_station_build_3.jpg)](images/xg_mobile_station_build_3.jpg)
+
+Connect the PCIe power cable back on the original board and connect the 2-pin power LED to the end of the board. Flip the board upside down and use electrical tape to secure it to the top of the chassis. Make sure that the holes for the top panel is not blocked by the board or any tape.
+
+[![Step 4](images/xg_mobile_station_build_4.jpg)](images/xg_mobile_station_build_4.jpg)
+
+Connect the XGM cable to the board (all three connectors). You will need to fold the cable in order to feed the XGM end through the PCIe slot. Secure the cable in place with the screw terminal on the board.
+
+[![Step 5](images/xg_mobile_station_build_5.jpg)](images/xg_mobile_station_build_5.jpg)
+
+Connect the custom power cable to both boards. Make sure that the front of the connector is **facing towards the PCIe connector on both boards**.
+
+[![Step 6](images/xg_mobile_station_build_6.jpg)](images/xg_mobile_station_build_6.jpg)
+
+Connect the PCIe 12V power to the GPU and seat the GPU. Note that you may need to modify the back I/O shield of the GPU in order to create space for the XGM cable to extend outside the case. Alternatively, you can try to pass the XGM cable above the GPU I/O or you can drill a hole next to the power connector.
+
+[![Step 7](images/xg_mobile_station_build_7.jpg)](images/xg_mobile_station_build_7.jpg)
+
+Now you can reassemble the rest of the case. If you have issues closing the front panel because of GPU clearance issues, do not screw in the PCIe slot until after you close the front panel.

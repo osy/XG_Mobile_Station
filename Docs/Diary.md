@@ -85,7 +85,27 @@ Another issue discovered was that devices plugged into the USB hub would be disc
 
 [![Board current measurement](images/current_measure.jpg)](images/current_measure.jpg)
 
-## Final Build
+### Rev. 5
+In addition to using a beefier LDO, we also connected a SPI flash to the VIA USB hub. Although the SPI flash was listed as optional in the datasheet, we found that USB 3.0 often caused errors in Windows and we hypothesized that the issue was due to outdated microcode that could be updated by a firmware stored in the SPI flash. We tested this by building a separate board with just the USB hub and confirmed this was indeed the fix.
+
+[![Board rev 5](images/board_v5.png)](images/board_v5.png)
+
+We also took the opportunity to reorganize the board layout. First, we moved the decoupling capacitors for the two USB ICs to the bottom layer. Previously, we avoided any components on the bottom layer for cost reasons but after observing the current consumption of the USB hub, we decided it would be safer to properly follow design recommendations and place the caps directly underneath the IC for better handling of sudden current spikes. This also means we have more space on top to follow other best practice guidelines such as putting Rbias and the crystal closer to the pads. Ultimately, the number of components on the bottom is quite small and can be manually soldered in small runs.
+
+Since we no longer need to stuff all these components close to each other, we also were able to increase the minimum drill size from 0.15mm to 0.3mm. This introduces significant cost savings in manufacturing.
+
+Finally, we moved the power passthrough from the bottom edge to a second connector on the top. Originally, we wanted to plug the original board directly into our board in a 90 degree orientation. This was awkward to manage and did not work with larger GPUs. Instead, a better way is to introduce a second 20-pin connector along with a custom passthrough cable.
+
+[![Power connector](images/power_connector.png)](images/power_connector.png)
+
+### Lite
+By popular demand, we also introduced a "lite" variant of the board which is cost-optimized to work with the minimal number of components. We removed the USB ICs and associated power controllers and added an ATX-24 connector.
+
+[![Board lite rev 5](images/board_lite_v5.png)](images/board_lite_v5.png)
+
+We chose to match the form factor to the ADT-UT3G in order to be compatible with third party case designs.
+
+## Final Build (rev. 4)
 Originally, we wanted to fit a 2 slot GPU into the case, which meant we could have daisy chained the PCIe power PCB on the side. However, after getting a NVIDIA RTX 4070 Ti SUPER (a 2.7 slot card), we had to adapt the power connector. The solution was to make a [riser cable](../Power_Riser) for the power connector which allowed us to mount (tape) the power PCB to the top of the enclosure.
 
 [![Power riser cable](images/power_riser_cable.jpg)](images/power_riser_cable.jpg)
@@ -137,6 +157,3 @@ The XG Station Pro's power supply is rated for 330W and the Ally charging maxes 
 The XG Station Pro has two case fans but we removed one of them for space issues and we kept the other one disconnected in order to reduce power consumption (and because the fan sit behind the GPU's backplate). As a result, the case fans were not used.
 
 At 265W, we ran FurMark for 45 minutes and there was no thermal throttling. The GPU temperatures stabilized at 70C while the outside of the case got to 47C. The power supply was around 38C. Ambient temperature was 25C.
-
-## Remaining Issue
-Although this project is considered "finished", there is still an unresolved issue with the USB hub. It seems that only USB 2.0 works and that many USB 3.0 devices error out. Additionally, we were made aware of the fact that the VL822-Q7 has been discontinued and will not be available for new purchase at JLCPCB. This means that one of the first things to do in a follow up project would be to replace the VL822-Q7 with either a newer (and properly documented) chip or to just pass through the USB signals directly to a port where an external charging hub can be used.
