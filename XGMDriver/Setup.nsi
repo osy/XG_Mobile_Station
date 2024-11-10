@@ -174,8 +174,8 @@ FunctionEnd
 Function fnc_SpoofGPU_Leave
   ${NSD_GetState} $hCtl_SpoofGPU_GPUSpoofNVIDIA $0
   ${If} $0 == 1
-    StrCpy $GpuModel "GC32L"
+    StrCpy $GpuModel "GC33Y"
   ${Else}
-    StrCpy $GpuModel "GC31R"
+    StrCpy $GpuModel "GC33L"
   ${EndIf}
 FunctionEnd
