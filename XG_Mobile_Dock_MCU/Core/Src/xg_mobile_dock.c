@@ -9,6 +9,7 @@ extern TIM_HandleTypeDef htim1;
 
 typedef enum {
     MCU_RESET=0,
+    DEVICE_IDLE,
     CABLE_DETECT,
     CABLE_LOCK,
     POWER_OFF,
@@ -32,6 +33,7 @@ typedef enum {
 
 static const char * const gFSMStateStrings[] = {
     [MCU_RESET] = "MCU_RESET",
+    [DEVICE_IDLE] = "DEVICE_IDLE",
     [CABLE_DETECT] = "CABLE_DETECT",
     [CABLE_LOCK] = "CABLE_LOCK",
     [POWER_OFF] = "POWER_OFF",
@@ -121,14 +123,12 @@ void update_cable_led(led_colour_t colour) {
             printf("Turn on white LED\n");
             HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
             HAL_GPIO_WritePin(LED_WHITE_GPIO_Port, LED_WHITE_Pin, GPIO_PIN_RESET);
-            HAL_GPIO_WritePin(LOCK_DET_GPIO_Port, LOCK_DET_Pin, GPIO_PIN_RESET);
             break;
         }
         case RED: {
             printf("Turn on red LED\n");
             HAL_GPIO_WritePin(LED_WHITE_GPIO_Port, LED_WHITE_Pin, GPIO_PIN_SET);
             HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_RESET);
-            HAL_GPIO_WritePin(LOCK_DET_GPIO_Port, LOCK_DET_Pin, GPIO_PIN_SET);
             break;
         }
         case NONE:
@@ -136,7 +136,6 @@ void update_cable_led(led_colour_t colour) {
             printf("Turn off cable LED\n");
             HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
             HAL_GPIO_WritePin(LED_WHITE_GPIO_Port, LED_WHITE_Pin, GPIO_PIN_SET);
-            HAL_GPIO_WritePin(LOCK_DET_GPIO_Port, LOCK_DET_Pin, GPIO_PIN_RESET);
             break;
         }
     }
@@ -185,6 +184,16 @@ void clear_ec_irq() {
     HAL_GPIO_WritePin(MCU_IRQ_GPIO_Port, MCU_IRQ_Pin, GPIO_PIN_SET);
 }
 
+void assert_lock_det() {
+    printf("Asserting LOCK_DET\n");
+    HAL_GPIO_WritePin(LOCK_DET_GPIO_Port, LOCK_DET_Pin, GPIO_PIN_SET);
+}
+
+void clear_lock_det() {
+    printf("Clearing LOCK_DET\n");
+    HAL_GPIO_WritePin(LOCK_DET_GPIO_Port, LOCK_DET_Pin, GPIO_PIN_RESET);
+}
+
 void transition_state(state_t *state, fsm_state_t next) {
     fsm_state_t prev = state->fsm;
 
@@ -192,11 +201,21 @@ void transition_state(state_t *state, fsm_state_t next) {
     // update cable LED
     if (next == CABLE_LOCK) {
         update_cable_led(WHITE);
-        toggle_external_board(1);
     } else if (next == POWER_ON && prev < next) {
         update_cable_led(RED);
-    } else if (next <= CABLE_DETECT && prev > next) {
+    } else if (next < CABLE_LOCK && prev > next) {
         update_cable_led(NONE);
+    }
+    // LOCK_DET
+    if (next > CABLE_LOCK && prev < next) {
+        assert_lock_det();
+    } else if (next <= CABLE_LOCK && prev > next) {
+        clear_lock_det();
+    }
+    // external power
+    if (next == POWER_OFF && prev < next) {
+        toggle_external_board(1);
+    } else if (next <= CABLE_DETECT && prev > next) {
         toggle_external_board(0);
     }
     // power off/on
@@ -209,9 +228,9 @@ void transition_state(state_t *state, fsm_state_t next) {
     if (prev < CABLE_LOCK && next >= CABLE_LOCK) {
         assert_ec_irq();
     }
-    // reset I2C state
-    if (prev > CABLE_LOCK && next <= CABLE_LOCK) {
-        state->i2cRegData1 = 0;
+    // reset I2C state when unplugged
+    if (prev == MCU_RESET || (prev > CABLE_DETECT && next <= CABLE_DETECT)) {
+        state->i2cRegData1 = 0xff;
     }
     state->fsm = next;
 }
@@ -222,20 +241,30 @@ void main_fsm_iteration(void) {
     //printf("Enter main FSM with state = %s\n", gFSMStateStrings[gState.fsm]);
     switch (prev) {
         case MCU_RESET: {
-            HAL_I2C_EnableListen_IT(&hi2c1);
             init_gpio_state(&gState);
             toggle_external_board(0);
-            transition_state(&gState, CABLE_DETECT);
+            transition_state(&gState, DEVICE_IDLE);
+            HAL_I2C_EnableListen_IT(&hi2c1);
+            break;
+        }
+        case DEVICE_IDLE: {
+            if (gState.i2cRegData1 == 0) {
+                transition_state(&gState, CABLE_DETECT);
+            }
             break;
         }
         case CABLE_DETECT: {
-            if (gState.connector_detect) {
+            if (gState.i2cRegData1 != 0) {
+                transition_state(&gState, DEVICE_IDLE);
+            } else if (gState.connector_detect) {
                 transition_state(&gState, CABLE_LOCK);
             }
             break;
         }
         case CABLE_LOCK: {
-            if (!gState.connector_detect) {
+            if (gState.i2cRegData1 != 0) {
+                transition_state(&gState, DEVICE_IDLE);
+            } else if (!gState.connector_detect) {
                 transition_state(&gState, CABLE_DETECT);
             } else if (gState.lock_switch) {
                 transition_state(&gState, POWER_OFF);
@@ -243,7 +272,9 @@ void main_fsm_iteration(void) {
             break;
         }
         case POWER_OFF: {
-            if (!gState.connector_detect) {
+            if (gState.i2cRegData1 != 0) {
+                transition_state(&gState, DEVICE_IDLE);
+            } else if (!gState.connector_detect) {
                 transition_state(&gState, CABLE_DETECT);
             } else if (!gState.lock_switch) {
                 transition_state(&gState, CABLE_LOCK);
@@ -253,7 +284,9 @@ void main_fsm_iteration(void) {
             break;
         }
         case POWER_ON: {
-            if (!gState.connector_detect) {
+            if (gState.i2cRegData1 != 0) {
+                transition_state(&gState, DEVICE_IDLE);
+            } else if (!gState.connector_detect) {
                 transition_state(&gState, CABLE_DETECT);
             } else if (!gState.lock_switch) {
                 transition_state(&gState, CABLE_LOCK);
