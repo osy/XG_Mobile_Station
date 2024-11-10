@@ -193,7 +193,7 @@ void transition_state(state_t *state, fsm_state_t next) {
     if (next == CABLE_LOCK) {
         update_cable_led(WHITE);
         toggle_external_board(1);
-    } else if (next == POWER_OFF && prev < next) {
+    } else if (next == POWER_ON && prev < next) {
         update_cable_led(RED);
     } else if (next <= CABLE_DETECT && prev > next) {
         update_cable_led(NONE);
