@@ -11,28 +11,86 @@ The I2C/SMBus pins from the connector is hooked up to the host's EC. The MCU com
 
 These are the commands supported by the real XG Mobile MCU:
 
-| Command (Byte 0) | Byte 1          | Byte 2 | Remaining    | Direction      | Description     |
-|------------------|-----------------|--------|--------------|----------------|-----------------|
-| 0xA0             | Register Number | Length | Data         | Host to Device | Write Register  |
-| 0xA1             | Register Number | Length | Data         | Device to Host | Read Register   |
-| 0xA2             | -               | -      | 0x01 or 0x02 | Device to Host | 0x02 = success? |
-| 0xA3             | -               | -      | 0x01         | Device to Host | Heartbeat?      |
+| Command (Byte 0) | Byte 1          | Byte 2 | Remaining                 | Direction      | Description     |
+|------------------|-----------------|--------|---------------------------|----------------|-----------------|
+| 0xA0             | Register Number | Length | Data                      | Host to Device | Write Register  |
+| 0xA1             | -               | -      | 0xD2, 0xDA, 0xDB, or 0xDC | Device to Host | Get event?      |
+| 0xA2             | -               | -      | 0x01 or 0x02              | Device to Host | Session status? |
+| 0xA3             | -               | -      | 0x01                      | Device to Host | Heartbeat?      |
 
 These are the registers:
 
-### Connect Sequence
+### Connect Sequence (Boot)
+
+1. Host send: `A0 07 01 01`
+2. Host send: `A0 01 01 00`
+3. Host send: `A0 0A 01 04`
+4. MCU asserts IRQ
+5. Host send: `A1`, MCU respond: `DC`, deasserts IRQ
+6. Host send: `A2`, MCU respond: `02`
+7. Host send: `A0 08 01 01`
+8. Host send: `A0 08 01 01`
+9. Host send: `A0 09 01 00`
+10. Host send: `A0 09 01 01`
+11. Host send: `A0 09 01 01`
+12. Host send: `A3`, MCU respond: `01` (repeat ad infinitum every second)
+
+### Connect Sequence (XGM Disconnected on Boot)
 
 1. Host send: `A0 07 01 01`
 2. Host send: `A0 01 01 00`
 3. Host send: `A0 0A 01 01`
-4. Host send: `A2`, MCU respond: `02`
-5. Host send: `A0 08 01 01`
-6. Host send: `A0 08 01 01`
-7. Host send: `A0 09 01 00`
-8. Host send: `A0 09 01 01`
-9. Host send: `A0 09 01 01`
-10. Host send: `A0 0A 01 02`
-11. Host send: `A3`, MCU respond: `01` (repeat ad infinitum)
+4. MCU asserts IRQ
+5. Host send: `A1`, MCU respond: `DC`, deasserts IRQ
+6. Host send: `A2`, MCU respond: `02`
+
+Press A to continue
+
+1. Host send: `A0 08 01 01`
+2. MCU asserts PWROK
+3. Host de-asserts RST
+4. Host send: `A0 09 01 00`
+5. Host send: `A0 09 01 01`
+6. Host send: `A0 09 01 01`
+7. Host send: `A0 0A 01 02` (only sometimes?)
+8. Host send: `A3`, MCU respond: `01` (repeat ad infinitum every second)
+
+### Connect Sequence (Windows)
+
+1. Host send: `A0 07 01 01`
+2. Host send: `A0 01 01 00`
+3. MCU asserts IRQ
+4. Host send: `A1`, MCU respond: `DC`, deasserts IRQ
+5. Host send: `A2`, MCU respond: `02`
+6. Host send: `A0 0A 01 04`
+
+XGM connect popup appears, user must click connect
+
+1. Host send: `A0 08 01 01`
+2. MCU asserts PWROK
+3. Host de-asserts RST
+4. Host send: `A0 09 01 01`
+5. Host send: `A3`, MCU respond: `01` (repeat ad infinitum every second)
+
+### Disconnect Sequence (Windows)
+
+1. Host send: `A0 08 01 00`
+2. Host stops sending `A3` after 2 more seconds
+
+### Reconnect Sequence (Windows)
+
+1. Host send: `A0 08 01 01`
+2. Host send: `A3`, MCU respond: `01` (repeat ad infinitum every second)
+
+### Shutdown Sequence (Windows)
+
+1. Host send: `A0 0D 01 01`
+2. Host send: `A0 09 01 00`
+3. Host send: `A0 09 01 00`
+4. Host send: `A0 01 01 05`
+5. MCU asserts IRQ
+6. Host send: `A1`, MCU respond: `DC`, deasserts IRQ
+7. Host send: `A2`, MCU respond: `01`
 
 ## Embedded Controller
 This information was gained by sniffing the I2C bus with a logic analyzer and also by reverse engineering the EC firmware. The EC for the ROG Ally can be found [here][1] and the MCU firmware for the 2021 XG Mobile can be found [here][2]. The ROG Ally has two chips a main controller and a secondary controller. Along with the XG Mobile's MCU, all three chips are different variants of ITE's embedded controller.
