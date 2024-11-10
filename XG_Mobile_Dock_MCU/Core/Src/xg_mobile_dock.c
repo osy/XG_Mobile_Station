@@ -50,6 +50,7 @@ typedef struct {
     int i2cCmd;
     int i2cReg;
     int i2cSize;
+    unsigned char i2cRegData1;
 } state_t;
 
 static state_t gState;
@@ -174,6 +175,16 @@ void turn_power_off() {
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_RESET);
 }
 
+void assert_ec_irq() {
+    printf("Asserting EC IRQ\n");
+    HAL_GPIO_WritePin(MCU_IRQ_GPIO_Port, MCU_IRQ_Pin, GPIO_PIN_RESET);
+}
+
+void clear_ec_irq() {
+    printf("Clearing EC IRQ\n");
+    HAL_GPIO_WritePin(MCU_IRQ_GPIO_Port, MCU_IRQ_Pin, GPIO_PIN_SET);
+}
+
 void transition_state(state_t *state, fsm_state_t next) {
     fsm_state_t prev = state->fsm;
 
@@ -193,6 +204,14 @@ void transition_state(state_t *state, fsm_state_t next) {
         turn_power_off();
     } else if (prev < POWER_ON && next >= POWER_ON) {
         turn_power_on();
+    }
+    // send IRQ
+    if (prev < CABLE_LOCK && next >= CABLE_LOCK) {
+        assert_ec_irq();
+    }
+    // reset I2C state
+    if (prev > CABLE_LOCK && next <= CABLE_LOCK) {
+        state->i2cRegData1 = 0;
     }
     state->fsm = next;
 }
@@ -285,13 +304,17 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
 {
     if (gState.i2c == I2C_STATE_IDLE) {
         gState.i2cCmd = gState.i2cBuffer[0];
-        if (gState.i2cCmd == 0xA0 || gState.i2cCmd == 0xA1) {
+        if (gState.i2cCmd == 0xA0) {
             gState.i2c = I2C_STATE_ACCESS_REG;
             HAL_I2C_Slave_Seq_Receive_IT(hi2c, gState.i2cBuffer, 1, I2C_NEXT_FRAME);
-        } else if (gState.i2cCmd == 0xA2 || gState.i2cCmd == 0xA3) {
+        } else if (gState.i2cCmd == 0xA1 || gState.i2cCmd == 0xA2 || gState.i2cCmd == 0xA3) {
             gState.i2cReg = 0;
-            if (gState.i2cCmd == 0xA2) {
-                gState.i2cBuffer[0] = 2;
+            if (gState.i2cCmd == 0xA1) {
+                clear_ec_irq();
+                gState.i2cBuffer[0] = 0xDC;
+                gState.i2cSize = 1;
+            } else if (gState.i2cCmd == 0xA2) {
+                gState.i2cBuffer[0] = gState.i2cRegData1 == 0 ? 2 : 1;
                 gState.i2cSize = 1;
             } else if (gState.i2cCmd == 0xA3) {
                 gState.i2cBuffer[0] = 1;
@@ -311,12 +334,7 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
         HAL_I2C_Slave_Seq_Receive_IT(hi2c, gState.i2cBuffer, 1, I2C_NEXT_FRAME);
     } else if (gState.i2c == I2C_STATE_ACCESS_SIZE) {
         gState.i2cSize = gState.i2cBuffer[0];
-        if (gState.i2cCmd == 0xA0) {
-            gState.i2c = I2C_STATE_WAIT_DATA;
-        } else {
-            memset(gState.i2cBuffer, 0, gState.i2cSize); // we don't care about reads
-            gState.i2c = I2C_STATE_SEND_DATA;
-        }
+        gState.i2c = I2C_STATE_WAIT_DATA;
         HAL_I2C_Slave_Seq_Receive_IT(hi2c, gState.i2cBuffer, gState.i2cSize, I2C_LAST_FRAME);
     } else if (gState.i2c == I2C_STATE_WAIT_DATA) {
         printf("I2C: CMD = 0x%02X, reg = 0x%02X, size = %d\n", gState.i2cCmd, gState.i2cReg, gState.i2cSize);
@@ -325,6 +343,9 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
             printf("0x%02X ", gState.i2cBuffer[i]);
         }
         printf("\n");
+        if (gState.i2cCmd == 0xA0 && gState.i2cSize == 1 && gState.i2cReg == 1) {
+            gState.i2cRegData1 = gState.i2cBuffer[0];
+        }
         gState.i2c = I2C_STATE_IDLE;
     }
 }
