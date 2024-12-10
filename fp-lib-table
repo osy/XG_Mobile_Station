@@ -24,4 +24,6 @@
   (lib (name "AP7361-10ER-13")(type "KiCad")(uri "${KIPRJMOD}/Footprints/AP7361-10ER-13.pretty")(options "")(descr ""))
   (lib (name "39300240")(type "KiCad")(uri "${KIPRJMOD}/Footprints/39300240.pretty")(options "")(descr ""))
   (lib (name "469911008")(type "KiCad")(uri "${KIPRJMOD}/Footprints/469911008.pretty")(options "")(descr ""))
+  (lib (name "LM5117PMH")(type "KiCad")(uri "${KIPRJMOD}/Footprints/LM5117PMH.pretty")(options "")(descr ""))
+  (lib (name "0455860005")(type "KiCad")(uri "${KIPRJMOD}/Footprints/0455860005.pretty")(options "")(descr ""))
 )

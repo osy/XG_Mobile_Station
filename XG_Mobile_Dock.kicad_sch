@@ -20022,6 +20022,102 @@
 		)
 	)
 	(sheet
+		(at 66.04 166.37)
+		(size 15.24 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "26322c8e-865a-4643-ac24-993508e41094")
+		(property "Sheetname" "Power 12V (1)"
+			(at 66.04 165.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power_12V.kicad_sch"
+			(at 66.04 170.7646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SHUTDOWN#" input
+			(at 81.28 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "bfdb95fa-b974-4120-aa3d-d5f000c513ec")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 66.04 175.26)
+		(size 15.24 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9c4a4d90-ef47-4134-81ea-2f9021c52e0b")
+		(property "Sheetname" "Power 12V (2)"
+			(at 66.04 174.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power_12V.kicad_sch"
+			(at 66.04 179.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SHUTDOWN#" input
+			(at 81.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "40b2e346-9bbf-4a94-8a43-446a4df6d25c")
+		)
+		(instances
+			(project "XG_Mobile_Dock"
+				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 44.45 166.37)
 		(size 17.78 12.7)
 		(fields_autoplaced yes)
@@ -20342,7 +20438,7 @@
 		(instances
 			(project "XG_Mobile_Dock"
 				(path "/f97e6956-ab08-42cb-8fed-03fa58e87f0e"
-					(page "7")
+					(page "9")
 				)
 			)
 		)
