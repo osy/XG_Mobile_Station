@@ -5019,6 +5019,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part_Number" "LM5117PMHX/NOPB"
+			(at 87.63 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C390088"
+			(at 87.63 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3031d7a3-0443-4268-8922-d2dfb508ab71")
 		)
