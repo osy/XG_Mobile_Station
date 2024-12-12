@@ -4982,7 +4982,7 @@
 				)
 			)
 		)
-		(property "Value" "LM5117PMH/NOPB"
+		(property "Value" "LM5117PMHX/NOPB"
 			(at 87.63 31.75 0)
 			(effects
 				(font
