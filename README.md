@@ -1,5 +1,6 @@
 XG Mobile Dock
 ==============
+
 This open source hardware allows you to connect any PCIe card to an ASUS ROG device with the XG Mobile connector.
 
 [![Board 3D model](Docs/images/board-3d.png)](Docs/images/board-3d.png)
@@ -8,9 +9,10 @@ The standard variant is a drop-in replacement PCB for the [XG Station Pro Thunde
 
 [![Board 3D model](Docs/images/board-lite-3d.png)](Docs/images/board-lite-3d.png)
 
-The lite variant is a drop-in replacement PCB for the [ADT-UT3G][6]. It requires a standard ATX power supply and passes through the USB to an external port.
+The lite variant is a fully-functional PCB design based on the [ADT-UT3G][6]. It requires a standard ATX power supply and passes through the USB to an external port.
 
 ## Features
+
 * PCIe 3.0 x8 support for 2021/2022/2023 ROG Flow (4.0 currently untested)
 * PCIe 4.0 x4 support for 2023 ROG Ally
 * MCU handling cable detection and LEDs
@@ -18,14 +20,17 @@ The lite variant is a drop-in replacement PCB for the [ADT-UT3G][6]. It requires
 * 2 USB-C ports connected to a USB 3.1 Gen 2 hub (standard variant)
 
 ## Getting Started
+
 1. [Build the PCB](Docs/Build_Guide.md)
 2. [Flash the board](#flashing-firmware)
 3. [Install the software](#install-xgmactivator)
 
 ### Flashing Firmware
+
 Lite boards only need to flash STM32 while the standard board requires writing two SPI flash as well.
 
 #### STM32 MCU
+
 1. Download `XG_Mobile_Dock_MCU.bin` from the latest release or [build your own](Docs/Build_Guide.md#mcu).
 2. Download and install [ST32CubeProgrammer][2].
 3. Connect your ST-LINK v2 to your computer. Note if you are using a cheap clone from Amazon or Aliexpress, the pin numbers printed on the device may be incorrect.
@@ -37,6 +42,7 @@ Lite boards only need to flash STM32 while the standard board requires writing t
 9. Click "Connect" on the right sidebar and then "Start Programming" on the left.
 
 #### SPI Flash for TI USB PD
+
 We will be using a Raspberry Pi, although most other SBC can also work as well as dedicated SPI flashers.
 
 1. [Enable the SPI interface on the Raspberry Pi.][3]
@@ -46,6 +52,7 @@ We will be using a Raspberry Pi, although most other SBC can also work as well a
 5. Flash the firmware: `sudo flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=1000 -w XG_Mobile_Dock_Charger.bin`
 
 #### SPI Flash for VIA USB Hub
+
 We will be using a Raspberry Pi, although most other SBC can also work as well as dedicated SPI flashers.
 
 1. [Enable the SPI interface on the Raspberry Pi.][3]
@@ -55,6 +62,7 @@ We will be using a Raspberry Pi, although most other SBC can also work as well a
 5. Flash the firmware: `sudo flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=1000 -w VL822_Q7_9043_Phantom_20220616.bin`
 
 ### Install XGMDriver
+
 XGMDriver tricks ARMORY CRATE software into identifying the custom dock as an official XG Mobile device. Once installed, it should work even if ARMORY CRATE software is updated. You can check out the [source code here](XGMDriver).
 
 1. Download `XGMDriverSetup.exe` from the latest release.
@@ -64,24 +72,31 @@ XGMDriver tricks ARMORY CRATE software into identifying the custom dock as an of
 ## Troubleshooting
 
 ### Error 43 or no video output on NVIDIA GPUs
+
 This is a well known issue with NVIDIA eGPUs. Once the eGPU is installed along with the correct drivers, you will need to install [this script][5].
 
 ### PCIe is only getting 3.0 speeds
+
 You need to restart your device. For some reason, hot plugging sometimes results in 3.0 speeds.
 
 ### No popup when XGM is connected
+
 Sometimes, the device will not be detected and you can flip the lock switch off and on again to force the software to re-detect the device.
 
 ### "It appears that your XG Mobile is not properly connected..."
+
 If you get a pop-up saying XG Mobile is not properly connected, make sure [XGMDriver](#install-xgmdriver) is installed. If this is still an issue with XGMDriver installed, there is likely a connection issue with the cable.
 
 ### ASUS Driver install popup on reboot
+
 Re-install XGMDriver to inhibit the ASUS driver popup.
 
 ### Lite: USB is not detected
+
 The lite board does not have USB orientation detection. Try flipping the USB-C cable upside down and try again.
 
 ## References
+
 Knowledge base for all things XGM gathered from reverse engineering the hardware and software.
 
 * [XGM connector information](Docs/Connector.md)
