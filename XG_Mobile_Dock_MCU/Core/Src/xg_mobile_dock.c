@@ -5,7 +5,7 @@
 extern I2C_HandleTypeDef hi2c1;
 extern I2C_HandleTypeDef hi2c2;
 extern UART_HandleTypeDef huart1;
-extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim3;
 
 typedef enum {
     MCU_RESET=0,
@@ -57,6 +57,9 @@ typedef struct {
 
 static state_t gState;
 
+extern void fans_start(void);
+extern void fans_stop(void);
+
 int __io_putchar(int ch) {
     if (ch == '\n') {
         uint8_t r = '\r';
@@ -78,14 +81,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     } else {
         if (gState.debounce_pins) {
             // reset timer, wait for last bounce
-            HAL_TIM_Base_Stop_IT(&htim1);
+            HAL_TIM_Base_Stop_IT(&htim3);
         }
-        HAL_TIM_Base_Start_IT(&htim1);
+        HAL_TIM_Base_Start_IT(&htim3);
         gState.debounce_pins |= GPIO_Pin;
     }
 }
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+void HAL_TIM3_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if ((gState.debounce_pins & LOCK_SW_Pin) != 0) {
         gState.lock_switch = HAL_GPIO_ReadPin(LOCK_SW_GPIO_Port, LOCK_SW_Pin) == GPIO_PIN_SET;
         printf("Pin changed: LOCK_SW = %d\n", gState.lock_switch);
@@ -141,6 +144,14 @@ void update_cable_led(led_colour_t colour) {
     }
 }
 
+void update_case_led(int on) {
+    if (on) {
+        HAL_GPIO_WritePin(CASE_LED_GPIO_Port, CASE_LED_Pin, GPIO_PIN_RESET);
+    } else {
+        HAL_GPIO_WritePin(CASE_LED_GPIO_Port, CASE_LED_Pin, GPIO_PIN_SET);
+    }
+}
+
 void toggle_external_board(int on) {
     int tries = 5;
 
@@ -165,6 +176,7 @@ void toggle_external_board(int on) {
 void turn_power_on() {
     printf("Turning on PCIe power\n");
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(HP_SHDN_GPIO_Port, HP_SHDN_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_SET);
 }
 
@@ -172,6 +184,7 @@ void turn_power_off() {
     printf("Turning off PCIe power\n");
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(HP_SHDN_GPIO_Port, HP_SHDN_Pin, GPIO_PIN_SET);
 }
 
 void assert_ec_irq() {
@@ -199,12 +212,15 @@ void transition_state(state_t *state, fsm_state_t next) {
 
     printf("Transition %s -> %s\n", gFSMStateStrings[prev], gFSMStateStrings[next]);
     // update cable LED
-    if (next == CABLE_LOCK) {
+    if (next == CABLE_LOCK || next == POWER_OFF) {
         update_cable_led(WHITE);
-    } else if (next == POWER_ON && prev < next) {
+        update_case_led(0);
+    } else if (next == POWER_ON) {
         update_cable_led(RED);
-    } else if (next < CABLE_LOCK && prev > next) {
+        update_case_led(1);
+    } else {
         update_cable_led(NONE);
+        update_case_led(0);
     }
     // LOCK_DET
     if (next > CABLE_LOCK && prev < next) {
@@ -245,6 +261,7 @@ void main_fsm_iteration(void) {
             toggle_external_board(0);
             transition_state(&gState, DEVICE_IDLE);
             HAL_I2C_EnableListen_IT(&hi2c1);
+            fans_start();
             break;
         }
         case DEVICE_IDLE: {
