@@ -3387,6 +3387,12 @@
 		(uuid "167fd122-324b-42fe-b25e-9dc84e9f7cb2")
 	)
 	(junction
+		(at 229.87 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2393d787-f6a1-4560-a4e2-cfdbfb08c94c")
+	)
+	(junction
 		(at 213.36 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3648,16 +3654,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 30.48) (xy 210.82 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "162c7efc-1378-4a23-b221-439029cf0214")
-	)
-	(wire
-		(pts
 			(xy 30.48 45.72) (xy 30.48 48.26)
 		)
 		(stroke
@@ -3675,16 +3671,6 @@
 			(type default)
 		)
 		(uuid "17d15041-2ee3-4430-aaa5-1578b5f3759f")
-	)
-	(wire
-		(pts
-			(xy 242.57 30.48) (xy 242.57 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19e57163-a334-4702-8b77-36713f09faa1")
 	)
 	(wire
 		(pts
@@ -3748,6 +3734,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 49.53) (xy 242.57 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2825cd0e-7c50-4bc5-b7e5-be069195f88a")
+	)
+	(wire
+		(pts
 			(xy 217.17 58.42) (xy 217.17 59.69)
 		)
 		(stroke
@@ -3765,6 +3761,16 @@
 			(type default)
 		)
 		(uuid "3056bfbd-0b8f-4ff3-ac87-6664fc53253b")
+	)
+	(wire
+		(pts
+			(xy 242.57 49.53) (xy 242.57 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3313b065-942c-44bc-8543-c714a284188c")
 	)
 	(wire
 		(pts
@@ -4782,7 +4788,7 @@
 		)
 		(uuid "2f10c6bc-39d3-4883-8a61-4785a2e31271")
 	)
-	(label "~{FAN_ON}"
+	(label "FAN_ON"
 		(at 72.39 71.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4826,7 +4832,7 @@
 		)
 		(uuid "5588249c-5973-4d41-9ce1-3fdf90866996")
 	)
-	(label "~{FAN_ON}"
+	(label "FAN_ON"
 		(at 181.61 54.61 180)
 		(fields_autoplaced yes)
 		(effects
@@ -8207,7 +8213,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "47k"
 			(at 128.2701 66.04 0)
 			(effects
 				(font
@@ -8243,7 +8249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "0402WGF4701TCE"
+		(property "Part_Number" "0402WGF4702TCE"
 			(at 129.54 63.5 0)
 			(effects
 				(font
@@ -8252,7 +8258,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
+		(property "LCSC" "C25792"
 			(at 129.54 63.5 0)
 			(effects
 				(font
