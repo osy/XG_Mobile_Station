@@ -8,7 +8,7 @@ The standard variant is a drop-in replacement PCB for the [XG Station Pro Thunde
 
 [![Board 3D model](Docs/images/board-lite-3d.png)](Docs/images/board-lite-3d.png)
 
-The lite variant is a drop-in replacement PCB for the [ADT-UT3G][6]. It requires a standard ATX power supply and passes through the USB to an external port.
+The lite variant is a standalone board that is compatible in dimensions with the [ADT-UT3G][6]. It requires a standard ATX power supply and passes through the USB to an external port.
 
 ## Features
 * PCIe 3.0 x8 support for 2021/2022/2023 ROG Flow (4.0 currently untested)

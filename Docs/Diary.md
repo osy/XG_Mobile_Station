@@ -105,6 +105,15 @@ By popular demand, we also introduced a "lite" variant of the board which is cos
 
 We chose to match the form factor to the ADT-UT3G in order to be compatible with third party case designs.
 
+### Rev. 6
+Originally, we didn't design a 300W DC-DC power supply because of the increased complexity and opted to build a passthrough cable for the 20V connector in order to use the power circuit from the original board. While this had worked, we were not happy with the thermal performance because we had to remove the case fans to make room for the board. To avoid the need to test multiple iterations of a high wattage power supply, we took a shortcut once again and stole a [TI reference design](https://www.ti.com/tool/PMP10852). By using the same BOM and layout we avoided the need to do extensive testing on the design.
+
+[![Board rev 6](images/board_v6.png)](images/board_v6.png)
+
+In addition to the power supply, we also added fan connectors and wrote a PWM driver in the microcontroller and support for the case LED. This means the board is now a complete replacement for the original and we no longer need the original board.
+
+After testing the boards, there was some minor issues including hiccup mode in the over-current protection of the power supply. The controller disables the FETs until a timer expires during an over-current condition but because the GPU is using two supplies in parallel, it is acceptable for short periods of over-current on one supply (it should drop the voltage and the other supply will then ramp up).
+
 ## Final Build (rev. 4)
 Originally, we wanted to fit a 2 slot GPU into the case, which meant we could have daisy chained the PCIe power PCB on the side. However, after getting a NVIDIA RTX 4070 Ti SUPER (a 2.7 slot card), we had to adapt the power connector. The solution was to make a [riser cable](../Power_Riser) for the power connector which allowed us to mount (tape) the power PCB to the top of the enclosure.
 
