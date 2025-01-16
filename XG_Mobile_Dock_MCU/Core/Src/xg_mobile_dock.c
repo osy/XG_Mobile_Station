@@ -237,8 +237,10 @@ void transition_state(state_t *state, fsm_state_t next) {
     // power off/on
     if (prev > POWER_OFF && next <= POWER_OFF) {
         turn_power_off();
+        fans_stop();
     } else if (prev < POWER_ON && next >= POWER_ON) {
         turn_power_on();
+        fans_start();
     }
     // send IRQ
     if (prev < CABLE_LOCK && next >= CABLE_LOCK) {
@@ -261,7 +263,6 @@ void main_fsm_iteration(void) {
             toggle_external_board(0);
             transition_state(&gState, DEVICE_IDLE);
             HAL_I2C_EnableListen_IT(&hi2c1);
-            fans_start();
             break;
         }
         case DEVICE_IDLE: {
