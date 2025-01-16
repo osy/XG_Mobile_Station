@@ -27075,7 +27075,7 @@
 		(layer "F.CrtYd")
 		(uuid "e4cb75b0-94c7-4e01-9d6a-70ac735c2441")
 	)
-	(gr_text "SDA"
+	(gr_text "SCL"
 		(at 177.83666 52.22654 0)
 		(layer "F.SilkS")
 		(uuid "12f0491e-4f03-427a-b409-dd85b864b89a")
@@ -27099,7 +27099,7 @@
 			(justify right bottom)
 		)
 	)
-	(gr_text "SCL"
+	(gr_text "SDA"
 		(at 177.83666 54.72654 0)
 		(layer "F.SilkS")
 		(uuid "305e112a-e4a6-4ed4-b5ae-be93e495bbc6")
