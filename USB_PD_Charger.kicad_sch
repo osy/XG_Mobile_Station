@@ -13526,7 +13526,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 136.8552 144.78 0)
 			(effects
 				(font
@@ -13553,7 +13553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL05A106MQ5NUNC"
+		(property "Part_Number" "CL10A106MA8NRNC"
 			(at 135.89 140.97 0)
 			(effects
 				(font
@@ -13562,7 +13562,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15525"
+		(property "LCSC" "C96446"
 			(at 135.89 140.97 0)
 			(effects
 				(font
@@ -15923,7 +15923,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 136.8552 119.38 0)
 			(effects
 				(font
@@ -15950,7 +15950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "CL05A106MQ5NUNC"
+		(property "Part_Number" "CL10A106MA8NRNC"
 			(at 135.89 115.57 0)
 			(effects
 				(font
@@ -15959,7 +15959,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15525"
+		(property "LCSC" "C96446"
 			(at 135.89 115.57 0)
 			(effects
 				(font
