@@ -177,6 +177,7 @@ void turn_power_on() {
     printf("Turning on PCIe power\n");
     HAL_GPIO_WritePin(PCI_12V_EN_GPIO_Port, PCI_12V_EN_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(HP_SHDN_GPIO_Port, HP_SHDN_Pin, GPIO_PIN_RESET);
+    HAL_Delay(1000);
     HAL_GPIO_WritePin(PWROK_GPIO_Port, PWROK_Pin, GPIO_PIN_SET);
 }
 
