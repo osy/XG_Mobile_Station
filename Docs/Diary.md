@@ -147,6 +147,19 @@ We removed the bracket from a PNY 3050 because it had the same mounting screws a
 
 With the mounting bracket installed, the GPU fits securely inside the enclosure and the cable is also protected against accidental pulls.
 
+## Final Build (rev. 6)
+We weren't happy with the solution in rev. 4 which required mounting the original logic board in order to steal the 12V DC-DC converter and not have to design our own. The heat output from the GPU made it hard for the board to stick to the top of the case with electrical tape. Additionally, there was no room to mount the case fans and the top mounted board impeded airflow even more. As a result, we decided to bite the bullet and add our own 2x 150W @ 12V DC-DC power supply along and a PWM fan controller as well. The final design of rev. 6 is now a complete logic board replacement.
+
+[![After installation](images/rev_6_installed.jpg)](images/rev_6_installed.jpg)
+
+[![After installation with cable](images/rev_6_installed_cable.jpg)](images/rev_6_installed_cable.jpg)
+
+[![ROG Ally connected with completed build](images/rev_6_completed.jpg)](images/rev_6_completed.jpg)
+
+Here is a box of all the various revisions that we tested:
+
+[![Box of waste boards](images/box_of_waste.jpg)](images/box_of_waste.jpg)
+
 ### Performance
 We are able to get PCIe 4.0 x4 speeds meaning that it will perform similar to an OCuLink x4 setup.
 

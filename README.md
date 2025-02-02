@@ -11,11 +11,12 @@ The standard variant is a drop-in replacement PCB for the [XG Station Pro Thunde
 The lite variant is a standalone board that is compatible in dimensions with the [ADT-UT3G][6]. It requires a standard ATX power supply and passes through the USB to an external port.
 
 ## Features
-* PCIe 3.0 x8 support for 2021/2022/2023 ROG Flow (4.0 currently untested)
-* PCIe 4.0 x4 support for 2023 ROG Ally
+* Up to PCIe 4.0 x8 support for 2021/2022/2023 ROG Flow
+* Up to PCIe 4.0 x4 support for 2023 ROG Ally
 * MCU handling cable detection and LEDs
 * 65W USB PD charger (standard variant)
 * 2 USB-C ports connected to a USB 3.1 Gen 2 hub (standard variant)
+* 300W DC-DC power supply (standard variant)
 
 ## Getting Started
 1. [Build the PCB](Docs/Build_Guide.md)
@@ -66,8 +67,26 @@ XGMDriver tricks ARMORY CRATE software into identifying the custom dock as an of
 ### Error 43 or no video output on NVIDIA GPUs
 This is a well known issue with NVIDIA eGPUs. Once the eGPU is installed along with the correct drivers, you will need to install [this script][5].
 
-### PCIe is only getting 3.0 speeds
-You need to restart your device. For some reason, hot plugging sometimes results in 3.0 speeds.
+### PCIe is only getting 3.0 speeds after hot plugging
+You need to restart your device. For some reason, hot plugging results in 3.0 speeds.
+
+### Unable to get 4.0 speeds
+If you observe any of the following:
+* GPU-Z changes between 4.0 and lower versions *when under load*
+* You observe a lot of stuttering or < 10 FPS in 1% lows
+* Windows behaves extremely slowly (moving the mouse cursor will take > 1 sec to respond)
+* Event viewer for System shows multiple times: "WHEA-Logger Event ID:17 - A corrected hardware error has occurred"
+
+Then the device is having trouble sustaining PCIe 4.0 speeds. This can be caused by any combination of the following issues:
+
+1. The board was not manufactured properly with impedance matching or the high speed connectors were not properly soldered. Verify that the boards were manufactured with the correct specifications and test multiple boards.
+2. The GPU is malfunctioning or is not mounted correctly. Make sure you can obtain PCIe 4.0 speeds on a desktop PC.
+3. The XGM cable is not connected to the board correctly. Make sure the two 40P connectors are tight and the metal bar is locked over the connector to prevent unintentional loosening. Make sure the shielding screw is tightly screwed to the screw terminal next to the connector. Make sure the cable isn't twisted or bent any more than it needs to be. If the XGM cable came coiled up, try to carefully straighten it.
+4. The XGM cable is not manufactured correctly. The official XGM device only supports PCIe 3.0 speeds so the cable is only rated for PCIe 3.0. We found that some cables are easier to get 4.0 speeds working than other cables so there is some manufacturing variance.
+
+You can run FurMark for a long duration and observe the GPU load to check that it is able to maintain 4.0 speeds. If the GPU is constantly trying to switch speeds, you will observe large FPS drops and large dips in the GPU usage percentage. You can also use CUDA-Z to check the access speeds while under load.
+
+If you cannot maintain PCIe 4.0 speeds, you can always do a hot-unplug and hot-plug to force it to run in PCIe 3.0 mode.
 
 ### No popup when XGM is connected
 Sometimes, the device will not be detected and you can flip the lock switch off and on again to force the software to re-detect the device.

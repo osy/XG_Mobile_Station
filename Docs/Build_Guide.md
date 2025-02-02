@@ -108,6 +108,8 @@ Alternatively, if you want to build and develop the firmware, the easiest way is
 ## Building XG Mobile Station
 The standard build is designed to fit inside the XG Station Pro enclosure and replace the original board.
 
+[![Before installation](images/rev_6_before_install.jpg)](images/rev_6_before_install.jpg)
+
 1. Start by completely disassembling the XG Station Pro. Remove the top and side covers. Unscrew the right fan (the left fan does not block any other screws and does not have to be removed).
 2. Remove the GPU if connected.
 3. Unscrew the power adapter (3 screws) and lift the power adapter up and out. The connector may get caught on the fabric on the case so you might have to tilt it as you try to remove the board.
@@ -122,3 +124,9 @@ The standard build is designed to fit inside the XG Station Pro enclosure and re
 11. Connect the XG Mobile cable (3 connectors) and then carefully fold the cable 180 degrees so the XGM connector is pointing towards the PCIe slot. You should fold the cable towards you as to not impede the PCIe slot with the cable. Do not attempt to force bend the cable as it may be damaged. The XGM connector can be threaded through the PCIe slot closest to the outside edge.
 12. Attach the ground pin to the board with the screw on the terminal.
 13. Insert the GPU to the board and connect the PCIe power cable(s). You may need to cut the mounting bracket of the GPU in order to make space for the XGM cable.
+
+[![After installation](images/rev_6_installed.jpg)](images/rev_6_installed.jpg)
+
+[![After installation with cable](images/rev_6_installed_cable.jpg)](images/rev_6_installed_cable.jpg)
+
+Important Note: The DC-DC power supply is capable of supplying 180W to each PCIe 8-pin connector, 65W to the USB-C port, and 72W to the PCIe slot + the PWM fans. However, the AC-DC power supply input is rated for a maximum of 330W. This means that if you max out every possible power source, you may cause the system to shut down or in an unlikely worst case scenario start a fire. On our device, we found that the power supply is capable of 360W (measured from the wall) for long durations without overheating however this may vary with each unit. It is recommended that you limit the GPU power consumption to a maximum of 285W or lower (undervolting it if needed) to be absolutely safe.
