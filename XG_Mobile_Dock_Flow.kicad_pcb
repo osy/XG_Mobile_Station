@@ -46424,7 +46424,7 @@
 			(justify right bottom)
 		)
 	)
-	(gr_text "XG Mobile Dock Lite v0.6"
+	(gr_text "XG Mobile Dock Flow v0.6"
 		(at 75.621496 55.121496 0)
 		(layer "F.SilkS")
 		(uuid "ae51a234-dc01-4609-871b-8aaa0035de15")
