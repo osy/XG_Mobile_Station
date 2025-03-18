@@ -145,9 +145,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "../XG_Mobile_Station_Release/")
 		)
 	)
 	(net 0 "")
@@ -411,7 +411,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "ce196f9c-e933-446d-a4ff-a3c72e645394")
@@ -865,7 +865,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "adbb2439-7c53-483d-bda0-ab0e339c6cb2")
@@ -2276,7 +2276,7 @@
 		(path "/e1fb5159-2fce-41e0-853e-150135900365")
 		(sheetname "/")
 		(sheetfile "XG_Mobile_Dock_Flow.kicad_sch")
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole)
 		(fp_line
 			(start 4.877981 0.635)
 			(end 3.353981 0)
@@ -4397,7 +4397,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "4b732c5f-d9a0-4c91-ad51-bfe221eeb7bc")
@@ -10035,7 +10035,7 @@
 		(fp_text user "*"
 			(at -3.9878 -1.6 0)
 			(layer "F.SilkS")
-			(uuid "a9b6bb26-79e4-48b2-88ab-80f60df8c555")
+			(uuid "f3042685-f2b7-427d-ae2a-7cc9cf3c56a4")
 			(effects
 				(font
 					(size 1 1)
@@ -10058,7 +10058,7 @@
 		(fp_text user "*"
 			(at -2.54 -1.6 0)
 			(layer "F.Fab")
-			(uuid "265aa2cc-3869-4f95-a6a7-3d511ca0a949")
+			(uuid "55363470-f453-4d7b-be3a-e9d75a24b4cd")
 			(effects
 				(font
 					(size 1 1)
@@ -10454,7 +10454,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "1730d45a-7a1d-432f-ae3d-81e123cce7e1")
+			(uuid "d0e64e16-3cf8-4620-a76b-68d91a371b99")
 		)
 		(pad "41" smd rect
 			(at -0.032192 0.801077 180)
@@ -10463,7 +10463,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "1730d45a-7a1d-432f-ae3d-81e123cce7e1")
+			(uuid "ac608545-1fb5-456c-b88c-86354793dfeb")
 		)
 		(pad "41" smd rect
 			(at -0.004079 -0.759231 180)
@@ -10472,7 +10472,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "1730d45a-7a1d-432f-ae3d-81e123cce7e1")
+			(uuid "cd293089-591e-4b12-968e-13a66a76c618")
 		)
 		(pad "41" smd rect
 			(at 1.636021 0.793712 180)
@@ -10481,7 +10481,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "1730d45a-7a1d-432f-ae3d-81e123cce7e1")
+			(uuid "9777bf31-84db-4c4b-88bc-468baee434d5")
 		)
 		(pad "41" smd rect
 			(at 1.636113 -0.766914 180)
@@ -10490,7 +10490,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "1730d45a-7a1d-432f-ae3d-81e123cce7e1")
+			(uuid "cc2d5603-bd4c-4dc8-b978-1b693f0dbb25")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/Models/SN75LVPE4410RNQR.stp"
@@ -10522,7 +10522,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "beb9ed4b-20d7-4a82-9bb9-df90ee8a57da")
@@ -16462,7 +16462,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "3ae3746d-412f-420a-bfaa-12a5e4ff5ffa")
@@ -17105,7 +17105,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "29c592b4-61bb-487e-9adc-bfaf1635bc38")
@@ -18176,7 +18176,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "47592a96-ae95-4b4b-9e5a-6740dfd4b6a1")
@@ -18371,7 +18371,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "502b7a33-4edc-4e41-92bd-b36dfe1789b3")
@@ -19366,7 +19366,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "ac1d95d3-82f2-454e-9fde-d33762d8bd3a")
@@ -20269,7 +20269,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "ec599ced-716d-4ccd-9ee4-27da3d051421")
@@ -27233,7 +27233,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "1e2e1a80-fa14-4305-9439-42169c129ea9")
@@ -28194,7 +28194,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "6e2c558c-b86b-44d7-b112-57616c12c66e")
@@ -28389,7 +28389,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "a7797515-67ee-4a8e-bf7c-e7d18096f65f")
@@ -34201,7 +34201,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "c2fe72c2-9c05-4258-967e-28ebeb37ef05")
@@ -36916,6 +36916,17 @@
 			(uuid "25e9a920-7923-4d49-bdeb-d5135fb0ee94")
 		)
 		(fp_text user "*"
+			(at -3.9878 -1.6 0)
+			(layer "F.SilkS")
+			(uuid "93f5057f-ba81-4b40-bfd9-9e8a89ad6e07")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "*"
 			(at -3.9878 -1.6 180)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -36928,9 +36939,9 @@
 			)
 		)
 		(fp_text user "*"
-			(at -3.9878 -1.6 0)
-			(layer "F.SilkS")
-			(uuid "d2b4965c-7ef3-4a29-b641-cabad28c931d")
+			(at -2.54 -1.6 0)
+			(layer "F.Fab")
+			(uuid "302c815d-c25c-4c19-ac23-8d16d4d5231a")
 			(effects
 				(font
 					(size 1 1)
@@ -36941,17 +36952,6 @@
 		(fp_text user "*"
 			(at -2.54 -1.6 180)
 			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "c108186b-e416-4a85-9fda-4f1c8e52d975")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "*"
-			(at -2.54 -1.6 0)
 			(layer "F.Fab")
 			(uuid "c108186b-e416-4a85-9fda-4f1c8e52d975")
 			(effects
@@ -37349,7 +37349,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "52bafe9e-a21d-4dff-bda0-5fc8cb4e1408")
+			(uuid "5335c150-8551-48e7-9746-08b8d2ef1aaa")
 		)
 		(pad "41" smd rect
 			(at -0.017109 0.789028 180)
@@ -37358,7 +37358,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "52bafe9e-a21d-4dff-bda0-5fc8cb4e1408")
+			(uuid "e8c2308f-d4e8-49de-acb7-62bc2cf69233")
 		)
 		(pad "41" smd rect
 			(at 0.011004 -0.77128 180)
@@ -37367,7 +37367,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "52bafe9e-a21d-4dff-bda0-5fc8cb4e1408")
+			(uuid "fcd8cafc-5704-4e6e-8094-c9098583424a")
 		)
 		(pad "41" smd rect
 			(at 1.651104 0.781663 180)
@@ -37376,7 +37376,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "52bafe9e-a21d-4dff-bda0-5fc8cb4e1408")
+			(uuid "044f3067-d6e5-4a06-9b4e-7f7006f33a68")
 		)
 		(pad "41" smd rect
 			(at 1.651196 -0.778963 180)
@@ -37385,7 +37385,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_out")
-			(uuid "52bafe9e-a21d-4dff-bda0-5fc8cb4e1408")
+			(uuid "8da82d63-8035-46b7-a4d8-5334ef869497")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/Models/SN75LVPE4410RNQR.stp"
@@ -40627,7 +40627,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "32203e27-2172-47a3-b4ff-9bae34613139")
@@ -41432,7 +41432,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22μF"
+		(property "Value" "220nF"
 			(at 0 1.05 90)
 			(layer "F.Fab")
 			(uuid "24fa954b-8cf9-48db-bbfc-c31842408b88")
@@ -42621,7 +42621,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "c842ce27-c389-4e99-912f-c1509cc31060")
@@ -42821,7 +42821,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "aa7a452a-00ba-476a-b0e5-b59fc2c676e3")
@@ -43021,7 +43021,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "5990c9c6-0ed5-4dc2-8f70-604881b84833")
@@ -44021,7 +44021,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "b6e8388d-8c2f-4c7d-9944-05a91320c8f3")
@@ -44221,7 +44221,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "23b3b547-587c-4827-b735-ddbabb48d875")
@@ -44621,7 +44621,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "07410939-223a-43c3-9286-d3e3789a0a69")
@@ -44821,7 +44821,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "4e2a1fa4-0caa-433c-b570-f8a2f5b2c90c")
@@ -45021,7 +45021,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "203a0011-1a4e-4114-8f25-5c5d9baa69ed")
