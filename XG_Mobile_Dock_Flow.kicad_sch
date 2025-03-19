@@ -21151,7 +21151,7 @@
 				)
 			)
 		)
-		(property "Value" "39300240"
+		(property "Value" "39301240"
 			(at 69.85 130.81 0)
 			(effects
 				(font
@@ -21197,7 +21197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "39300240"
+		(property "Part_Number" "39301240"
 			(at 69.85 148.59 0)
 			(effects
 				(font
@@ -21206,7 +21206,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C492361"
+		(property "LCSC" "C492347"
 			(at 69.85 148.59 0)
 			(effects
 				(font
