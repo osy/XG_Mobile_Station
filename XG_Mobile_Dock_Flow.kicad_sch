@@ -30900,7 +30900,7 @@
 				)
 			)
 		)
-		(property "Value" "469911008"
+		(property "Value" "455860005"
 			(at 36.83 170.18 0)
 			(effects
 				(font
@@ -30937,7 +30937,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "469911008"
+		(property "Part_Number" "455860005"
 			(at 26.67 175.26 0)
 			(effects
 				(font
@@ -30946,7 +30946,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17470577"
+		(property "LCSC" "C17693884"
 			(at 26.67 175.26 0)
 			(effects
 				(font

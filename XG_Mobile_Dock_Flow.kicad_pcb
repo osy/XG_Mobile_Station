@@ -2261,7 +2261,7 @@
 				)
 			)
 		)
-		(property "Value" "469911008"
+		(property "Value" "455860005"
 			(at -1.849998 3.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2299,7 +2299,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "469911008"
+		(property "Part_Number" "455860005"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2312,7 +2312,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17470577"
+		(property "LCSC" "C17693884"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
