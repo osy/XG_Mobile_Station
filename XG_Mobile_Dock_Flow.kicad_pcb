@@ -448,6 +448,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7945c710-6572-4074-856f-48a5fb19a733")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06d5fdcf-bde4-4298-90ca-c1cade2e67f2")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/fff2aba5-13a3-4d85-b786-1d4da8ba531d")
 		(sheetname "/")
@@ -902,6 +928,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "723cacb7-9a34-4443-a83c-36ab57bea926")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8451406f-5202-415b-8d2b-3edb787e1108")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f11e5818-0316-429e-814d-8974d5932a2f")
 		(sheetname "/")
@@ -1097,7 +1149,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C32297"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1110,7 +1162,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF5902TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1863,7 +1915,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C32297"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1876,7 +1928,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF5902TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2664,7 +2716,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2677,7 +2729,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4430,6 +4482,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7810fc0-a80e-43a5-95e0-ffdeaacee988")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3963f8ee-b9c8-4804-9949-050b1a77fb35")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 			)
@@ -10632,6 +10710,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5cfae11f-d437-42d4-8642-f7d298e96514")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8f53f96-6080-4c1f-933c-7512c022c6ef")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0b6f9426-7deb-4ffb-87ee-d073fe3b815a")
 		(sheetname "/")
@@ -12885,7 +12989,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12898,7 +13002,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF1001TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15806,7 +15910,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15819,7 +15923,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16572,6 +16676,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec9024b6-c632-4a61-b830-592b650b2222")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5fd1f5a1-ad69-42b4-b9e2-714154f2aacb")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/31ce2c8e-f308-49dc-869a-1f33d7d762b1")
 		(sheetname "/")
@@ -16832,7 +16962,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16845,7 +16975,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17215,6 +17345,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15a366bf-a42f-4a61-8197-90434595a6c5")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb13d0aa-3006-4bb8-a5be-a3fd82ebdc82")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f141d82c-6547-4044-a67e-c8545c4b9b7e")
 		(sheetname "/")
@@ -17410,7 +17566,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C32297"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17423,7 +17579,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF5902TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18286,6 +18442,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55d7580a-69e9-4be1-a55b-093b9a64564f")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eee32d91-111d-47cd-9964-c63ac2468f50")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2a6679b8-38a5-4788-b974-86fee15ea733")
 		(sheetname "/")
@@ -18477,6 +18659,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1cbf77d-3290-410e-8933-186da10e6c33")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b57f4c9b-436c-4bed-87b7-77f8f04a88b3")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 			)
@@ -19476,6 +19684,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8d96f9f-7050-4a62-82ad-dad028c7a689")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4cc7e33-0f5c-4a97-a257-e6bbac88afac")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/038a1dc9-91df-4af5-95ca-a2538e6a26b2")
 		(sheetname "/")
@@ -19996,7 +20230,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20009,7 +20243,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20375,6 +20609,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9753c9ce-c9cc-48a5-bdbd-19bf11bb687f")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bfc3eee-30ea-4cf0-aa77-b57dbeda2207")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 			)
@@ -22810,7 +23070,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C32297"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22823,7 +23083,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF5902TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27343,6 +27603,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a5cd110-05c0-4ee6-b7b0-5a1832cb29e2")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e62900d3-79fd-4850-b340-24d7c977a0d3")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80973ca8-3641-48e0-9d76-65c06d774567")
 		(sheetname "/")
@@ -27538,7 +27824,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27551,7 +27837,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27921,7 +28207,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27934,7 +28220,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF1001TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28304,6 +28590,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81231122-3d3b-4a1d-84bf-9cc9fa5753d1")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d872f38-8917-4a9f-b055-60733368e79b")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f445796a-1c35-4389-80e5-fd853a1b9fca")
 		(sheetname "/")
@@ -28495,6 +28807,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a05d3859-42b4-42b4-a506-0d96dd00c046")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d838e3e8-9a09-4b6d-89f1-42db43d3565f")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 			)
@@ -28694,7 +29032,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28707,7 +29045,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29408,7 +29746,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29421,7 +29759,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29791,7 +30129,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C11702"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29804,7 +30142,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF1001TCE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32439,7 +32777,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C32297"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32452,7 +32790,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF5902TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32822,7 +33160,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C32297"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32835,7 +33173,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF5902TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34307,6 +34645,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1746bbe1-c092-4c24-9846-fd8ceac15cd1")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f11bbcbb-90c1-4c86-96c0-70cda7034361")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 			)
@@ -40085,7 +40449,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C11702"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40098,7 +40462,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF1001TCE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40810,6 +41174,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ab4cd89-b2e0-44b9-8557-7d2d4df7a125")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56d4c2af-4e5c-4e7b-94a2-b0a9f67de1c6")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/14cd4213-38e1-4ae6-880c-84096cdd6111")
 		(sheetname "/")
@@ -41005,7 +41395,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41018,7 +41408,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41615,6 +42005,32 @@
 				)
 			)
 		)
+		(property "Part_Number" "CGA0603X7R224K160JT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d00f750c-2df0-441d-80aa-0934f24b0aa0")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7503500"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de4fb1fb-1e8e-49e4-a3b7-38b1c6206e2a")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e744b12c-ef88-4eee-80d2-622485efc891")
 		(sheetname "/")
@@ -41810,7 +42226,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41823,7 +42239,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42193,7 +42609,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C25900"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42206,7 +42622,7 @@
 				)
 			)
 		)
-		(property "Part_Number" "0402WGF1002TCE"
+		(property "Part_Number" "0402WGF4701TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42807,6 +43223,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "25ea3287-7a5d-4234-8020-ebb901a83bf4")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fcdb18a7-680f-4554-8a19-ba959f783416")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7ba44842-89d4-46e3-8b53-794e9baccac0")
 		(sheetname "/")
@@ -43002,6 +43446,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6cd98eb3-a4b8-4478-9a89-fc242e470114")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "96a72fe7-377d-4233-b5e3-8fc07d0f49c6")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -43207,6 +43679,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7bd93939-fe2f-4a09-a2ef-d56e0f57c65a")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "503ee880-100f-4a6c-b3e2-1b7b658716b4")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/81b9e417-e32d-4c3a-a7b1-3262f6aaf7a1")
 		(sheetname "/")
@@ -43367,7 +43867,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "aeb01c41-7fa6-4c9c-8673-5cdf3fcd0096")
@@ -43402,6 +43902,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3d701ebd-22b9-48ae-9ee9-35c32d68a845")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2963daf5-fdb3-4d46-9817-e8ef6c15fb20")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -43607,6 +44135,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Part_Number" "CL10A105KO8NNNC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "44d630c5-7ac0-48b8-89b0-5211f08dfae8")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C1592"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e665f678-6c84-4dcb-9896-7851c31b94e4")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e6484f37-f72b-4b94-9c4b-5363fe2897ef")
 		(sheetname "/")
@@ -43767,7 +44323,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "bea03284-c52f-44dd-88eb-e86ada3bcb81")
@@ -43802,6 +44358,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "689e5f13-8b98-40fa-b77c-39e37de6a154")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "42e8f890-cb79-4424-8265-2a11a4689edd")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -43967,7 +44551,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "5a7a58bc-4d1c-4198-8596-b1cda3c81ab4")
@@ -44002,6 +44586,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8a906433-7854-45dc-95fa-d1a8f8fa13c4")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "911fa014-36d9-4e64-aaf6-71325ba5508b")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -44207,6 +44819,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2b844ceb-869a-4b8b-98eb-f5706a2161ee")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fd67a8eb-8b6b-4c5e-985d-e30548b2630d")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/b326542c-29fe-4f23-93f8-341ccca0d99c")
 		(sheetname "/")
@@ -44407,6 +45047,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f2d73663-b2bf-45e7-bcf4-1dce80ab5c4b")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "18d816ac-2cfe-4207-a365-8972e440ecc4")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/585ab99b-9bb2-415d-801d-50abca64cbc5")
 		(sheetname "/")
@@ -44567,7 +45235,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "0.1μF"
+		(property "Value" "100nF"
 			(at 0 -1.05 90)
 			(layer "B.Fab")
 			(uuid "8e02fdc8-2270-40cd-935b-b1aab01b6bb5")
@@ -44602,6 +45270,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dc140cf3-763c-4af7-a96b-3ad05917be4a")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bf6c5afa-e24f-4e05-974a-0495b50b572b")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -44807,6 +45503,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "47d6d399-794d-4cf8-ac2d-bd34ee1774b8")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "03552a67-d2f3-4a93-ae69-e44c836034bf")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ca4e4b0e-c1d0-4c76-9727-d0a6f5e0b7d3")
 		(sheetname "/")
@@ -45002,6 +45726,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0ebd2928-5a39-4f6b-8618-af33d733525c")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dc874290-7a40-4838-82f0-d73496c4fbb8")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -45207,6 +45959,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Part_Number" "GRM188R71C104KA01D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f2d06e91-c46a-42b4-91dd-92e0d93f6f19")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C45000"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c183230c-28bc-403a-bf34-59434088b670")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/cd75d2ae-7cab-4911-9166-b0ecb9420762")
 		(sheetname "/")
@@ -45402,6 +46182,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part_Number" "CL10A105KO8NNNC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "39c432e1-bcbc-48dd-bfce-88eef25cf60e")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C1592"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2439f291-32f8-4673-84ae-335fe3469e74")
+			(effects
+				(font
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
