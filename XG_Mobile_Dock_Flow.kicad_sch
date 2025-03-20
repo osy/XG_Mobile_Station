@@ -24008,6 +24008,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part_Number" "DS160PR410RNQR"
+			(at 227.33 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1855779"
+			(at 227.33 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "37"
 			(uuid "52aebf03-1bab-4a94-b10d-d7d5162b0b54")
 		)
@@ -26816,6 +26834,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 72.39 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part_Number" "DS160PR410RNQR"
+			(at 72.39 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1855779"
 			(at 72.39 200.66 0)
 			(effects
 				(font
