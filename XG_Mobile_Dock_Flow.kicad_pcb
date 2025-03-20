@@ -11074,6 +11074,7 @@
 			(net 118 "+12V")
 			(pinfunction "1")
 			(pintype "passive")
+			(clearance 0.3)
 			(uuid "6792254c-7e10-42ff-98f3-656d18b4f704")
 		)
 		(pad "2" thru_hole circle
@@ -11085,6 +11086,7 @@
 			(net 118 "+12V")
 			(pinfunction "2")
 			(pintype "passive")
+			(clearance 0.3)
 			(uuid "c001a62e-bcf6-491e-b51f-34e01c9531bc")
 		)
 		(pad "3" thru_hole circle
@@ -11096,6 +11098,7 @@
 			(net 118 "+12V")
 			(pinfunction "3")
 			(pintype "passive")
+			(clearance 0.3)
 			(uuid "231429af-81e0-4bf3-81ea-fd9433141439")
 		)
 		(pad "4" thru_hole circle
@@ -11154,6 +11157,17 @@
 			(uuid "a53c80e8-da46-4d2b-9a61-5b2152b7785b")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/Models/0455860005.stp"
+			(offset
+				(xyz -6.3 -13.7 5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "AZ1045-04F:AZ1045-04F"
 		(layer "F.Cu")
