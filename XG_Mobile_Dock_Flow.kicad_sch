@@ -31894,6 +31894,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part_Number" "455860005"
+			(at 40.64 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17693884"
+			(at 40.64 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "6ee964a9-2a09-4ec8-8059-8b0dcd26c0db")
 		)
