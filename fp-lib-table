@@ -28,4 +28,5 @@
   (lib (name "0455860005")(type "KiCad")(uri "${KIPRJMOD}/Footprints/0455860005.pretty")(options "")(descr ""))
   (lib (name "470531000")(type "KiCad")(uri "${KIPRJMOD}/Footprints/470531000.pretty")(options "")(descr ""))
   (lib (name "DS160PR410RNQR")(type "KiCad")(uri "${KIPRJMOD}/Footprints/DS160PR410RNQR.pretty")(options "")(descr ""))
+  (lib (name "455860005")(type "KiCad")(uri "${KIPRJMOD}/Footprints/455860005.pretty")(options "")(descr ""))
 )
