@@ -130,3 +130,5 @@ The standard build is designed to fit inside the XG Station Pro enclosure and re
 [![After installation with cable](images/rev_6_installed_cable.jpg)](images/rev_6_installed_cable.jpg)
 
 Important Note: The DC-DC power supply is capable of supplying 180W to each PCIe 8-pin connector, 65W to the USB-C port, and 72W to the PCIe slot + the PWM fans. However, the AC-DC power supply input is rated for a maximum of 330W. This means that if you max out every possible power source, you may cause the system to shut down or in an unlikely worst case scenario start a fire. On our device, we found that the power supply is capable of 360W (measured from the wall) for long durations without overheating however this may vary with each unit. It is recommended that you limit the GPU power consumption to a maximum of 285W or lower (undervolting it if needed) to be absolutely safe.
+
+[Check out the power guide for custom power supply replacements.](Power.md)
