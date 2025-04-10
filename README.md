@@ -110,6 +110,10 @@ Knowledge base for all things XGM gathered from reverse engineering the hardware
 * [Reversed ACPI tables](Docs/ACPI_Annotated.asl)
 * [Reversed BIOS detection](Docs/BIOS_Detect.c)
 
+## Related Projects
+
+* [Modified Lite design with redrivers for improved performance (not yet working)](https://github.com/Alecu100/XG_Mobile_Station/tree/flow_v2)
+
 [1]: https://www.asus.com/motherboards-components/external-graphics-docks/all-series/xg-station-pro/
 [2]: https://www.st.com/en/development-tools/stm32cubeprog.html
 [3]: https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/
