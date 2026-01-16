@@ -14054,16 +14054,6 @@
 		)
 		(uuid "9e02e681-aceb-4b9b-8299-01db416ca539")
 	)
-	(label "+3V3_PCI"
-		(at 46.99 17.78 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a6b3a074-d7b6-424d-96d1-83adc39b8cc5")
-	)
 	(label "C_DN"
 		(at 40.64 69.85 0)
 		(effects
@@ -14547,6 +14537,28 @@
 		(uuid "1cd81208-25f6-44f1-892e-14fbcf24456c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 49.0848 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape input)
+		(at 46.99 17.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ea653bf-58f5-464b-98d2-29bbcb5e1af8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.9248 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
