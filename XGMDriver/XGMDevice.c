@@ -86,43 +86,56 @@ HID_DESCRIPTOR              G_DefaultHidDescriptor =
     }
 };
 
+// UNICODE_STRING buffers are not guaranteed to be NUL-terminated
+static BOOLEAN ModelEquals(
+    _In_ PCUNICODE_STRING pModel,
+    _In_ PCWSTR pName
+)
+{
+    size_t length = wcslen(pName);
+
+    return pModel->Buffer != NULL &&
+        pModel->Length == length * sizeof(WCHAR) &&
+        _wcsnicmp(pModel->Buffer, pName, length) == 0;
+}
+
 static void ParseModel(
-    _In_ PCWSTR pModel,
+    _In_ PCUNICODE_STRING pModel,
     _Out_ PUINT16 pVid,
     _Out_ PUINT16 pPid,
     _Out_ PUINT16 pSvid,
     _Out_ PUINT16 pSsid
 )
 {
-    if (_wcsicmp(pModel, L"GC31R") == 0)
+    if (ModelEquals(pModel, L"GC31R"))
     {
         *pVid = ntohs(0x10de);
         *pPid = ntohs(0x249d);
         *pSvid = ntohs(0x1043);
         *pSsid = ntohs(0x218b);
     }
-    else if (_wcsicmp(pModel, L"GC31S") == 0)
+    else if (ModelEquals(pModel, L"GC31S"))
     {
         *pVid = ntohs(0x10de);
         *pPid = ntohs(0x249c);
         *pSvid = ntohs(0x1043);
         *pSsid = ntohs(0x217b);
     }
-    else if (_wcsicmp(pModel, L"GC33Y") == 0)
+    else if (ModelEquals(pModel, L"GC33Y"))
     {
         *pVid = ntohs(0x10de);
         *pPid = ntohs(0x2717);
         *pSvid = ntohs(0x1043);
         *pSsid = ntohs(0x21fb);
     }
-    else if (_wcsicmp(pModel, L"GC33Z") == 0)
+    else if (ModelEquals(pModel, L"GC33Z"))
     {
         *pVid = ntohs(0x10de);
         *pPid = ntohs(0x27a0);
         *pSvid = ntohs(0x1043);
         *pSsid = ntohs(0x220b);
     }
-    else // if (_wcsicmp(pModel, L"GC32L") == 0)
+    else // if (ModelEquals(pModel, L"GC32L"))
     {
         *pVid = ntohs(0x1002);
         *pPid = ntohs(0x73df);
@@ -132,13 +145,21 @@ static void ParseModel(
 }
 
 static void ParseSerial(
-    _In_ PCWSTR pInput,
+    _In_reads_opt_(inputLength) PCWSTR pInput,
     _In_ USHORT inputLength,
-    _Out_ PSTR pOutput
+    _Out_writes_(8) PSTR pOutput
 )
 {
     memset(pOutput, '0', 8);
-    WideCharToMultiByte(CP_ACP, 0, pInput, inputLength, pOutput, 9, NULL, NULL);
+    if (pInput == NULL || inputLength == 0)
+    {
+        return;
+    }
+    // The serial field is 8 bytes and not NUL-terminated
+    if (WideCharToMultiByte(CP_ACP, 0, pInput, min(inputLength, 8), pOutput, 8, NULL, NULL) == 0)
+    {
+        memset(pOutput, '0', 8);
+    }
 }
 
 static NTSTATUS
@@ -193,6 +214,7 @@ XGMDriver_Get_EGPUID(
         {
             TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "XGMDriver_Get_EGPUID Error: WdfRegistryQueryString failed %!STATUS!", status);
         }
+        WdfRegistryClose(hKey);
     }
     else
     {
@@ -204,8 +226,8 @@ XGMDriver_Get_EGPUID(
     OutputReportBuffer->ReportID = XGM_REPORT_ID;
     OutputReportBuffer->Command = XGM_CMD_GET_EGPUID;
     OutputReportBuffer->Data[0] = 0x03;
-    ParseModel(pModel.Buffer, (PUINT16)&OutputReportBuffer->Data[1], (PUINT16)&OutputReportBuffer->Data[3], (PUINT16)&OutputReportBuffer->Data[7], (PUINT16)&OutputReportBuffer->Data[5]);
-    ParseSerial(pSerial.Buffer, pSerial.Length, (PSTR)&OutputReportBuffer->Data[9]);
+    ParseModel(&pModel, (PUINT16)&OutputReportBuffer->Data[1], (PUINT16)&OutputReportBuffer->Data[3], (PUINT16)&OutputReportBuffer->Data[7], (PUINT16)&OutputReportBuffer->Data[5]);
+    ParseSerial(pSerial.Buffer, (USHORT)(pSerial.Length / sizeof(WCHAR)), (PSTR)&OutputReportBuffer->Data[9]);
     OutputReportBuffer->Data[17] = 'G';
     OutputReportBuffer->Data[18] = 'E';
     OutputReportBuffer->Data[19] = 'N';
