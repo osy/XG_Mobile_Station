@@ -12,6 +12,12 @@ InstallDir $PROGRAMFILES64\XGMDriver
 !include MUI2.nsh
 !include FileFunc.nsh
 
+; Set by package.bat: the folder holding the signed driver, and TEST_SIGNED
+; when it also holds the test root certificate
+!ifndef DRIVER_DIR
+  !error "Build the installer with package.bat <driver folder>"
+!endif
+
 
 Page custom fnc_SpoofGPU_Show fnc_SpoofGPU_Leave
 !insertmacro MUI_PAGE_COMPONENTS
@@ -354,19 +360,31 @@ Section "Driver" SecDriver
   SetOutPath $INSTDIR
 
   ; Write driver
-  File "x64\Release\XGMDriver\xgmdriver.cat"
-  File "x64\Release\XGMDriver\XGMDriver.dll"
-  File "x64\Release\XGMDriver\XGMDriver.inf"
-  File "RootCA.cer"
+  File "${DRIVER_DIR}\xgmdriver.cat"
+  File "${DRIVER_DIR}\XGMDriver.dll"
+  File "${DRIVER_DIR}\XGMDriver.inf"
+!ifdef TEST_SIGNED
+  File "${DRIVER_DIR}\RootCA.cer"
+!endif
 
   ; Write devinstall
   File "devinstall\x64\Release\devinstall.exe"
 
-  ; Install certificates
+!ifdef TEST_SIGNED
+  ; Install certificates; an attestation-signed driver needs none
   ${DisableX64FSRedirection}
   NsExec::ExecToLog '"$WINDIR\system32\certutil.exe" -addstore root "$INSTDIR\RootCA.cer"'
   Pop $1
   ${EnableX64FSRedirection}
+!else
+  ; Remove the test certificate that test-signed installs trusted, if present.
+  ; The result is ignored: it may be missing or fail to delete.
+  DetailPrint "Removing any test certificate..."
+  ${DisableX64FSRedirection}
+  NsExec::ExecToLog '"$WINDIR\system32\certutil.exe" -delstore root "Fake XGM Device Publisher"'
+  Pop $1
+  ${EnableX64FSRedirection}
+!endif
 
   ; Install driver
   ; removeall also removes devices that are not currently present, which

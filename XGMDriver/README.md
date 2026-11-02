@@ -19,7 +19,11 @@ See [Software.md](../Docs/Software.md) for more details.
 
 1. Install [Visual Studio 2022 Community Edition and WDK][1].
 2. Install [NSIS][2].
-3. Run `build.bat`. If prompted to enter a password to protect the generated private key, press "None".
+3. Build and sign the driver with `build.bat`:
+   * `build.bat` signs it with a self-signed test certificate and writes the driver and `RootCA.cer` to `x64\Release\SignedDriver`. If prompted to enter a password to protect the generated private key, press "None". The installer adds this certificate to the trusted root store, but machines that only accept Microsoft-signed drivers still reject the driver.
+   * `build.bat "<certificate subject>"` signs it with the EV code signing certificate of that subject from the certificate store and writes `x64\Release\Attestation\XGMDriver.cab`. Submit the CAB for attestation signing in the [Partner Center hardware dashboard][3], then download the signed driver and extract the folder holding `XGMDriver.inf` to `x64\Release\SignedDriver`.
+4. Run `package.bat` to build `XGMDriverSetup.exe` from `x64\Release\SignedDriver` (or pass another folder holding the signed driver). A folder with `RootCA.cer` is packaged as test signed and the installer installs the certificate; otherwise no certificate is installed.
 
 [1]: https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk
 [2]: https://nsis.sourceforge.io/Download
+[3]: https://learn.microsoft.com/en-us/windows-hardware/drivers/dashboard/code-signing-attestation
