@@ -180,4 +180,24 @@ MessageId=61206 SymbolicName=MSG_REMOVEALL_SHORT
 Language=English
 %1!-20s! Remove devices, including those that are not currently attached.
 .
+;//
+;// DELETEDRIVER
+;//
+MessageId=61300 SymbolicName=MSG_DELETEDRIVER_LONG
+Language=English
+Devcon Deletedriver Command
+Deletes every third-party driver package that was installed from an INF
+with the specified original file name, even if a device still uses it.
+Valid only on the local computer.
+%1 %2 <inf>
+<inf>        Original file name of the INF, without a path (e.g. xgmdriver.inf).
+.
+MessageId=61301 SymbolicName=MSG_DELETEDRIVER_SHORT
+Language=English
+%1!-20s! Delete driver packages by original INF name.
+.
+MessageId=61302 SymbolicName=MSG_DELETEDRIVER_TAIL
+Language=English
+%1!u! driver package(s) were deleted.
+.
 

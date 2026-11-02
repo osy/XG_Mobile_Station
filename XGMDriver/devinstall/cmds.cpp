@@ -595,11 +595,105 @@ EXIT_xxxx
     return failcode;
 }
 
+int cmdDeleteDriver(_In_ LPCTSTR BaseName, _In_opt_ LPCTSTR Machine, _In_ DWORD Flags, _In_ int argc, _In_reads_(argc) PTSTR argv[])
+/*++
+
+Routine Description:
+
+    DELETEDRIVER
+    delete every oem*.inf driver package whose original INF file name
+    matches, so callers do not need to know the published oemNN.inf name
+
+Arguments:
+
+    BaseName  - name of executable
+    Machine   - machine name, must be NULL
+    argc/argv - remaining parameters
+
+Return Value:
+
+    EXIT_xxxx
+
+--*/
+{
+    TCHAR infDir[MAX_PATH];
+    TCHAR searchPath[MAX_PATH];
+    TCHAR infPath[MAX_PATH];
+    WIN32_FIND_DATA findData;
+    HANDLE findHandle;
+    PSP_INF_INFORMATION infInfo;
+    SP_ORIGINAL_FILE_INFO originalInfo;
+    DWORD infInfoSize;
+    DWORD count = 0;
+    LPCTSTR originalName;
+    int failcode = EXIT_OK;
+
+    UNREFERENCED_PARAMETER(BaseName);
+    UNREFERENCED_PARAMETER(Flags);
+
+    if (Machine) {
+        //
+        // must be local machine
+        //
+        return EXIT_USAGE;
+    }
+    if (argc != 1 || !argv[0][0]) {
+        return EXIT_USAGE;
+    }
+    originalName = argv[0];
+
+    if (!GetWindowsDirectory(infDir, ARRAYSIZE(infDir)) ||
+        FAILED(StringCchCat(infDir, ARRAYSIZE(infDir), TEXT("\\INF\\"))) ||
+        FAILED(StringCchPrintf(searchPath, ARRAYSIZE(searchPath), TEXT("%soem*.inf"), infDir))) {
+        return EXIT_FAIL;
+    }
+
+    findHandle = FindFirstFile(searchPath, &findData);
+    if (findHandle != INVALID_HANDLE_VALUE) {
+        do {
+            if (FAILED(StringCchPrintf(infPath, ARRAYSIZE(infPath), TEXT("%s%s"), infDir, findData.cFileName))) {
+                continue;
+            }
+            infInfoSize = 0;
+            if (!SetupGetInfInformation(infPath, INFINFO_INF_NAME_IS_ABSOLUTE, NULL, 0, &infInfoSize)) {
+                continue;
+            }
+            infInfo = (PSP_INF_INFORMATION)malloc(infInfoSize);
+            if (!infInfo) {
+                failcode = EXIT_FAIL;
+                break;
+            }
+            originalInfo.cbSize = sizeof(originalInfo);
+            if (SetupGetInfInformation(infPath, INFINFO_INF_NAME_IS_ABSOLUTE, infInfo, infInfoSize, NULL) &&
+                SetupQueryInfOriginalFileInformation(infInfo, 0, NULL, &originalInfo) &&
+                _tcsicmp(originalInfo.OriginalInfName, originalName) == 0) {
+                //
+                // SetupUninstallOEMInf takes the published file name, not a path
+                //
+                if (SetupUninstallOEMInf(findData.cFileName, SUOI_FORCEDELETE, NULL)) {
+                    _tprintf(TEXT("%-60s: %s\n"), findData.cFileName, TEXT("Deleted"));
+                    count++;
+                }
+                else {
+                    _tprintf(TEXT("%-60s: %s\n"), findData.cFileName, TEXT("Delete failed"));
+                    failcode = EXIT_FAIL;
+                }
+            }
+            free(infInfo);
+        } while (FindNextFile(findHandle, &findData));
+        FindClose(findHandle);
+    }
+
+    FormatToStream(stdout, MSG_DELETEDRIVER_TAIL, count);
+    return failcode;
+}
+
 
 DispatchEntry DispatchTable[] = {
     { TEXT("install"),      cmdInstall,     MSG_INSTALL_SHORT,     MSG_INSTALL_LONG },
     { TEXT("remove"),       cmdRemove,      MSG_REMOVE_SHORT,      MSG_REMOVE_LONG },
     { TEXT("removeall"),    cmdRemoveAll,   MSG_REMOVEALL_SHORT,   MSG_REMOVEALL_LONG },
+    { TEXT("deletedriver"), cmdDeleteDriver, MSG_DELETEDRIVER_SHORT, MSG_DELETEDRIVER_LONG },
     { TEXT("update"),       cmdUpdate,      MSG_UPDATE_SHORT,      MSG_UPDATE_LONG },
     { TEXT("?"),            cmdHelp,        0,                     0 },
     { NULL,NULL }
