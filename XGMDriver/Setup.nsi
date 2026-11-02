@@ -153,6 +153,28 @@ Function ${UN}AcseFilesEqual
   Exch $0
 FunctionEnd
 
+; Armoury Crate keeps the virtual HID device open, which vetoes removing it.
+; Push nothing; Call; Pop <1 if the service was running and is now stopped>
+Function ${UN}AcseStopService
+  Push $0
+  NsExec::ExecToLog '"$SYSDIR\net.exe" stop ArmouryCrateSEService'
+  Pop $0
+  ${If} $0 == 0
+    StrCpy $0 1
+  ${Else}
+    StrCpy $0 0
+  ${EndIf}
+  Exch $0
+FunctionEnd
+
+Function ${UN}AcseStartService
+  Push $0
+  DetailPrint "Starting ARMOURY CRATE SE Service..."
+  NsExec::ExecToLog '"$SYSDIR\net.exe" start ArmouryCrateSEService'
+  Pop $0
+  Pop $0
+FunctionEnd
+
 ; Armoury Crate SE reads Load.conf when the service starts
 Function ${UN}AcseRestartService
   Push $0
@@ -351,6 +373,9 @@ Section "Driver" SecDriver
   ; would otherwise keep their old configuration and could come back. The
   ; wildcard matches the bare ID used by older installers and every
   ; per-model ID, so changing the model replaces the device.
+  DetailPrint "Stopping ARMOURY CRATE SE Service..."
+  Call AcseStopService
+  Pop $R9
   DetailPrint "Removing any existing device..."
   NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice*"'
   Pop $1
@@ -364,6 +389,16 @@ Section "Driver" SecDriver
   DetailPrint "Installing driver for $GpuModel..."
   NsExec::ExecToLog '"$INSTDIR\devinstall.exe" install "$INSTDIR\XGMDriver.inf" "ROOT\FakeXGMDevice_$GpuModel" "VID_0B05&PID_1A9A"'
   Pop $1
+
+  ${If} $1 != 0
+    ; install creates the device before installing the driver on it; do not
+    ; leave a device without a driver behind
+    NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice_$GpuModel"'
+    Pop $2
+  ${EndIf}
+  ${If} $R9 == 1
+    Call AcseStartService
+  ${EndIf}
 
   ${If} $1 != 0
     MessageBox MB_OK|MB_ICONEXCLAMATION "Driver failed to install. Check the log file."
@@ -419,6 +454,9 @@ FunctionEnd
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 Section -Uninstall
+  DetailPrint "Stopping ARMOURY CRATE SE Service..."
+  Call un.AcseStopService
+  Pop $R9
   DetailPrint "Uninstalling driver..."
   NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice*"'
   Pop $1
@@ -435,6 +473,10 @@ Section -Uninstall
 
   ${If} $1 != 0
     MessageBox MB_OK|MB_ICONEXCLAMATION "Driver package failed to delete. You can remove it with pnputil /delete-driver."
+  ${EndIf}
+
+  ${If} $R9 == 1
+    Call un.AcseStartService
   ${EndIf}
 
   Call un.AcseRemovePatch
