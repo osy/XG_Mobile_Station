@@ -65,8 +65,16 @@ Section "Driver"
   ${EnableX64FSRedirection}
 
   ; Install driver
+  ; removeall also removes devices that are not currently present, which
+  ; would otherwise keep their old configuration and could come back
   DetailPrint "Removing any existing device..."
-  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" remove "ROOT\FakeXGMDevice"'
+  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice"'
+  Pop $1
+  ${If} $1 == 1
+    SetRebootFlag true
+  ${EndIf}
+  DetailPrint "Removing any existing driver package..."
+  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" deletedriver "xgmdriver.inf"'
   Pop $1
   DetailPrint "Installing driver..."
   NsExec::ExecToLog '"$INSTDIR\devinstall.exe" install "$INSTDIR\XGMDriver.inf" "ROOT\FakeXGMDevice" "VID_0B05&PID_1A9A"'
@@ -102,17 +110,22 @@ SectionEnd
 
 Section -Uninstall
   DetailPrint "Uninstalling driver..."
-  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" remove "ROOT\FakeXGMDevice"'
+  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice"'
   Pop $1
 
-  ${If} $1 != 0
+  ${If} $1 == 1
+    SetRebootFlag true
+  ${ElseIf} $1 != 0
     MessageBox MB_OK|MB_ICONEXCLAMATION "Driver failed to uninstall. You must manually delete the device."
   ${EndIf}
 
-  ${DisableX64FSRedirection}
-  NsExec::ExecToLog '"$WINDIR\system32\pnputil.exe" /delete-driver "$INSTDIR\XGMDriver.inf" /uninstall'
+  DetailPrint "Deleting driver package..."
+  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" deletedriver "xgmdriver.inf"'
   Pop $1
-  ${EnableX64FSRedirection}
+
+  ${If} $1 != 0
+    MessageBox MB_OK|MB_ICONEXCLAMATION "Driver package failed to delete. You can remove it with pnputil /delete-driver."
+  ${EndIf}
 
   ; Uninstall certificates
   ${DisableX64FSRedirection}
