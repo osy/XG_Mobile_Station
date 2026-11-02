@@ -176,6 +176,6 @@ Function fnc_SpoofGPU_Leave
   ${If} $0 == 1
     StrCpy $GpuModel "GC33Y"
   ${Else}
-    StrCpy $GpuModel "GC33L"
+    StrCpy $GpuModel "GC32L"
   ${EndIf}
 FunctionEnd
