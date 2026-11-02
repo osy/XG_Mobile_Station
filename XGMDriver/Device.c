@@ -76,6 +76,8 @@ Return Value:
     hidAttributes->ProductID = XGMDEVICE_PID;
     hidAttributes->VersionNumber = XGMDEVICE_VERSION;
 
+    XGMDriver_LoadConfiguration(deviceContext);
+
     status = QueueCreate(device,
         &deviceContext->DefaultQueue);
     if (!NT_SUCCESS(status)) {
@@ -347,6 +349,7 @@ Return Value:
 
     reportSize = packet.reportBufferLen;
     status = XGMDriver_ProcessCommand(
+        QueueContext->DeviceContext,
         QueueContext->LastXgmReport.Command,
         QueueContext->LastXgmReport.Data,
         (PHID_XGM_REPORT)packet.reportBuffer,

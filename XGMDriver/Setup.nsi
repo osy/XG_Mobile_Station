@@ -37,6 +37,9 @@ Function .onInit
   !insertmacro EnsureAdminRights
   ${GetParent} $WINDIR $R0
   StrCpy $ASUSDRIVERDIR "$R0\eSupport\eDriver\Software\Peripherals\ExternalGraphics"
+  ; A silent install skips the selection page, so start from its preselected
+  ; choice; the model must name one of the hardware IDs in XGMDriver.inf
+  StrCpy $GpuModel "GC33Y"
 FunctionEnd
 
 Function un.onInit
@@ -66,9 +69,11 @@ Section "Driver"
 
   ; Install driver
   ; removeall also removes devices that are not currently present, which
-  ; would otherwise keep their old configuration and could come back
+  ; would otherwise keep their old configuration and could come back. The
+  ; wildcard matches the bare ID used by older installers and every
+  ; per-model ID, so changing the model replaces the device.
   DetailPrint "Removing any existing device..."
-  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice"'
+  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice*"'
   Pop $1
   ${If} $1 == 1
     SetRebootFlag true
@@ -76,8 +81,9 @@ Section "Driver"
   DetailPrint "Removing any existing driver package..."
   NsExec::ExecToLog '"$INSTDIR\devinstall.exe" deletedriver "xgmdriver.inf"'
   Pop $1
-  DetailPrint "Installing driver..."
-  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" install "$INSTDIR\XGMDriver.inf" "ROOT\FakeXGMDevice" "VID_0B05&PID_1A9A"'
+  ; The model is encoded in the hardware ID (see XGMDriver.inf)
+  DetailPrint "Installing driver for $GpuModel..."
+  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" install "$INSTDIR\XGMDriver.inf" "ROOT\FakeXGMDevice_$GpuModel" "VID_0B05&PID_1A9A"'
   Pop $1
 
   ${If} $1 != 0
@@ -95,9 +101,9 @@ Section "Driver"
   SetOutPath $ASUSDRIVERDIR
   File "x64\Release\AsusXGDriverInst.exe"
 
-  ; Write model to registry
+  ; Remove the model value older installers wrote; the driver no longer reads it
   SetRegView 64
-  WriteRegStr HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\XGMDriver\Parameters" "Model" "$GpuModel"
+  DeleteRegKey HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\XGMDriver\Parameters"
   SetRegView lastused
 
   ; Write the uninstall keys for Windows
@@ -110,7 +116,7 @@ SectionEnd
 
 Section -Uninstall
   DetailPrint "Uninstalling driver..."
-  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice"'
+  NsExec::ExecToLog '"$INSTDIR\devinstall.exe" removeall "ROOT\FakeXGMDevice*"'
   Pop $1
 
   ${If} $1 == 1
@@ -132,6 +138,10 @@ Section -Uninstall
   NsExec::ExecToLog '"$WINDIR\system32\certutil.exe" -delstore root "Fake XGM Device Publisher"'
   Pop $1
   ${EnableX64FSRedirection}
+
+  SetRegView 64
+  DeleteRegKey HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\XGMDriver\Parameters"
+  SetRegView lastused
 
   DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\XGMDriver"
   Delete $INSTDIR\xgmdriver.cat

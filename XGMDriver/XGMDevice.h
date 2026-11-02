@@ -52,8 +52,14 @@ typedef struct _HID_XGM_REPORT
 extern HID_REPORT_DESCRIPTOR G_DefaultReportDescriptor[];
 extern HID_DESCRIPTOR G_DefaultHidDescriptor;
 
+VOID
+XGMDriver_LoadConfiguration(
+    _Inout_ PDEVICE_CONTEXT DeviceContext
+);
+
 NTSTATUS
 XGMDriver_ProcessCommand(
+    _In_ PDEVICE_CONTEXT  DeviceContext,
     _In_ UCHAR            Command,
     _In_ PUCHAR           InputBuffer,
     _Out_ PHID_XGM_REPORT OutputReportBuffer,

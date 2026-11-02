@@ -17,7 +17,6 @@ Environment:
 #include "Driver.h"
 #include "XGMDevice.h"
 #include "XGMDevice.tmh"
-#include <WinSock2.h>
 
 //
 // This is the default report descriptor for the virtual Hid device returned
@@ -86,62 +85,88 @@ HID_DESCRIPTOR              G_DefaultHidDescriptor =
     }
 };
 
-// UNICODE_STRING buffers are not guaranteed to be NUL-terminated
-static BOOLEAN ModelEquals(
-    _In_ PCUNICODE_STRING pModel,
-    _In_ PCWSTR pName
+typedef struct _XGM_MODEL
+{
+    PCWSTR Name;
+    USHORT VendorID;
+    USHORT DeviceID;
+    USHORT SubsystemVendorID;
+    USHORT SubsystemID;
+} XGM_MODEL, * PXGM_MODEL;
+
+//
+// The installer creates the device with hardware ID
+// XGM_HARDWARE_ID_PREFIX <Name> (see XGMDriver.inf). A device created with
+// any other hardware ID gets G_Models[XGM_DEFAULT_MODEL].
+//
+static const XGM_MODEL G_Models[] =
+{
+    { L"GC31R", 0x10de, 0x249d, 0x1043, 0x218b },
+    { L"GC31S", 0x10de, 0x249c, 0x1043, 0x217b },
+    { L"GC32L", 0x1002, 0x73df, 0x1043, 0x21cb },
+    { L"GC33Y", 0x10de, 0x2717, 0x1043, 0x21fb },
+    { L"GC33Z", 0x10de, 0x27a0, 0x1043, 0x220b },
+};
+
+#define XGM_DEFAULT_MODEL       2 // GC32L
+#define XGM_HARDWARE_ID_PREFIX  L"Root\\FakeXGMDevice_"
+
+// pId is one string of a REG_MULTI_SZ and is not necessarily NUL-terminated
+static BOOLEAN HardwareIdEquals(
+    _In_reads_(idLength) PCWSTR pId,
+    _In_ size_t idLength,
+    _In_ PCWSTR pModelName
 )
 {
-    size_t length = wcslen(pName);
+    size_t prefixLength = wcslen(XGM_HARDWARE_ID_PREFIX);
+    size_t nameLength = wcslen(pModelName);
 
-    return pModel->Buffer != NULL &&
-        pModel->Length == length * sizeof(WCHAR) &&
-        _wcsnicmp(pModel->Buffer, pName, length) == 0;
+    return idLength == prefixLength + nameLength &&
+        _wcsnicmp(pId, XGM_HARDWARE_ID_PREFIX, prefixLength) == 0 &&
+        _wcsnicmp(pId + prefixLength, pModelName, nameLength) == 0;
 }
 
-static void ParseModel(
-    _In_ PCUNICODE_STRING pModel,
-    _Out_ PUINT16 pVid,
-    _Out_ PUINT16 pPid,
-    _Out_ PUINT16 pSvid,
-    _Out_ PUINT16 pSsid
+static const XGM_MODEL* FindModelFromHardwareIds(
+    _In_ WDFDEVICE Device
 )
 {
-    if (ModelEquals(pModel, L"GC31R"))
+    NTSTATUS            status;
+    WDFMEMORY           memory;
+    PCWSTR              pId;
+    size_t              size, remaining, idLength, i;
+    const XGM_MODEL*    pModel = NULL;
+
+    status = WdfDeviceAllocAndQueryProperty(Device, DevicePropertyHardwareID, PagedPool, WDF_NO_OBJECT_ATTRIBUTES, &memory);
+    if (!NT_SUCCESS(status))
     {
-        *pVid = ntohs(0x10de);
-        *pPid = ntohs(0x249d);
-        *pSvid = ntohs(0x1043);
-        *pSsid = ntohs(0x218b);
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "FindModelFromHardwareIds Error: WdfDeviceAllocAndQueryProperty failed %!STATUS!", status);
+        return NULL;
     }
-    else if (ModelEquals(pModel, L"GC31S"))
+
+    // walk the REG_MULTI_SZ without reading past the end of the buffer
+    pId = (PCWSTR)WdfMemoryGetBuffer(memory, &size);
+    remaining = size / sizeof(WCHAR);
+    while (pModel == NULL && remaining > 0 && pId[0] != L'\0')
     {
-        *pVid = ntohs(0x10de);
-        *pPid = ntohs(0x249c);
-        *pSvid = ntohs(0x1043);
-        *pSsid = ntohs(0x217b);
+        idLength = wcsnlen(pId, remaining);
+        for (i = 0; i < ARRAYSIZE(G_Models); i++)
+        {
+            if (HardwareIdEquals(pId, idLength, G_Models[i].Name))
+            {
+                pModel = &G_Models[i];
+                break;
+            }
+        }
+        if (idLength >= remaining)
+        {
+            break;
+        }
+        pId += idLength + 1;
+        remaining -= idLength + 1;
     }
-    else if (ModelEquals(pModel, L"GC33Y"))
-    {
-        *pVid = ntohs(0x10de);
-        *pPid = ntohs(0x2717);
-        *pSvid = ntohs(0x1043);
-        *pSsid = ntohs(0x21fb);
-    }
-    else if (ModelEquals(pModel, L"GC33Z"))
-    {
-        *pVid = ntohs(0x10de);
-        *pPid = ntohs(0x27a0);
-        *pSvid = ntohs(0x1043);
-        *pSsid = ntohs(0x220b);
-    }
-    else // if (ModelEquals(pModel, L"GC32L"))
-    {
-        *pVid = ntohs(0x1002);
-        *pPid = ntohs(0x73df);
-        *pSvid = ntohs(0x1043);
-        *pSsid = ntohs(0x21cb);
-    }
+    WdfObjectDelete(memory);
+
+    return pModel;
 }
 
 static void ParseSerial(
@@ -162,21 +187,89 @@ static void ParseSerial(
     }
 }
 
+// Serial is optional; without it the serial reads as all zeros
+static void ReadSerial(
+    _In_ WDFDEVICE Device,
+    _Out_writes_(8) PSTR pOutput
+)
+{
+    NTSTATUS        status;
+    WDFKEY          hKey;
+    WDFSTRING       pWdfSerial;
+    UNICODE_STRING  pSerial;
+    DECLARE_CONST_UNICODE_STRING(pSerialKey, L"Serial");
+    DECLARE_CONST_UNICODE_STRING(pEmptyString, L"");
+
+    memset(pOutput, '0', 8);
+    status = WdfStringCreate(&pEmptyString, WDF_NO_OBJECT_ATTRIBUTES, &pWdfSerial);
+    if (!NT_SUCCESS(status))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "ReadSerial Error: WdfStringCreate failed %!STATUS!", status);
+        return;
+    }
+    status = WdfDeviceOpenRegistryKey(Device, PLUGPLAY_REGKEY_DEVICE, KEY_READ, WDF_NO_OBJECT_ATTRIBUTES, &hKey);
+    if (NT_SUCCESS(status))
+    {
+        status = WdfRegistryQueryString(hKey, &pSerialKey, pWdfSerial);
+        if (NT_SUCCESS(status))
+        {
+            WdfStringGetUnicodeString(pWdfSerial, &pSerial);
+            ParseSerial(pSerial.Buffer, (USHORT)(pSerial.Length / sizeof(WCHAR)), pOutput);
+        }
+        else if (status != STATUS_OBJECT_NAME_NOT_FOUND)
+        {
+            TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "ReadSerial Error: WdfRegistryQueryString failed %!STATUS!", status);
+        }
+        WdfRegistryClose(hKey);
+    }
+    else
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "ReadSerial Error: WdfDeviceOpenRegistryKey failed %!STATUS!", status);
+    }
+    WdfObjectDelete(pWdfSerial);
+}
+
+VOID
+XGMDriver_LoadConfiguration(
+    _Inout_ PDEVICE_CONTEXT DeviceContext
+)
+{
+    const XGM_MODEL*    pModel;
+
+    pModel = FindModelFromHardwareIds(DeviceContext->Device);
+    if (pModel == NULL)
+    {
+        pModel = &G_Models[XGM_DEFAULT_MODEL];
+        TraceEvents(TRACE_LEVEL_WARNING, TRACE_DRIVER, "XGMDriver_LoadConfiguration: no model hardware ID, using default model %ws", pModel->Name);
+    }
+    else
+    {
+        TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, "XGMDriver_LoadConfiguration: model %ws", pModel->Name);
+    }
+    DeviceContext->EgpuVendorID = pModel->VendorID;
+    DeviceContext->EgpuDeviceID = pModel->DeviceID;
+    DeviceContext->EgpuSubsystemVendorID = pModel->SubsystemVendorID;
+    DeviceContext->EgpuSubsystemID = pModel->SubsystemID;
+    ReadSerial(DeviceContext->Device, DeviceContext->EgpuSerial);
+}
+
+static void StoreBigEndian16(
+    _Out_writes_(2) PUCHAR pOutput,
+    _In_ USHORT value
+)
+{
+    pOutput[0] = (UCHAR)(value >> 8);
+    pOutput[1] = (UCHAR)(value & 0xFF);
+}
+
 static NTSTATUS
 XGMDriver_Get_EGPUID(
+    _In_ PDEVICE_CONTEXT  DeviceContext,
     _In_ PUCHAR           InputBuffer,
     _Out_ PHID_XGM_REPORT OutputReportBuffer,
     _Inout_ PULONG        OutputReportBufferLength
 )
 {
-    NTSTATUS        status = STATUS_SUCCESS;
-    WDFKEY          hKey;
-    WDFSTRING       pWdfModel, pWdfSerial;
-    UNICODE_STRING  pModel, pSerial;
-    DECLARE_CONST_UNICODE_STRING(pModelKey, L"Model");
-    DECLARE_CONST_UNICODE_STRING(pSerialKey, L"Serial");
-    DECLARE_CONST_UNICODE_STRING(pEmptyString, L"");
-
     if (*OutputReportBufferLength < 24)
     {
         return STATUS_BUFFER_TOO_SMALL;
@@ -187,61 +280,28 @@ XGMDriver_Get_EGPUID(
         return STATUS_INVALID_PARAMETER;
     }
 
-    // get data from registry
-    status = WdfStringCreate(&pEmptyString, WDF_NO_OBJECT_ATTRIBUTES, &pWdfModel);
-    if (!NT_SUCCESS(status))
-    {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "XGMDriver_Get_EGPUID Error: WdfStringCreate failed %!STATUS!", status);
-        return status;
-    }
-    status = WdfStringCreate(&pEmptyString, WDF_NO_OBJECT_ATTRIBUTES, &pWdfSerial);
-    if (!NT_SUCCESS(status))
-    {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "XGMDriver_Get_EGPUID Error: WdfStringCreate failed %!STATUS!", status);
-        WdfObjectDelete(pWdfModel);
-        return status;
-    }
-    status = WdfDriverOpenParametersRegistryKey(WdfGetDriver(), KEY_READ, WDF_NO_OBJECT_ATTRIBUTES, &hKey);
-    if (NT_SUCCESS(status))
-    {
-        status = WdfRegistryQueryString(hKey, &pModelKey, pWdfModel);
-        if (!NT_SUCCESS(status))
-        {
-            TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "XGMDriver_Get_EGPUID Error: WdfRegistryQueryString failed %!STATUS!", status);
-        }
-        status = WdfRegistryQueryString(hKey, &pSerialKey, pWdfSerial);
-        if (!NT_SUCCESS(status))
-        {
-            TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "XGMDriver_Get_EGPUID Error: WdfRegistryQueryString failed %!STATUS!", status);
-        }
-        WdfRegistryClose(hKey);
-    }
-    else
-    {
-        TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "XGMDriver_Get_EGPUID Error: WdfDriverOpenParametersRegistryKey failed %!STATUS!", status);
-    }
-    status = STATUS_SUCCESS; // ignore error
-    WdfStringGetUnicodeString(pWdfSerial, &pSerial);
-    WdfStringGetUnicodeString(pWdfModel, &pModel);
     OutputReportBuffer->ReportID = XGM_REPORT_ID;
     OutputReportBuffer->Command = XGM_CMD_GET_EGPUID;
     OutputReportBuffer->Data[0] = 0x03;
-    ParseModel(&pModel, (PUINT16)&OutputReportBuffer->Data[1], (PUINT16)&OutputReportBuffer->Data[3], (PUINT16)&OutputReportBuffer->Data[7], (PUINT16)&OutputReportBuffer->Data[5]);
-    ParseSerial(pSerial.Buffer, (USHORT)(pSerial.Length / sizeof(WCHAR)), (PSTR)&OutputReportBuffer->Data[9]);
+    // big endian VID, PID, then the 32-bit subsystem ID (SSID, SVID)
+    StoreBigEndian16(&OutputReportBuffer->Data[1], DeviceContext->EgpuVendorID);
+    StoreBigEndian16(&OutputReportBuffer->Data[3], DeviceContext->EgpuDeviceID);
+    StoreBigEndian16(&OutputReportBuffer->Data[5], DeviceContext->EgpuSubsystemID);
+    StoreBigEndian16(&OutputReportBuffer->Data[7], DeviceContext->EgpuSubsystemVendorID);
+    memcpy(&OutputReportBuffer->Data[9], DeviceContext->EgpuSerial, sizeof(DeviceContext->EgpuSerial));
     OutputReportBuffer->Data[17] = 'G';
     OutputReportBuffer->Data[18] = 'E';
     OutputReportBuffer->Data[19] = 'N';
     OutputReportBuffer->Data[20] = ' ';
     OutputReportBuffer->Data[21] = '4';
-    WdfObjectDelete(pWdfSerial);
-    WdfObjectDelete(pWdfModel);
     *OutputReportBufferLength = 24;
 
-    return status;
+    return STATUS_SUCCESS;
 }
 
 NTSTATUS
 XGMDriver_ProcessCommand(
+    _In_ PDEVICE_CONTEXT  DeviceContext,
     _In_ UCHAR            Command,
     _In_ PUCHAR           InputBuffer,
     _Out_ PHID_XGM_REPORT OutputReportBuffer,
@@ -254,7 +314,7 @@ XGMDriver_ProcessCommand(
     {
     case XGM_CMD_GET_EGPUID:
     {
-        status = XGMDriver_Get_EGPUID(InputBuffer, OutputReportBuffer, OutputReportBufferLength);
+        status = XGMDriver_Get_EGPUID(DeviceContext, InputBuffer, OutputReportBuffer, OutputReportBufferLength);
         break;
     }
     default:

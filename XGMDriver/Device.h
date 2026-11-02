@@ -39,6 +39,16 @@ typedef struct _DEVICE_CONTEXT
     PHID_REPORT_DESCRIPTOR  ReportDescriptor;
     BOOLEAN                 ReadReportDescFromRegistry;
 
+    //
+    // eGPU identity returned for XGM_CMD_GET_EGPUID, loaded once when the
+    // device is created
+    //
+    USHORT                  EgpuVendorID;
+    USHORT                  EgpuDeviceID;
+    USHORT                  EgpuSubsystemVendorID;
+    USHORT                  EgpuSubsystemID;
+    CHAR                    EgpuSerial[8];
+
 } DEVICE_CONTEXT, * PDEVICE_CONTEXT;
 
 //
